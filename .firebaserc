@@ -1,14 +1,14 @@
 {
   "targets": {
-    "trabakar": {
+    "trabacar": {
       "hosting": {
         "app": [
-          "trabakar"
+          "trabacar"
         ]
       }
     }
   },
   "projects": {
-    "default": "trabakar"
+    "default": "trabacar"
   }
 }

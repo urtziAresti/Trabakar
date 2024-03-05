@@ -1,13 +1,27 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>account</ion-title>
+    <ion-title class="ion-text-center" color="primary">Cuenta</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">account</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+
+
+  <div class="profile-data">
+
+    <ion-label class="head2 bold">
+      Urtzi
+    </ion-label>
+
+    <ion-avatar (click)="changeImage()">
+      <img *ngIf="profile && profile.imageUrl; else placeholderAvatar;" [src]="profile?.imageUrl" />
+      <ng-template #placeholderAvatar>
+        <div class="fallback">
+          <p>Select avatar</p>
+        </div>
+      </ng-template>
+    </ion-avatar>
+
+  </div>
+
 </ion-content>

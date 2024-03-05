@@ -12,6 +12,7 @@ import {getFirestore, provideFirestore} from '@angular/fire/firestore';
 import {getMessaging, provideMessaging} from '@angular/fire/messaging';
 import {environment} from "../environments/environment";
 import { provideAuth, getAuth } from '@angular/fire/auth';
+import {StorageModule} from "@angular/fire/storage";
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { provideAuth, getAuth } from '@angular/fire/auth';
     provideAnalytics(() => getAnalytics()),
     provideFirestore(() => getFirestore()),
     provideMessaging(() => getMessaging()),
+    StorageModule
   ],
   providers: [{provide: RouteReuseStrategy, useClass: IonicRouteStrategy}, ScreenTrackingService],
   bootstrap: [AppComponent],

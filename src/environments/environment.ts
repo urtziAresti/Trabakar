@@ -4,16 +4,17 @@
 
 export const environment = {
   production: false,
-  prefix: 'TRABAKAR_',
+  prefix: 'TRABACAR_',
 
   firebaseConfig: {
-    apiKey: "AIzaSyAbbUgiZtsZK_7o3dh-VVSjR4aUHM9kGl4",
-    authDomain: "trabakar.firebaseapp.com",
-    projectId: "trabakar",
-    storageBucket: "trabakar.appspot.com",
-    messagingSenderId: "989084876367",
-    appId: "1:989084876367:web:aa29cc0a03e04c92d9343a",
-    measurementId: "G-WB1NSC8X5T"
+    apiKey: "AIzaSyD6irneWJYf4dYI6gFbLm8V2FIJEHE782E",
+    authDomain: "trabacar-36366.firebaseapp.com",
+    databaseURL: "https://trabacar-36366-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "trabacar-36366",
+    storageBucket: "trabacar-36366.appspot.com",
+    messagingSenderId: "410699824207",
+    appId: "1:410699824207:web:70c713ff89247380c87e3a",
+    measurementId: "G-8MQ4HG52EN"
   }
 
 };
