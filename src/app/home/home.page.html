@@ -1,21 +1,23 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-tabs>
+  <ion-tab-bar slot="bottom" mode="ios">
+    <ion-tab-button tab="search">
+      <ion-icon name="car-sport-outline"></ion-icon>
+      <ion-label>Tab1</ion-label>
+    </ion-tab-button>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-tab-button tab="publish">
+      <ion-icon name="car-sport-outline"></ion-icon>
+      <ion-label>Tab2</ion-label>
+    </ion-tab-button>
 
-  <div id="container">
-    <ion-label class="padding-bottom-l" color="primary">11111</ion-label>
-    <p class="padding-top-xl head1">2222222</p>
+    <ion-tab-button tab="chat">
+      <ion-icon name="car-sport-outline"></ion-icon>
+      <ion-label>Tab2</ion-label>
+    </ion-tab-button>
 
-  </div>
-</ion-content>
+    <ion-tab-button tab="account">
+      <ion-icon name="person-circle-outline"></ion-icon>
+      <ion-label>Cuenta</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>

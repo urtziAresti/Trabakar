@@ -21,7 +21,8 @@ import { provideAuth, getAuth } from '@angular/fire/auth';
     provideAuth(() => getAuth()),
     provideAnalytics(() => getAnalytics()),
     provideFirestore(() => getFirestore()),
-    provideMessaging(() => getMessaging())],
+    provideMessaging(() => getMessaging()),
+  ],
   providers: [{provide: RouteReuseStrategy, useClass: IonicRouteStrategy}, ScreenTrackingService],
   bootstrap: [AppComponent],
 })
