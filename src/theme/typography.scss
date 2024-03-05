@@ -1,0 +1,123 @@
+:root {
+
+  @font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../assets/fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: normal;
+  }
+
+}
+
+body{
+  font-family: Poppins-Medium;
+
+}
+
+// TYPOGRAPHY
+.head1 {
+  font-size: 34px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+
+
+.head2 {
+  font-size: 28px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.head3 {
+  font-size: 22px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.head4 {
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.body1 {
+  font-size: 17px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.body2 {
+  font-size: 15px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.caption1 {
+  font-size: 13px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.caption2 {
+  font-size: 11px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 700;
+}
+
+.bold {
+  font-family: Poppins-Bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--color-base-dark);
+}
+
+.border-top {
+  border-top: 1px solid var(--color-base-dark);
+}
+
+* {
+  box-sizing: border-box;
+}
