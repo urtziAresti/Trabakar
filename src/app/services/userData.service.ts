@@ -12,18 +12,18 @@ import {UserProfile} from "../interfaces/user-profile";
 })
 export class UserDataService {
 
+  userAvatar!:string;
+
   constructor(private auth: Auth, private firestore: Firestore, private storage: Storage) {
   }
 
-  getUserProfile(): Observable<UserProfile> {
+  getUserProfileData(): Observable<UserProfile> {
     const user = this.auth.currentUser;
     const userDocRef = doc(this.firestore, `users/${user?.uid}`);
     return docData(userDocRef).pipe(
       map((data: any) => {
-        console.warn(data)
         const userProfile: UserProfile = {
           id: user?.uid,
-
           imageUrl : data.imageUrl,
           name : data.name,
           surname : data.surname
@@ -33,14 +33,21 @@ export class UserDataService {
     );
   }
 
+  getUserProfileAvatar(): Observable<UserProfile> {
+    const user = this.auth.currentUser;
+    const userDocRef = doc(this.firestore, `users-avatar/${user?.uid}`);
+    return docData(userDocRef).pipe(
+      map((data: any) => {
+        const userProfile: any = {
+          imageUrl : data.imageUrl,
+        };
+        return userProfile;
+      })
+    );
+  }
 
   async updateUserData(updatedProfileData: UserProfile) {
     const user = this.auth.currentUser;
-
-    // this.auth.updateCurrentUser({
-    //   email : updatedProfileData.email
-    // })
-    //
 
     try {
 
@@ -48,7 +55,8 @@ export class UserDataService {
       await setDoc(userDocRef, {
         name:updatedProfileData.name,
         surname : updatedProfileData.surname,
-        id : user?.uid
+        id : user?.uid,
+        imageUrl : this.userAvatar
       });
       return true;
     } catch (e) {
@@ -65,18 +73,16 @@ export class UserDataService {
     try {
       await uploadString(storageRef, cameraFile.base64String!, 'base64');
 
-      const imageUrl = await getDownloadURL(storageRef);
+      this.userAvatar = await getDownloadURL(storageRef);
 
-      const userDocRef = doc(this.firestore, `users/${user?.uid}`);
+      const userDocRef = doc(this.firestore, `users-avatar/${user?.uid}`);
       await setDoc(userDocRef, {
-        imageUrl,
-        "name":"Urr"
+        imageUrl:this.userAvatar
       });
       return true;
     } catch (e) {
       return null;
     }
   }
-
 
 }

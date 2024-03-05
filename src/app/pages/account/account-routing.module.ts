@@ -11,6 +11,10 @@ const routes: Routes = [
   {
     path: 'edit-profile',
     loadChildren: () => import('./edit-profile/edit-profile.module').then( m => m.EditProfilePageModule)
+  },
+  {
+    path: 'edit-access-data',
+    loadChildren: () => import('./edit-access-data/edit-access-data.module').then( m => m.EditAccessDataPageModule)
   }
 ];
 

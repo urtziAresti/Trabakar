@@ -34,7 +34,6 @@ export class EditProfilePage implements OnInit {
 
   updateUser() {
     this.userDataService.updateUserData(this.userDataForm.value).then(res => {
-      console.warn(res)
       this.showAlert('', 'Usuario actualizado correctamente!!').then(() =>
         this.router.navigateByUrl('home/account')
       )

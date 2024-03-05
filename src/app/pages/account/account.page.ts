@@ -14,6 +14,8 @@ import {UserProfile} from "../../interfaces/user-profile";
 })
 export class AccountPage implements OnInit {
   profile: UserProfile | undefined;
+  profileAvatar: any;
+
 
   constructor(
     private userDataService: UserDataService,
@@ -22,8 +24,12 @@ export class AccountPage implements OnInit {
     private loadingController: LoadingController,
     private alertController: AlertController
   ) {
-    this.userDataService.getUserProfile().subscribe((data) => {
+    this.userDataService.getUserProfileData().subscribe((data) => {
       this.profile = data;
+    });
+
+    this.userDataService.getUserProfileAvatar().subscribe((data) => {
+      this.profileAvatar = data;
     });
   }
 

@@ -12,7 +12,7 @@
     </ion-label>
 
     <ion-avatar class="avatar-image" (click)="changeImage()">
-      <img *ngIf="profile && profile.imageUrl; else placeholderAvatar;" [src]="profile?.imageUrl" />
+      <img *ngIf="profileAvatar && profileAvatar.imageUrl; else placeholderAvatar;" [src]="profileAvatar?.imageUrl" />
       <ng-template #placeholderAvatar>
         <div class="fallback">
           <p>Select avatar</p>
@@ -30,7 +30,6 @@
       </ion-label>
     </ion-button>
 
-
     <ion-button (click)="openEditProfilePage()"  fill="clear" color="secondary">
       <ion-label class="caption1">
         Editar Datos perfil
@@ -42,7 +41,6 @@
         Cerrar session
       </ion-label>
     </ion-button>
-
 
   </div>
 
