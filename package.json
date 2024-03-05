@@ -5,7 +5,9 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "nvmload": "source $HOME/.nvm/nvm.sh; nvm use || true",
+    "start": "ionic serve",
+    "prestart": "npm run nvmload",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
