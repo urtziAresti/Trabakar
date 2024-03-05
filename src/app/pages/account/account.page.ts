@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {AvatarService} from "../../services/avatar.service";
+import {UserDataService} from "../../services/userData.service";
 import {AuthService} from "../../services/auth.service";
 import {Router} from '@angular/router';
 import {Camera, CameraResultType, CameraSource} from '@capacitor/camera';
@@ -16,13 +16,13 @@ export class AccountPage implements OnInit {
   profile: UserProfile | undefined;
 
   constructor(
-    private avatarService: AvatarService,
+    private userDataService: UserDataService,
     private authService: AuthService,
     private router: Router,
     private loadingController: LoadingController,
     private alertController: AlertController
   ) {
-    this.avatarService.getUserProfile().subscribe((data) => {
+    this.userDataService.getUserProfile().subscribe((data) => {
       this.profile = data;
     });
   }
@@ -45,7 +45,7 @@ export class AccountPage implements OnInit {
       const loading = await this.loadingController.create();
       await loading.present();
 
-      const result = await this.avatarService.updateUserData(image);
+      const result = await this.userDataService.updateUserAvatar(image);
       loading.dismiss();
 
       if (!result) {
@@ -57,6 +57,15 @@ export class AccountPage implements OnInit {
         await alert.present();
       }
     }
+  }
+
+  openEditProfilePage(){
+    this.router.navigateByUrl('home/account/edit-profile')
+  }
+
+  openEditAccessDataPage(){
+    this.router.navigateByUrl('home/account/edit-access-data')
+
   }
 
   ngOnInit() {

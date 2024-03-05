@@ -10,21 +10,23 @@ import {UserProfile} from "../interfaces/user-profile";
 @Injectable({
   providedIn: 'root'
 })
-export class AvatarService {
+export class UserDataService {
 
   constructor(private auth: Auth, private firestore: Firestore, private storage: Storage) {
   }
 
   getUserProfile(): Observable<UserProfile> {
     const user = this.auth.currentUser;
-
-    debugger
     const userDocRef = doc(this.firestore, `users/${user?.uid}`);
     return docData(userDocRef).pipe(
       map((data: any) => {
+        console.warn(data)
         const userProfile: UserProfile = {
           id: user?.uid,
-          imageUrl : data.imageUrl
+
+          imageUrl : data.imageUrl,
+          name : data.name,
+          surname : data.surname
         };
         return userProfile;
       })
@@ -32,7 +34,30 @@ export class AvatarService {
   }
 
 
-  async updateUserData(cameraFile: Photo) {
+  async updateUserData(updatedProfileData: UserProfile) {
+    const user = this.auth.currentUser;
+
+    // this.auth.updateCurrentUser({
+    //   email : updatedProfileData.email
+    // })
+    //
+
+    try {
+
+      const userDocRef = doc(this.firestore, `users/${user?.uid}`);
+      await setDoc(userDocRef, {
+        name:updatedProfileData.name,
+        surname : updatedProfileData.surname,
+        id : user?.uid
+      });
+      return true;
+    } catch (e) {
+      return null;
+    }
+  }
+
+
+  async updateUserAvatar(cameraFile: Photo) {
     const user = this.auth.currentUser;
     const path = `uploads/${user?.uid}/profile.webp`;
     const storageRef = ref(this.storage, path);
@@ -44,7 +69,8 @@ export class AvatarService {
 
       const userDocRef = doc(this.firestore, `users/${user?.uid}`);
       await setDoc(userDocRef, {
-        imageUrl
+        imageUrl,
+        "name":"Urr"
       });
       return true;
     } catch (e) {
