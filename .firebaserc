@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "trabakar": {
+      "hosting": {
+        "app": [
+          "trabakar"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "trabakar"
+  }
+}

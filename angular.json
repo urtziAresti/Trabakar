@@ -31,7 +31,11 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["src/global.scss", "src/theme/variables.scss","src/theme/typography.scss"],
+            "styles": [
+              "src/global.scss",
+              "src/theme/variables.scss",
+              "src/theme/typography.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -111,7 +115,11 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["src/global.scss", "src/theme/variables.scss","src/theme/typography.scss"],
+            "styles": [
+              "src/global.scss",
+              "src/theme/variables.scss",
+              "src/theme/typography.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -129,6 +137,23 @@
               "src/**/*.html"
             ]
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "app:build:production",
+              "serveTarget": "app:serve:production"
+            },
+            "development": {
+              "buildTarget": "app:build:development",
+              "serveTarget": "app:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
@@ -136,7 +161,8 @@
   "cli": {
     "schematicCollections": [
       "@ionic/angular-toolkit"
-    ]
+    ],
+    "analytics": false
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {
