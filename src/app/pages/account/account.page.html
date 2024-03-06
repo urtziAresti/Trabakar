@@ -8,11 +8,11 @@
 
   <div class="profile-data ion-padding">
     <ion-label class="head1 bold">
-      {{profile?.name}}
+      {{ profile?.name }} {{ profile?.surname }}
     </ion-label>
 
     <ion-avatar class="avatar-image" (click)="changeImage()">
-      <img *ngIf="profileAvatar && profileAvatar.imageUrl; else placeholderAvatar;" [src]="profileAvatar?.imageUrl" />
+      <img *ngIf="profileAvatar && profileAvatar.imageUrl; else placeholderAvatar;" [src]="profileAvatar?.imageUrl"/>
       <ng-template #placeholderAvatar>
         <div class="fallback">
           <p>Select avatar</p>
@@ -24,19 +24,19 @@
 
   <div class="options-list">
 
-    <ion-button (click)="openEditAccessDataPage()"  fill="clear" color="secondary">
+    <ion-button (click)="openEditAccessDataPage()" fill="clear" color="secondary">
       <ion-label class="caption1">
         Editar Datos de acceso
       </ion-label>
     </ion-button>
 
-    <ion-button (click)="openEditProfilePage()"  fill="clear" color="secondary">
+    <ion-button (click)="openEditProfilePage()" fill="clear" color="secondary">
       <ion-label class="caption1">
         Editar Datos perfil
       </ion-label>
     </ion-button>
 
-    <ion-button (click)="logout()"  fill="clear" color="secondary">
+    <ion-button (click)="logout()" fill="clear" color="secondary">
       <ion-label class="caption1">
         Cerrar session
       </ion-label>

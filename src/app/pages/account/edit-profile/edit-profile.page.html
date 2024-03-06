@@ -1,13 +1,14 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>edit-profile</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/" text="Atras"></ion-back-button>
+    </ion-buttons>
+    <ion-title>edit-profile-data</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
   <form (ngSubmit)="updateUser()" [formGroup]="userDataForm">
-
-
 
     <ion-item fill="solid" class="ion-margin-bottom">
       <ion-input type="text" placeholder="name" formControlName="name"></ion-input>
@@ -16,8 +17,6 @@
     <ion-item fill="solid" class="ion-margin-bottom">
       <ion-input type="text" placeholder="surname" formControlName="surname"></ion-input>
     </ion-item>
-
-    <ion-button type="submit" expand="block" [disabled]="!userDataForm.valid" >Actualizar datos</ion-button>
-
+    <ion-button type="submit" expand="block" [disabled]="!userDataForm.valid">Actualizar datos</ion-button>
   </form>
 </ion-content>

@@ -1,32 +1,35 @@
 import {Injectable} from '@angular/core';
-import {Auth} from '@angular/fire/auth';
+import {Auth, getAuth, updateEmail, updatePassword} from '@angular/fire/auth';
 import {doc, docData, Firestore, setDoc} from '@angular/fire/firestore';
 import {getDownloadURL, ref, Storage, uploadString} from '@angular/fire/storage';
 import {Photo} from '@capacitor/camera';
 import {DocumentData} from "@angular/fire/compat/firestore";
 import {map, Observable} from "rxjs";
 import {UserProfile} from "../interfaces/user-profile";
+import {User} from "firebase/auth";
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserDataService {
-
-  userAvatar!:string;
+  userAvatar!: string;
+  user: User | null;
 
   constructor(private auth: Auth, private firestore: Firestore, private storage: Storage) {
+    this.user = this.auth!.currentUser;
+
   }
 
   getUserProfileData(): Observable<UserProfile> {
-    const user = this.auth.currentUser;
-    const userDocRef = doc(this.firestore, `users/${user?.uid}`);
+    const userDocRef = doc(this.firestore, `users/${this.user?.uid}`);
     return docData(userDocRef).pipe(
       map((data: any) => {
         const userProfile: UserProfile = {
-          id: user?.uid,
-          imageUrl : data.imageUrl,
-          name : data.name,
-          surname : data.surname
+          id: this.user?.uid,
+          imageUrl: data.imageUrl,
+          name: data.name,
+          surname: data.surname
         };
         return userProfile;
       })
@@ -39,7 +42,7 @@ export class UserDataService {
     return docData(userDocRef).pipe(
       map((data: any) => {
         const userProfile: any = {
-          imageUrl : data.imageUrl,
+          imageUrl: data.imageUrl,
         };
         return userProfile;
       })
@@ -50,20 +53,17 @@ export class UserDataService {
     const user = this.auth.currentUser;
 
     try {
-
       const userDocRef = doc(this.firestore, `users/${user?.uid}`);
       await setDoc(userDocRef, {
-        name:updatedProfileData.name,
-        surname : updatedProfileData.surname,
-        id : user?.uid,
-        imageUrl : this.userAvatar
+        name: updatedProfileData.name,
+        surname: updatedProfileData.surname,
+        id: user?.uid
       });
       return true;
     } catch (e) {
       return null;
     }
   }
-
 
   async updateUserAvatar(cameraFile: Photo) {
     const user = this.auth.currentUser;
@@ -77,12 +77,20 @@ export class UserDataService {
 
       const userDocRef = doc(this.firestore, `users-avatar/${user?.uid}`);
       await setDoc(userDocRef, {
-        imageUrl:this.userAvatar
+        imageUrl: this.userAvatar
       });
       return true;
     } catch (e) {
       return null;
     }
+  }
+
+  updateUserEmailAccessData(email: string) {
+    return updateEmail(this.user!, email)
+  }
+
+  updateUserPassAccessData(password: string) {
+    return updatePassword(this.user!, password)
   }
 
 }

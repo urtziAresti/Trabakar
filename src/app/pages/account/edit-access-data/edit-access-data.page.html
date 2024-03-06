@@ -1,13 +1,35 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/" text="Atras"></ion-back-button>
+    </ion-buttons>
     <ion-title>edit-access-data</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">edit-access-data</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <form [formGroup]="accessDataForm">
+
+    <ion-item fill="solid" class="ion-margin-bottom">
+      <ion-input type="text" placeholder="email" formControlName="email"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" (click)="updateUserEmailAccessData()" [disabled]="!accessDataForm.get('email')?.valid">
+      Actualizar Email
+    </ion-button>
+
+    <ion-item fill="solid" class="ion-margin-bottom">
+      <ion-input type="text" placeholder="new Password" formControlName="password"></ion-input>
+    </ion-item>
+
+    <ion-item fill="solid" class="ion-margin-bottom">
+      <ion-input type="text" placeholder="repeat Password" formControlName="repeatPassword"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" (click)="updateUserPassAccessData()"
+                [disabled]="!accessDataForm.get('password')?.valid">Actualizar contraseña
+    </ion-button>
+
+
+  </form>
 </ion-content>

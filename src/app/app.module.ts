@@ -13,10 +13,11 @@ import {getMessaging, provideMessaging} from '@angular/fire/messaging';
 import {environment} from "../environments/environment";
 import { provideAuth, getAuth } from '@angular/fire/auth';
 import {StorageModule} from "@angular/fire/storage";
+import { GoBackDirective } from './directives/go-back.directive';
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, GoBackDirective],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
     provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
     provideAuth(() => getAuth()),

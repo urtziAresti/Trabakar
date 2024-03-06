@@ -23,8 +23,8 @@ export class LoginPage implements OnInit {
   ) {
 
     this.credentials = this.fb.group({
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(4)]]
+      email: ['urtzi.aresti@gmail.com', [Validators.required, Validators.email]],
+      password: ['1234567', [Validators.required, Validators.minLength(4)]]
     });
   }
 
