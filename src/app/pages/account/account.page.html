@@ -1,6 +1,8 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title class="ion-text-center" color="primary">Cuenta</ion-title>
+    <ion-title class="ion-text-center" color="primary">
+      {{ 'ACCOUNT.TITLE' |translate }}
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -15,7 +17,8 @@
       <img *ngIf="profileAvatar && profileAvatar.imageUrl; else placeholderAvatar;" [src]="profileAvatar?.imageUrl"/>
       <ng-template #placeholderAvatar>
         <div class="fallback">
-          <p>Select avatar</p>
+          <p> {{ 'ACCOUNT.SELECT_AVATAR' |translate }}
+          </p>
         </div>
       </ng-template>
     </ion-avatar>
@@ -26,19 +29,19 @@
 
     <ion-button (click)="openEditAccessDataPage()" fill="clear" color="secondary">
       <ion-label class="caption1">
-        Editar Datos de acceso
+        {{ 'ACCOUNT.EDIT_ACCESS_DATA' |translate }}
       </ion-label>
     </ion-button>
 
     <ion-button (click)="openEditProfilePage()" fill="clear" color="secondary">
       <ion-label class="caption1">
-        Editar Datos perfil
+        {{ 'ACCOUNT.EDIT_PROFILE_DATA' |translate }}
       </ion-label>
     </ion-button>
 
     <ion-button (click)="logout()" fill="clear" color="secondary">
       <ion-label class="caption1">
-        Cerrar session
+        {{ 'ACCOUNT.LOG_OUT' |translate }}
       </ion-label>
     </ion-button>
 

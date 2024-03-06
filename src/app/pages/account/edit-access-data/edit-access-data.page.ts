@@ -30,9 +30,9 @@ export class EditAccessDataPage implements OnInit {
 
 
     this.accessDataForm = this.fb.group({
-      email: [user?.email, [Validators.required, Validators.email]],
-      password: ['12345', [Validators.required, Validators.minLength(6)]],
-      repeatPassword: ['12345', [Validators.required, Validators.minLength(6)]],
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required, Validators.minLength(6)]],
+      repeatPassword: ['', [Validators.required, Validators.minLength(6)]],
     });
   }
 

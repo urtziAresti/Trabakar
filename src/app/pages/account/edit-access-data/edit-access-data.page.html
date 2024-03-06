@@ -1,35 +1,40 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button default-href="/" text="Atras"></ion-back-button>
+      <ion-back-button default-href="/" [text]="'BACK' | translate"></ion-back-button>
     </ion-buttons>
-    <ion-title>edit-access-data</ion-title>
+    <ion-title>
+      {{ 'EDIT_ACCESS_DATA.TITLE' | translate }}
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
+
   <form [formGroup]="accessDataForm">
 
     <ion-item fill="solid" class="ion-margin-bottom">
-      <ion-input type="text" placeholder="email" formControlName="email"></ion-input>
+      <ion-input type="text" [placeholder]="'EDIT_ACCESS_DATA.EMAIL_PLACEHOLDER' |translate"
+                 formControlName="email"></ion-input>
     </ion-item>
 
     <ion-button expand="block" (click)="updateUserEmailAccessData()" [disabled]="!accessDataForm.get('email')?.valid">
-      Actualizar Email
+      {{ 'EDIT_ACCESS_DATA.UPDATE_EMAIL' | translate }}
     </ion-button>
 
     <ion-item fill="solid" class="ion-margin-bottom">
-      <ion-input type="text" placeholder="new Password" formControlName="password"></ion-input>
+      <ion-input type="text" [placeholder]="'EDIT_ACCESS_DATA.NEW_PASSWORD_PLACEHOLDER' |translate"
+                 formControlName="password"></ion-input>
     </ion-item>
 
     <ion-item fill="solid" class="ion-margin-bottom">
-      <ion-input type="text" placeholder="repeat Password" formControlName="repeatPassword"></ion-input>
+      <ion-input type="text" [placeholder]="'EDIT_ACCESS_DATA.REPEAT_PASSWORD_PLACEHOLDER' |translate"
+                 formControlName="repeatPassword"></ion-input>
     </ion-item>
 
     <ion-button expand="block" (click)="updateUserPassAccessData()"
-                [disabled]="!accessDataForm.get('password')?.valid">Actualizar contraseña
+                [disabled]="!accessDataForm.get('password')?.valid">
+      {{ 'EDIT_ACCESS_DATA.UPDATE_PASSWORD' | translate }}
     </ion-button>
-
-
   </form>
 </ion-content>

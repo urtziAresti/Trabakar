@@ -1,9 +1,11 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button default-href="/" text="Atras"></ion-back-button>
+      <ion-back-button default-href="/" [text]="'BACK' |translate"></ion-back-button>
     </ion-buttons>
-    <ion-title>edit-profile-data</ion-title>
+    <ion-title>
+      {{ 'EDIT_PROFILE_DATA.TITLE' | translate }}
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -11,12 +13,15 @@
   <form (ngSubmit)="updateUser()" [formGroup]="userDataForm">
 
     <ion-item fill="solid" class="ion-margin-bottom">
-      <ion-input type="text" placeholder="name" formControlName="name"></ion-input>
+      <ion-input type="text" [placeholder]=" 'EDIT_PROFILE_DATA.NAME_PLACEHOLDER' | translate " formControlName="name"></ion-input>
     </ion-item>
 
     <ion-item fill="solid" class="ion-margin-bottom">
-      <ion-input type="text" placeholder="surname" formControlName="surname"></ion-input>
+      <ion-input type="text" [placeholder]=" 'EDIT_PROFILE_DATA.SURNAME_PLACEHOLDER' | translate " formControlName="surname"></ion-input>
     </ion-item>
-    <ion-button type="submit" expand="block" [disabled]="!userDataForm.valid">Actualizar datos</ion-button>
+    <ion-button type="submit" expand="block" [disabled]="!userDataForm.valid">
+      {{ 'EDIT_PROFILE_DATA.UPDATE_DATA' | translate }}
+
+    </ion-button>
   </form>
 </ion-content>

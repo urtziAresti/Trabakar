@@ -1,0 +1,12 @@
+{
+  "BACK": "Atzera",
+
+  "EDIT_ACCESS_DATA" : {
+    "TITLE" : "Editar Datos acceso",
+    "UPDATE_EMAIL": "Actualizar email",
+    "EMAIL_PLACEHOLDER" : "Email",
+    "UPDATE_PASSWORD": "Actualizar Contraseña",
+    "NEW_PASSWORD_PLACEHOLDER" : "Nueva Contraseña",
+    "REPEAT_PASSWORD_PLACEHOLDER" : "Repite la contraseña"
+  }
+}
