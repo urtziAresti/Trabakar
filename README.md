@@ -1,9 +1,7 @@
 # TrabaCarDEV
 
+npm run build-deploy to generate prod app and deploy to firebase hosting
 
-TODOS
-1º Iplement PWA funcionality udpates/icons
-2º host on firebase hosting
 
 ##BREAK DEJAR EN RAMA APARTE
 
