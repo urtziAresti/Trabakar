@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button default-href="/" [text]="'BACK' | translate"></ion-back-button>
@@ -17,6 +17,12 @@
       <ion-input type="text" [placeholder]="'EDIT_ACCESS_DATA.EMAIL_PLACEHOLDER' |translate"
                  formControlName="email"></ion-input>
     </ion-item>
+    <div class="padding-left-l padding-bottom-l">
+      <ion-text *ngIf="accessDataForm.get('email')?.hasError('email') &&
+       (accessDataForm.get('email')?.dirty || accessDataForm.get('email')?.touched)" color="danger">
+        {{ 'EDIT_ACCESS_DATA.EMAIL_PATTERN_ERROR' | translate }}
+      </ion-text>
+    </div>
 
     <ion-button expand="block" (click)="updateUserEmailAccessData()" [disabled]="!accessDataForm.get('email')?.valid">
       {{ 'EDIT_ACCESS_DATA.UPDATE_EMAIL' | translate }}
@@ -27,13 +33,26 @@
                  formControlName="password"></ion-input>
     </ion-item>
 
+    <div class="padding-left-l padding-bottom-l">
+      <ion-text *ngIf="accessDataForm.get('password')?.hasError('minlength') &&
+       (accessDataForm.get('password')?.dirty || accessDataForm.get('password')?.touched)" color="danger">
+        {{ 'EDIT_ACCESS_DATA.PASS_MIN_LENGTH' | translate }}
+      </ion-text>
+    </div>
+
     <ion-item fill="solid" class="ion-margin-bottom">
       <ion-input type="text" [placeholder]="'EDIT_ACCESS_DATA.REPEAT_PASSWORD_PLACEHOLDER' |translate"
                  formControlName="repeatPassword"></ion-input>
     </ion-item>
+    <div class="padding-left-l padding-bottom-l">
+      <ion-text *ngIf="accessDataForm.hasError('passwordMismatch') && (accessDataForm.get('repeatPassword')?.dirty
+    || accessDataForm.get('repeatPassword')?.touched)" color="danger">
+        {{ 'EDIT_ACCESS_DATA.PASS_ND_REPEAT_EQUALS' | translate }}
+      </ion-text>
+    </div>
 
     <ion-button expand="block" (click)="updateUserPassAccessData()"
-                [disabled]="!accessDataForm.get('password')?.valid">
+                [disabled]="!accessDataForm.valid">
       {{ 'EDIT_ACCESS_DATA.UPDATE_PASSWORD' | translate }}
     </ion-button>
   </form>

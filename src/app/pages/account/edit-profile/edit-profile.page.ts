@@ -1,9 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {AlertController, LoadingController} from "@ionic/angular";
-import {AuthService} from "../../../services/auth.service";
+import {AlertController} from "@ionic/angular";
 import {Router} from "@angular/router";
 import {UserDataService} from "../../../services/userData.service";
+import {UserProfile} from "../../../interfaces/user-profile";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-edit-profile',
@@ -11,48 +12,56 @@ import {UserDataService} from "../../../services/userData.service";
   styleUrls: ['./edit-profile.page.scss'],
 })
 export class EditProfilePage implements OnInit {
-  userDataForm: FormGroup;
+  userDataForm!: FormGroup;
+  userData!: UserProfile
 
-  constructor(private fb: FormBuilder,
-              private loadingController: LoadingController,
-              private alertController: AlertController,
-              private authService: AuthService,
-              private router: Router,
-              private userDataService: UserDataService) {
+  constructor(
+    private fb: FormBuilder,
+    private alertController: AlertController,
+    private router: Router,
+    private userDataService: UserDataService,
+    private translate: TranslateService) {
 
     this.userDataForm = this.fb.group({
-      name: ['Urr', [Validators.required]],
-      surname: ['ares', [Validators.required]]
+      name: ['', [Validators.required]],
+      surname: ['', [Validators.required]]
     });
-  }
 
+  }
 
   get name() {
     return this.userDataForm.get('name');
   }
 
+  get surname() {
+    return this.userDataForm.get('surname');
+  }
 
   updateUser() {
     this.userDataService.updateUserData(this.userDataForm.value).then(res => {
-      this.showAlert('', 'Usuario actualizado correctamente!!').then(() =>
+      this.showAlert('', this.translate.instant('EDIT_PROFILE_DATA.SUCCESS_ALERT')).then(() =>
         this.router.navigateByUrl('home/account')
       )
     }).catch(err => {
       console.error(err)
+      this.showAlert('', this.translate.instant('EDIT_PROFILE_DATA.ERROR_ALERT')).then();
     })
   }
-
 
   async showAlert(header: string, message: string) {
     const alert = await this.alertController.create({
       header,
       message,
-      buttons: ['OK']
+      buttons: [this.translate.instant('OK')]
     });
     await alert.present();
   }
 
   ngOnInit() {
+    this.userDataService.getUserProfileData().subscribe(userData => {
+      this.userData = userData;
+      this.name?.setValue(userData.name)
+      this.surname?.setValue(userData.surname)
+    })
   }
-
 }

@@ -1,11 +1,10 @@
 import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {AsyncValidator, FormBuilder, FormGroup, ValidatorFn, Validators} from "@angular/forms";
 import {AlertController, LoadingController} from "@ionic/angular";
-import {AuthService} from "../../../services/auth.service";
 import {Router} from "@angular/router";
 import {UserDataService} from "../../../services/userData.service";
 import {Auth} from "@angular/fire/auth";
-import { updateEmail } from '@angular/fire/auth';
+import {TranslateService} from "@ngx-translate/core";
 
 
 @Component({
@@ -17,25 +16,28 @@ export class EditAccessDataPage implements OnInit {
 
   accessDataForm: FormGroup;
 
-
   constructor(private fb: FormBuilder,
-              private loadingController: LoadingController,
               private alertController: AlertController,
-              private authService: AuthService,
               private router: Router,
               private userDataService: UserDataService,
-              private auth: Auth) {
+              private auth: Auth,
+              private translate: TranslateService) {
 
     const user = this.auth.currentUser;
 
-
     this.accessDataForm = this.fb.group({
-      email: ['', [Validators.required, Validators.email]],
+      email: [user?.email, [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]],
       repeatPassword: ['', [Validators.required, Validators.minLength(6)]],
-    });
+    },{ validators: this.passwordMatchValidator });
   }
 
+  passwordMatchValidator: (control: FormGroup) => ({ [p: string]: any } | null) =
+    (control: FormGroup): {[key: string]: any} | null => {
+    const password = control.get('password');
+    const repeatPassword = control.get('repeatPassword');
+    return password && repeatPassword && password.value !== repeatPassword.value ? { 'passwordMismatch': true } : null;
+  };
 
   get email() {
     return this.accessDataForm.get('email');
@@ -49,36 +51,31 @@ export class EditAccessDataPage implements OnInit {
     return this.accessDataForm.get('repeatPassword');
   }
 
-
   updateUserEmailAccessData() {
-
-    // TODO check if 2 passwords are the same
-
-    this.userDataService.updateUserEmailAccessData(this.email?.value).then( () =>
-       this.userDataService.updateUserData(this.accessDataForm.value).then(res => {
-        this.showAlert('', 'Email y contraseña actualizados correctamente!!').then(() =>
-          this.router.navigateByUrl('home/account')
-        )
-      })
-    ).catch(err => {
-        console.error(err)
-      })
-  }
-
-
-
-  updateUserPassAccessData() {
-
-    // TODO check if 2 passwords are the same
-
-    this.userDataService.updateUserPassAccessData(this.password?.value).then( () =>
+    this.userDataService.updateUserEmailAccessData(this.email?.value).then(() =>
       this.userDataService.updateUserData(this.accessDataForm.value).then(res => {
-        this.showAlert('', 'Email y contraseña actualizados correctamente!!').then(() =>
+        this.showAlert('', this.translate.instant('EDIT_ACCESS_DATA.EMAIL_SUCCESS_ALERT')).then(() =>
           this.router.navigateByUrl('home/account')
         )
       })
     ).catch(err => {
       console.error(err)
+      this.showAlert('', this.translate.instant('EDIT_ACCESS_DATA.EMAIL_ERROR_ALERT')).then()
+    })
+  }
+
+
+  updateUserPassAccessData() {
+    // TODO check if 2 passwords are the same
+    this.userDataService.updateUserPassAccessData(this.password?.value).then(() =>
+      this.userDataService.updateUserData(this.accessDataForm.value).then(res => {
+        this.showAlert('', this.translate.instant('EDIT_ACCESS_DATA.PASS_SUCCESS_ALERT')).then(() =>
+          this.router.navigateByUrl('home/account')
+        )
+      })
+    ).catch(err => {
+      console.error(err)
+      this.showAlert('', this.translate.instant('EDIT_ACCESS_DATA.PASS_ERROR_ALERT')).then()
     })
   }
 

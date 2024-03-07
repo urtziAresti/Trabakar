@@ -1,12 +1,38 @@
 {
   "BACK": "Atzera",
-
-  "EDIT_ACCESS_DATA" : {
-    "TITLE" : "Editar Datos acceso",
+  "OK" : "Ok",
+  "CANCEL" : "Cancelar",
+  "TABS": {
+    "TAB1": "Tab1",
+    "TAB2": "Tab2",
+    "TAB3": "Tab3",
+    "TAB4": "Cuenta"
+  },
+  "EDIT_ACCESS_DATA": {
+    "TITLE": "Editar Datos acceso",
     "UPDATE_EMAIL": "Actualizar email",
-    "EMAIL_PLACEHOLDER" : "Email",
+    "EMAIL_PLACEHOLDER": "Email",
     "UPDATE_PASSWORD": "Actualizar Contraseña",
-    "NEW_PASSWORD_PLACEHOLDER" : "Nueva Contraseña",
-    "REPEAT_PASSWORD_PLACEHOLDER" : "Repite la contraseña"
+    "NEW_PASSWORD_PLACEHOLDER": "Nueva Contraseña",
+    "REPEAT_PASSWORD_PLACEHOLDER": "Repite la contraseña",
+    "SUCCESS_ALERT": "Datos de acceso actualizados correctamente!!",
+    "ERROR_ALERT" : "A ocurrido un error al actualizar tus datos de accesso, Intentalo de nuevo!!"
+  },
+  "EDIT_PROFILE_DATA": {
+    "TITLE": "Editar Datos personales",
+    "NAME_PLACEHOLDER": "Nombre",
+    "SURNAME_PLACEHOLDER": "Apellido",
+    "UPDATE_DATA": "Actualizar Datos",
+    "EMAIL_SUCCESS_ALERT": "Email actualizado correctamente!!",
+    "EMAIL_ERROR_ALERT" : "A ocurrido un error al actualizar tus datos, Intentalo de nuevo!!",
+    "PASS_SUCCESS_ALERT": "Tu Contraseña se a cambiado correctamente!!",
+    "PASS_ERROR_ALERT" : "A ocurrido un error al cambiar tu contraseña, Intentalo de nuevo!!"
+  },
+  "ACCOUNT": {
+    "TITLE": "Cuenta",
+    "SELECT_AVATAR": "SELECCIONA AVATAR",
+    "EDIT_ACCESS_DATA": "Eeditar Datos acceso",
+    "EDIT_PROFILE_DATA": "Editar Datos perfil",
+    "LOG_OUT": "Cerrar session"
   }
 }
