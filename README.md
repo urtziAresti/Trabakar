@@ -2,9 +2,8 @@
 
 
 TODOS
-1º Language selector
-2º Iplement PWA funcionality udpates/icons
-3º host on firebase hosting
+1º Iplement PWA funcionality udpates/icons
+2º host on firebase hosting
 
 ##BREAK DEJAR EN RAMA APARTE
 

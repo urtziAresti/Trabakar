@@ -1,4 +1,8 @@
 {
+  "projects": {
+    "default": "trabacar-36366",
+    "prod": "trabacar-36366"
+  },
   "targets": {
     "trabacar": {
       "hosting": {
@@ -8,7 +12,5 @@
       }
     }
   },
-  "projects": {
-    "default": "trabacar"
-  }
+  "etags": {}
 }

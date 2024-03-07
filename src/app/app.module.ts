@@ -1,4 +1,4 @@
-import {NgModule} from '@angular/core';
+import {NgModule, isDevMode} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {RouteReuseStrategy} from '@angular/router';
 import {HttpClientModule, HttpBackend, HttpClient} from '@angular/common/http'; // Import HttpClientModule
@@ -21,6 +21,7 @@ import {registerLocaleData} from "@angular/common";
 // locales
 import localeEs from '@angular/common/locales/es';
 import localeEu from '@angular/common/locales/eu';
+import { ServiceWorkerModule } from '@angular/service-worker';
 registerLocaleData(localeEs);
 registerLocaleData(localeEu);
 
@@ -48,6 +49,14 @@ export function HttpLoaderFactory(handler: HttpBackend) {
         useFactory: (HttpLoaderFactory),
         deps: [HttpBackend]
       }
+    }),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+
+
+      // enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
     }),
   ],
   providers: [{provide: RouteReuseStrategy, useClass: IonicRouteStrategy}, ScreenTrackingService],
