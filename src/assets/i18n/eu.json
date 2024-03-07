@@ -1,7 +1,7 @@
 {
   "BACK": "Atzera",
-  "OK" : "Ok",
-  "CANCEL" : "Cancelar",
+  "OK": "Ok",
+  "CANCEL": "Cancelar",
   "TABS": {
     "TAB1": "Tab1",
     "TAB2": "Tab2",
@@ -16,7 +16,10 @@
     "NEW_PASSWORD_PLACEHOLDER": "Nueva Contraseña",
     "REPEAT_PASSWORD_PLACEHOLDER": "Repite la contraseña",
     "SUCCESS_ALERT": "Datos de acceso actualizados correctamente!!",
-    "ERROR_ALERT" : "A ocurrido un error al actualizar tus datos de accesso, Intentalo de nuevo!!"
+    "ERROR_ALERT": "A ocurrido un error al actualizar tus datos de accesso, Intentalo de nuevo!!",
+    "EMAIL_PATTERN_ERROR": "Introduce un email valido",
+    "PASS_MIN_LENGTH": "la contraseña debe de tener 6 caracteres minimo",
+    "PASS_ND_REPEAT_EQUALS": "Las contraseñas no conciden"
   },
   "EDIT_PROFILE_DATA": {
     "TITLE": "Editar Datos personales",
@@ -24,14 +27,14 @@
     "SURNAME_PLACEHOLDER": "Apellido",
     "UPDATE_DATA": "Actualizar Datos",
     "EMAIL_SUCCESS_ALERT": "Email actualizado correctamente!!",
-    "EMAIL_ERROR_ALERT" : "A ocurrido un error al actualizar tus datos, Intentalo de nuevo!!",
+    "EMAIL_ERROR_ALERT": "A ocurrido un error al actualizar tus datos, Intentalo de nuevo!!",
     "PASS_SUCCESS_ALERT": "Tu Contraseña se a cambiado correctamente!!",
-    "PASS_ERROR_ALERT" : "A ocurrido un error al cambiar tu contraseña, Intentalo de nuevo!!"
+    "PASS_ERROR_ALERT": "A ocurrido un error al cambiar tu contraseña, Intentalo de nuevo!!"
   },
   "ACCOUNT": {
-    "TITLE": "Contua",
+    "TITLE": "Cuenta",
     "CHANGE_LANGUAGE"  : "Cambiar idioma",
-    "SELECT_AVATAR": "Sube una imagen",
+    "SELECT_AVATAR": "SELECCIONA AVATAR",
     "EDIT_ACCESS_DATA": "Editar Datos acceso",
     "EDIT_PROFILE_DATA": "Editar Datos perfil",
     "LOG_OUT": "Cerrar session"

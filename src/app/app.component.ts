@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {LanguageService} from "./services/language.service";
+import {UpdatePWAService} from "./services/update-pwa.service";
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,8 @@ import {LanguageService} from "./services/language.service";
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor(private languageService:LanguageService) {
+  constructor(private languageService:LanguageService,
+              private pwaUpdate:UpdatePWAService) {
     this.languageService.initLanguage()
   }
 

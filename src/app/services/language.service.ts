@@ -66,7 +66,6 @@ export class LanguageService {
 
   public changeLanguage(lang: string) {
 
-    debugger
     if (!this.isAcceptedLang(lang)) {
       return false;
     }

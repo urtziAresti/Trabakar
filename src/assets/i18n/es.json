@@ -26,10 +26,8 @@
     "NAME_PLACEHOLDER": "Nombre",
     "SURNAME_PLACEHOLDER": "Apellido",
     "UPDATE_DATA": "Actualizar Datos",
-    "EMAIL_SUCCESS_ALERT": "Email actualizado correctamente!!",
-    "EMAIL_ERROR_ALERT": "A ocurrido un error al actualizar tus datos, Intentalo de nuevo!!",
-    "PASS_SUCCESS_ALERT": "Tu Contraseña se a cambiado correctamente!!",
-    "PASS_ERROR_ALERT": "A ocurrido un error al cambiar tu contraseña, Intentalo de nuevo!!"
+    "SUCCESS_ALERT": "Datos personales actualizados correctamente!!",
+    "ERROR_ALERT": "A ocurrido un error al actualizar tus datos personales, Intentalo de nuevo!!"
   },
   "ACCOUNT": {
     "TITLE": "Cuenta",
