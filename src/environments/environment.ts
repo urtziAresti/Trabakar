@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   defaultLanguage: 'es',
+  availableLanguages : ['es','eu','en'],
   prefix: 'TRABACAR_',
 
   firebaseConfig: {

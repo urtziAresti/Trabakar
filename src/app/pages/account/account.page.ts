@@ -3,9 +3,11 @@ import {UserDataService} from "../../services/userData.service";
 import {AuthService} from "../../services/auth.service";
 import {Router} from '@angular/router';
 import {Camera, CameraResultType, CameraSource} from '@capacitor/camera';
-import {AlertController, LoadingController} from '@ionic/angular';
+import {ActionSheetController, AlertController, LoadingController} from '@ionic/angular';
 import {DocumentData} from "@angular/fire/compat/firestore";
 import {UserProfile} from "../../interfaces/user-profile";
+import {LanguageService} from "../../services/language.service";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-account',
@@ -22,7 +24,10 @@ export class AccountPage implements OnInit {
     private authService: AuthService,
     private router: Router,
     private loadingController: LoadingController,
-    private alertController: AlertController
+    private alertController: AlertController,
+    private languageService: LanguageService,
+    private actionSheetController: ActionSheetController,
+    private translateService: TranslateService
   ) {
     this.userDataService.getUserProfileData().subscribe((data) => {
       this.profile = data;
@@ -33,6 +38,40 @@ export class AccountPage implements OnInit {
     });
   }
 
+  async openChangeLanguageActionSheet() {
+
+    const actionSheet = await this.actionSheetController.create({
+      header: this.translateService.instant('CHANGE_LANGUAGE_ACTION_SHEET.TITLE'),
+      buttons: [{
+        text: this.translateService.instant('CHANGE_LANGUAGE_ACTION_SHEET.OPT1'),
+        handler: () => {
+          this.handleLanguageChanged('es')
+        }
+      }, {
+        text: this.translateService.instant('CHANGE_LANGUAGE_ACTION_SHEET.OPT2'),
+        handler: () => {
+          this.handleLanguageChanged('eu')
+        }
+      }, {
+        text: this.translateService.instant('CHANGE_LANGUAGE_ACTION_SHEET.OPT3'),
+        handler: () => {
+          this.handleLanguageChanged('en')
+        }
+      }, {
+        text: this.translateService.instant('CHANGE_LANGUAGE_ACTION_SHEET.CANCEL'),
+        role: 'cancel',
+        handler: () => {
+          console.log('Cancel clicked');
+        }
+      }]
+    });
+    await actionSheet.present();
+  }
+
+  handleLanguageChanged(selectedLang: string) {
+    this.languageService.changeLanguage(selectedLang)
+
+  }
 
   async logout() {
     await this.authService.logout();
@@ -65,11 +104,11 @@ export class AccountPage implements OnInit {
     }
   }
 
-  openEditProfilePage(){
+  openEditProfilePage() {
     this.router.navigateByUrl('home/account/edit-profile')
   }
 
-  openEditAccessDataPage(){
+  openEditAccessDataPage() {
     this.router.navigateByUrl('home/account/edit-access-data')
 
   }

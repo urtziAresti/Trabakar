@@ -29,10 +29,18 @@
     "PASS_ERROR_ALERT" : "A ocurrido un error al cambiar tu contraseña, Intentalo de nuevo!!"
   },
   "ACCOUNT": {
-    "TITLE": "Cuenta",
-    "SELECT_AVATAR": "SELECCIONA AVATAR",
-    "EDIT_ACCESS_DATA": "Eeditar Datos acceso",
+    "TITLE": "Contua",
+    "CHANGE_LANGUAGE"  : "Cambiar idioma",
+    "SELECT_AVATAR": "Sube una imagen",
+    "EDIT_ACCESS_DATA": "Editar Datos acceso",
     "EDIT_PROFILE_DATA": "Editar Datos perfil",
     "LOG_OUT": "Cerrar session"
+  },
+  "CHANGE_LANGUAGE_ACTION_SHEET" : {
+    "TITLE" : "Cambiar idioma",
+    "OPT1" : "Castellano",
+    "OPT2" : "Euskera",
+    "OPT3" : "Ingles",
+    "CANCEL" : "Cancelar"
   }
 }

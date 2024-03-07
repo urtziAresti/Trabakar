@@ -1,8 +1,8 @@
 export const environment = {
-  production: false,
+  production: true,
   defaultLanguage: 'es',
+  availableLanguages : ['es','eu','en'],
   prefix: 'TRABACAR_',
-
 
   firebaseConfig: {
     apiKey: "AIzaSyD6irneWJYf4dYI6gFbLm8V2FIJEHE782E",
