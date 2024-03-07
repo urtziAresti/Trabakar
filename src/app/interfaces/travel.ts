@@ -1,4 +1,3 @@
-import {Coordinates} from "./Coordinates";
 import {OriginPlace} from "./OriginPlace";
 import {DestinyPlace} from "./destinyPlace";
 
