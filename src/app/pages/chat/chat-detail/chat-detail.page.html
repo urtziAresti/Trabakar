@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <ion-list #messageList [scrollTop]="10000" >
     <ion-item *ngFor="let message of messages " lines="none" class="padding-xs">
       <div class="message-text" [ngClass]="{'right-align': message.originaryID == destinataryUser.id}" >
         <ion-label class="caption1 padding-bottom-xs">{{ message.message_timestamp |date:'HH:mm'}}</ion-label>
