@@ -16,7 +16,7 @@ export class ChatDetailPage implements OnInit {
   messages!: ChatMessage[];
   @ViewChild('messageInput', {static: false}) messageInput!: HTMLInputElement;
   @ViewChild('messageList', {static: false}) messageList!: IonContent;
-  @ViewChild(IonContent, { static: false }) content!: IonContent;
+  @ViewChild(IonContent, {static: false}) content!: IonContent;
 
 
   constructor(
@@ -38,7 +38,6 @@ export class ChatDetailPage implements OnInit {
   }
 
   ngAfterViewInit() {
-
     setTimeout(() => {
       this.scrollDownView()
     }, 300);
@@ -48,9 +47,7 @@ export class ChatDetailPage implements OnInit {
     this.chatService.sendMessage(this.destinataryUser, message);
     this.clearInputValue(this.messageInput);
     this.scrollDownView()
-
   }
-
 
   scrollDownView() {
     if (this.messageList) {

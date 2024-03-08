@@ -16,7 +16,7 @@
 </ion-content>
 
 <ion-footer class="chat-detail-footer">
-  <ion-input type="text" #messageInput (keyup.enter)="sendMessage(''+messageInput.value)">
+  <ion-input type="text" #messageInput (keyup.enter)="sendMessage(''+messageInput.value)" class="input-style">
     <ion-icon (click)="sendMessage(''+messageInput.value)" color="primary"
               class="send-icon-size" slot="end" src="../../../../assets/sgvs/send-icon.svg">
     </ion-icon>
