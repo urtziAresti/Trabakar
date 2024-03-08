@@ -1,13 +1,17 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-title>chat</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">chat</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let user of users" (click)="openUserChat(user)">
+      <ion-label>{{ user.name }} {{ user.surname }}</ion-label>
+    </ion-item>
+  </ion-list>
+
+
+
 </ion-content>

@@ -1,0 +1,27 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>{{ destinataryUser.name }} {{ destinataryUser.surname }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let message of messages " lines="none" class="padding-xs">
+      <div class="message-text" [ngClass]="{'right-align': message.originaryID == destinataryUser.id}" >
+        <ion-label class="caption1 padding-bottom-xs">{{ message.message_timestamp |date:'HH:mm'}}</ion-label>
+        {{message.messageText}}
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer class="chat-detail-footer">
+  <ion-input type="text" #messageInput (keyup.enter)="sendMessage(''+messageInput.value)">
+    <ion-icon (click)="sendMessage(''+messageInput.value)" color="primary"
+              class="send-icon-size" slot="end" src="../../../../assets/sgvs/send-icon.svg">
+    </ion-icon>
+  </ion-input>
+
+</ion-footer>
+
+

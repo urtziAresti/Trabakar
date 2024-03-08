@@ -26,8 +26,7 @@ export class UserDataService {
     return docData(userDocRef).pipe(
       map((data: any) => {
         const userProfile: UserProfile = {
-          id: this.user?.uid,
-          imageUrl: data.imageUrl,
+          id: this.user!.uid,
           name: data.name,
           surname: data.surname
         };

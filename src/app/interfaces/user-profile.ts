@@ -1,6 +1,5 @@
 export interface UserProfile {
-  id: string |undefined;
-  name:string,
-  surname:string,
-  imageUrl: string;
+  id: string;
+  name: string,
+  surname: string,
 }
