@@ -1,5 +1,9 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/" [text]="'BACK' | translate"></ion-back-button>
+    </ion-buttons>
+
     <ion-title>{{ destinataryUser.name }} {{ destinataryUser.surname }}</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -8,16 +12,18 @@
   <ion-list #messageList [scrollTop]="10000" >
     <ion-item *ngFor="let message of messages " lines="none" class="padding-xs">
       <div class="message-text" [ngClass]="{'right-align': message.originaryID == destinataryUser.id}" >
-        <ion-label class="caption1 padding-bottom-xs">{{ message.message_timestamp |date:'HH:mm'}}</ion-label>
-        {{message.messageText}}
+        <ion-label class="caption1 light padding-left-l">{{ message.message_timestamp |date:'HH:mm'}}</ion-label>
+        <ion-label class="caption1 bold">
+          {{message.messageText}}
+        </ion-label>
       </div>
     </ion-item>
   </ion-list>
 </ion-content>
 
 <ion-footer class="chat-detail-footer">
-  <ion-input type="text" #messageInput (keyup.enter)="sendMessage(''+messageInput.value)" class="input-style">
-    <ion-icon (click)="sendMessage(''+messageInput.value)" color="primary"
+  <ion-input type="text"#messageInput (keyup.enter)="messageInput.value && sendMessage(''+messageInput.value)" class="input-style">
+    <ion-icon (click)="messageInput.value && sendMessage(''+messageInput.value)" color="primary"
               class="send-icon-size" slot="end" src="../../../../assets/sgvs/send-icon.svg">
     </ion-icon>
   </ion-input>

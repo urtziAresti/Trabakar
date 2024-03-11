@@ -8,14 +8,16 @@ import { ChatDetailPageRoutingModule } from './chat-detail-routing.module';
 
 import { ChatDetailPage } from './chat-detail.page';
 import {orderBy} from "@angular/fire/firestore";
+import {TranslateModule} from "@ngx-translate/core";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    ChatDetailPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        ChatDetailPageRoutingModule,
+        TranslateModule
+    ],
   declarations: [ChatDetailPage]
 })
 export class ChatDetailPageModule {}

@@ -1,7 +1,16 @@
 import {Injectable} from '@angular/core';
 import {map, Observable} from "rxjs";
 import {UserProfile} from "../interfaces/user-profile";
-import {addDoc, collection, collectionData, doc, docData, Firestore, setDoc} from "@angular/fire/firestore";
+import {
+  addDoc,
+  collection,
+  collectionData,
+  doc,
+  docData,
+  Firestore,
+  getDocs,
+  getDocFromCache,
+} from "@angular/fire/firestore";
 import {DocumentData} from "@angular/fire/compat/firestore";
 import {Auth} from "@angular/fire/auth";
 import {ChatMessage} from "../interfaces/chatMessage";
@@ -31,7 +40,6 @@ export class ChatService {
     );
   }
 
-
   async sendMessage(destinataryUser: UserProfile, message: string) {
     const originaryUser = this.auth.currentUser;
 
@@ -43,8 +51,6 @@ export class ChatService {
     }
     try {
       const chatRoomKey = this.generateUniqueHash(destinataryUser!.id, originaryUser!.uid);
-      console.warn(chatRoomKey);
-
       const userDocRef = collection(this.firestore, `chatRooms/chatRoom-${chatRoomKey}/chats`);
       await addDoc(userDocRef, messageData);
       return true;
@@ -61,7 +67,7 @@ export class ChatService {
 
     return collectionData(userDocRef).pipe(
       map((docs: DocumentData[]) => {
-        return docs.map(doc => {
+        return docs.map((doc, index) => {
           return {
             destinataryID: doc['destinataryID'],
             originaryID: doc['originaryID'],
@@ -71,13 +77,21 @@ export class ChatService {
         });
       })
     );
+  }
 
-
+  async getCollectionDataIds(collectionPath: string) {
+    const collectionRef = collection(this.firestore, collectionPath);
+    const querySnapshot = await getDocs(collectionRef);
+    const documentIds: String[] = [];
+    querySnapshot.forEach(doc => {
+      documentIds.push(doc.id);
+    });
+    return documentIds;
   }
 
   generateUniqueHash(value1: string, value2: string): string {
     let UIDSArray = [value1.toLowerCase(), value2.toLowerCase()].sort();
-
     return Md5.hashStr(UIDSArray.toString().replace('/', ''));
   }
+
 }

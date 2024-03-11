@@ -1,25 +1,31 @@
-.send-icon-size{
+.send-icon-size {
   scale: 2.0;
   padding-right: 10px;
 }
 
-.message-text{
+.message-text {
   border-radius: 20px;
   padding-inline: 10px;
-  padding-top:5px;
-  padding-bottom: 5px;
-  border:2px solid #2dd55b;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: darkgreen;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.right-align{
+.right-align {
   margin-left: auto;
+  background-color: darkcyan;
 }
 
-.input-style{
+.input-style {
   border-radius: 20px;
   background-color: white;
   color: var(--ion-color-primary);
-  padding-left:10px !important;
+  padding-left: 10px !important;
+  white-space: pre-line;
+  width: 95vw;
+  margin: auto auto 5px;
 }
 
 
