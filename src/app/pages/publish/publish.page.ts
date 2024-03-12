@@ -4,6 +4,7 @@ import {LocationService} from "../../services/location.service";
 import {Coordinates} from "../../interfaces/Coordinates";
 import {environment} from "../../../environments/environment";
 import {PointExpression} from "leaflet";
+import {GeocodingService} from "../../services/geocoding.service";
 
 @Component({
   selector: 'app-publish',
@@ -14,7 +15,8 @@ export class PublishPage implements OnInit {
   leafletMap: any;
   zoom: number = 13
 
-  constructor(public locationService: LocationService) {
+  constructor(public locationService: LocationService,
+              private geocodingService: GeocodingService) {
   }
 
   ngOnInit() {
@@ -23,17 +25,20 @@ export class PublishPage implements OnInit {
     this.watchPosition();
   }
 
-  setPosition(){
-    console.warn(this.leafletMap.getCenter())
+  setPosition() {
+    const leafletCenter = this.leafletMap.getCenter();
+    this.geocodingService.getAddressFromLatLng(leafletCenter.lat,leafletCenter.lng).subscribe(res => {
+      console.warn(res)
+    })
   }
 
   flyTo(userCoords: GeolocationCoordinates): void {
     console.warn(userCoords.latitude)
-    if(userCoords)
-    this.leafletMap.flyTo([userCoords.latitude, userCoords.longitude], 16, {
-      animate: true,
-      duration: 1
-    });
+    if (userCoords)
+      this.leafletMap.flyTo([userCoords.latitude, userCoords.longitude], 16, {
+        animate: true,
+        duration: 1
+      });
   }
 
   getCurrentPosition(): void {
