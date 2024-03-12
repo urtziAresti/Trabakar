@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { PublishPageRoutingModule } from './publish-routing.module';
 
 import { PublishPage } from './publish.page';
+import {TranslateModule} from "@ngx-translate/core";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    PublishPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        PublishPageRoutingModule,
+        TranslateModule
+    ],
   declarations: [PublishPage]
 })
 export class PublishPageModule {}

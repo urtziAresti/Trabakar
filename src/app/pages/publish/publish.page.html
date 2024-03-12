@@ -1,13 +1,22 @@
-<ion-header [translucent]="true" class="ion-no-border">
-  <ion-toolbar>
-    <ion-title>publish</ion-title>
-  </ion-toolbar>
+<ion-header class="ion-no-border">
+    <div class="padding-top-xs padding-left-xl">
+      <ion-label class="head2 bold ion-text-center">Desde donde sales?</ion-label>
+    </div>
 </ion-header>
+<ion-content>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">publish</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div id="leafletMap">
+    <div class="pinned-position-container">
+      <ion-icon src="assets/icon/pinned-point.svg" class="pinned-icon"></ion-icon>
+    </div>
+
+    <div class="floating-button-div">
+    <ion-button (click)="setPosition()"  class="floating-set-position-button">
+      <ion-label class="caption1 bold">
+        Selecionar posicion
+      </ion-label>
+    </ion-button>
+    </div>
+  </div>
+
 </ion-content>

@@ -5,8 +5,13 @@
 export const environment = {
   production: false,
   defaultLanguage: 'es',
-  availableLanguages : ['es','eu','en'],
+  availableLanguages: ['es', 'eu', 'en'],
   prefix: 'TRABACAR_',
+
+  defaultPosition: {
+    lontitude: "-2.9266229",
+    latitude: "43.2633289"
+  },
 
   firebaseConfig: {
     apiKey: "AIzaSyD6irneWJYf4dYI6gFbLm8V2FIJEHE782E",
