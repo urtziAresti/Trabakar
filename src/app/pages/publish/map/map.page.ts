@@ -6,9 +6,8 @@ import {environment} from "../../../../environments/environment";
 import {ActivatedRoute, Router} from "@angular/router";
 import {Address} from "../../../interfaces/address";
 import {Coordinates} from "../../../interfaces/Coordinates";
-import {Auth} from "@angular/fire/auth";
-import {Md5} from "ts-md5";
 import {TravelPublisherService} from "../../../services/travel-publisher.service";
+import {TravelModel} from "../../../models/travel-model";
 
 @Component({
   selector: 'app-map',
@@ -24,19 +23,12 @@ export class MapPage implements OnInit {
               private geocodingService: GeocodingService,
               private route: ActivatedRoute,
               private router: Router,
-              private auth: Auth,
-              private travelService:TravelPublisherService) {
-
-
+              private travelService: TravelPublisherService) {
   }
 
-  generateTravelID() {
-    return Md5.hashStr(new Date().toString());
-
-  }
 
   ngOnInit() {
-    this.route.queryParams.subscribe(params => {
+    this.route.queryParams.subscribe(() => {
         const currentNavigation = this.router.getCurrentNavigation();
         if (currentNavigation && currentNavigation.extras?.state) {
           if (currentNavigation.extras.state['address']) {
@@ -52,15 +44,14 @@ export class MapPage implements OnInit {
 
   setPosition() {
     const leafletCenter = this.leafletMap.getCenter();
-    this.geocodingService.getAddressFromLatLng(leafletCenter.lat, leafletCenter.lng).subscribe(adressResult => {
-      console.error(this.travelService.travelData)
+    this.geocodingService.getAddressFromLatLng(leafletCenter.lat, leafletCenter.lng).subscribe(addressResult => {
 
-      // this.travelService.travelData.origin?.name = adressResult.name;
-      // this.travelService.travelData.origin.originPostalCode = adressResult.addressData.postcode;
-      // this.travelService.travelData.origin.originCoords = {lat: adressResult.lat, lng:adressResult.lon}
-
-
-      // this.router.navigateByUrl('')
+      const travelData: TravelModel = this.travelService.travelData;
+      travelData.origin = {
+        name: addressResult.name,
+        originPostalCode: addressResult.addressData.postcode,
+        originCoords: {lat: addressResult.lat, lng: addressResult.lon}
+      };
     })
   }
 
@@ -76,15 +67,16 @@ export class MapPage implements OnInit {
   }
 
   getCurrentPosition(): void {
-    this.locationService.getCurrentPosition().subscribe(
-      (position) => {
-        this.leafletMap.setView([position.coords.latitude, position.coords.longitude], this.zoom);
-        this.flyTo({lat: position.coords.latitude, lng: position.coords.longitude})
-      },
-      (error) => {
-        console.error('Error getting current position:', error);
+    this.locationService.getCurrentPosition().subscribe({
+        next: (position) => {
+          this.leafletMap.setView([position.coords.latitude, position.coords.longitude], this.zoom);
+          this.flyTo({lat: position.coords.latitude, lng: position.coords.longitude});
+        },
+        error: (error) => {
+          console.error('Error getting current position:', error);
+        }
       }
-    );
+    )
   }
 
   mapInit(centerPosition: Coordinates) {
@@ -99,13 +91,13 @@ export class MapPage implements OnInit {
   }
 
   watchPosition(): void {
-    this.locationService.watchPosition().subscribe(
-      (position) => {
-        console.log('Updated Position:', position);
-      },
-      (error) => {
-        console.error('Error watching position:', error);
-        // Handle error
+    this.locationService.watchPosition().subscribe({
+        next: (position) => {
+          console.log('Updated Position:', position);
+        },
+        error: (error) => {
+          console.error('Error watching position:', error);
+        }
       }
     );
   }

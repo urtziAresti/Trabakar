@@ -1,9 +1,9 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
-import {ActivatedRoute, Router, Routes} from "@angular/router";
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {ActivatedRoute, Router} from "@angular/router";
 import {UserProfile} from "../../../interfaces/user-profile";
 import {ChatService} from "../../../services/chat.service";
 import {ChatMessage} from "../../../interfaces/chatMessage";
-import {IonContent, IonList} from "@ionic/angular";
+import {IonContent} from "@ionic/angular";
 
 
 @Component({
@@ -27,7 +27,7 @@ export class ChatDetailPage implements OnInit {
   }
 
   ngOnInit() {
-    this.route.queryParams.subscribe(params => {
+    this.route.queryParams.subscribe(() => {
       const currentNavigation = this.router.getCurrentNavigation();
       if (currentNavigation && currentNavigation.extras?.state) {
         this.destinataryUser = currentNavigation.extras.state['user'];

@@ -1,25 +1,14 @@
-import { Injectable } from '@angular/core';
-import {Travel} from "../interfaces/travel";
-import {Md5} from "ts-md5";
-import {Auth} from "@angular/fire/auth";
+import {Injectable} from '@angular/core';
+import {TravelModel} from '../models/travel-model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TravelPublisherService {
 
-  public travelData: Travel
+  public travelData: TravelModel = new TravelModel('');
 
-  constructor(private auth:Auth) {
-    const currentUser = this.auth.currentUser!;
-    this.travelData = {travelID : this.generateTravelID(),userID :currentUser?.uid }
+  constructor() {
   }
-
-
-  generateTravelID() {
-    return Md5.hashStr(new Date().toString());
-
-  }
-
 
 }

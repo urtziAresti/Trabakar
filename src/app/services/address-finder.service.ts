@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {map, Observable} from "rxjs";
 import {Address} from "../interfaces/address";
+import {IAddress} from "../interfaces/IAddress";
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class AddressFinderService {
 
 
   findAddress(text: string): Observable<Address[]> {
-    return this.httpClient.get<Address[]>(
+    return this.httpClient.get<IAddress[]>(
       `https://nominatim.openstreetmap.org/search.php?q=${text}&addressdetails=1&format=jsonv2&limit=3`
     ).pipe(
       map(res => {
@@ -31,12 +32,12 @@ export class AddressFinderService {
           name: item.name,
           display_name: item.display_name,
           addressData: {
-            town: item.addressData.town,
-            province: item.addressData.province,
-            state: item.addressData.state,
-            postcode: item.addressData.postcode,
-            country: item.addressData.country,
-            country_code: item.addressData.country_code
+            town: item.address.town,
+            province: item.address.province,
+            state: item.address.state,
+            postcode: item.address.postcode,
+            country: item.address.country,
+            country_code: item.address.country_code
           },
           boundingbox: item.boundingbox
         }));
