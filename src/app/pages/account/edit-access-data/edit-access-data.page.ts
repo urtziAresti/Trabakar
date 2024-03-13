@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {AsyncValidator, FormBuilder, FormGroup, ValidatorFn, Validators} from "@angular/forms";
-import {AlertController, LoadingController} from "@ionic/angular";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {AlertController} from "@ionic/angular";
 import {Router} from "@angular/router";
 import {UserDataService} from "../../../services/userData.service";
 import {Auth} from "@angular/fire/auth";
@@ -29,15 +29,15 @@ export class EditAccessDataPage implements OnInit {
       email: [user?.email, [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]],
       repeatPassword: ['', [Validators.required, Validators.minLength(6)]],
-    },{ validators: this.passwordMatchValidator });
+    }, {validators: this.passwordMatchValidator});
   }
 
   passwordMatchValidator: (control: FormGroup) => ({ [p: string]: any } | null) =
-    (control: FormGroup): {[key: string]: any} | null => {
-    const password = control.get('password');
-    const repeatPassword = control.get('repeatPassword');
-    return password && repeatPassword && password.value !== repeatPassword.value ? { 'passwordMismatch': true } : null;
-  };
+    (control: FormGroup): { [key: string]: any } | null => {
+      const password = control.get('password');
+      const repeatPassword = control.get('repeatPassword');
+      return password && repeatPassword && password.value !== repeatPassword.value ? {'passwordMismatch': true} : null;
+    };
 
   get email() {
     return this.accessDataForm.get('email');
@@ -53,7 +53,7 @@ export class EditAccessDataPage implements OnInit {
 
   updateUserEmailAccessData() {
     this.userDataService.updateUserEmailAccessData(this.email?.value).then(() =>
-      this.userDataService.updateUserData(this.accessDataForm.value).then(res => {
+      this.userDataService.updateUserData(this.accessDataForm.value).then(() => {
         this.showAlert('', this.translate.instant('EDIT_ACCESS_DATA.EMAIL_SUCCESS_ALERT')).then(() =>
           this.router.navigateByUrl('home/account')
         )
@@ -64,11 +64,9 @@ export class EditAccessDataPage implements OnInit {
     })
   }
 
-
   updateUserPassAccessData() {
-    // TODO check if 2 passwords are the same
     this.userDataService.updateUserPassAccessData(this.password?.value).then(() =>
-      this.userDataService.updateUserData(this.accessDataForm.value).then(res => {
+      this.userDataService.updateUserData(this.accessDataForm.value).then(() => {
         this.showAlert('', this.translate.instant('EDIT_ACCESS_DATA.PASS_SUCCESS_ALERT')).then(() =>
           this.router.navigateByUrl('home/account')
         )
