@@ -1,22 +1,29 @@
 <ion-header class="ion-no-border">
-    <div class="padding-top-xs padding-left-xl">
-      <ion-label class="head2 bold ion-text-center">Desde donde sales?</ion-label>
-    </div>
+  <div class="padding-top-xs padding-left-xl">
+    <ion-label class="head2 bold ion-text-center">Desde donde sales?</ion-label>
+  </div>
 </ion-header>
 <ion-content>
 
-  <div id="leafletMap">
-    <div class="pinned-position-container">
-      <ion-icon src="assets/icon/pinned-point.svg" class="pinned-icon"></ion-icon>
-    </div>
+  <ion-searchbar [debounce]="1000" [(ngModel)]="searchQuery" (ionInput)="handleInput($event)"
+                 show-clear-button="always"></ion-searchbar>
+  <ion-list lines="none">
+    <ion-item detail="true" (click)="openMap(null)">
+      <ion-icon slot="start" src="assets/icon/geolocation-icon.svg"></ion-icon>
+      <div class="padding-bottom-xs">
+        <ion-label class="caption2 bold">Utilizar ubicacion actual</ion-label>
+      </div>
 
-    <div class="floating-button-div">
-    <ion-button (click)="setPosition()"  class="floating-set-position-button">
-      <ion-label class="caption1 bold">
-        Selecionar posicion
-      </ion-label>
-    </ion-button>
-    </div>
-  </div>
+    </ion-item>
 
+    <ion-item *ngFor="let result of results" detail="true" (click)="openMap(result)">
+      <div class="padding-bottom-xs">
+        <ion-label class="caption2 bold">
+          {{ result.name }}
+          {{ result.addressData.province }}
+          ,{{ result.addressData.postcode }}
+        </ion-label>
+      </div>
+    </ion-item>
+  </ion-list>
 </ion-content>

@@ -1,10 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import * as L from "leaflet"
-import {LocationService} from "../../services/location.service";
-import {Coordinates} from "../../interfaces/Coordinates";
-import {environment} from "../../../environments/environment";
-import {PointExpression} from "leaflet";
-import {GeocodingService} from "../../services/geocoding.service";
+import {AddressFinderService} from "../../services/address-finder.service";
+import {Address} from "../../interfaces/address";
+import {NavigationExtras, Router} from "@angular/router";
 
 @Component({
   selector: 'app-publish',
@@ -12,67 +9,62 @@ import {GeocodingService} from "../../services/geocoding.service";
   styleUrls: ['./publish.page.scss'],
 })
 export class PublishPage implements OnInit {
-  leafletMap: any;
-  zoom: number = 13
+  searchQuery: string = '';
+  results: Address[] = [
+    {
+      "place_id": 282802195,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 341908,
+      "lat": 43.1940413,
+      "lon": -3.1945492,
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 16,
+      "importance": 0.4778744230054683,
+      "addresstype": "town",
+      "name": "Valmaseda",
+      "display_name": "Valmaseda, Vizcaya, País Vasco, 48800, España",
+      "addressData": {
+        "town": "Valmaseda",
+        "province": "Vizcaya",
+        "state": "País Vasco",
+        "postcode": "48800",
+        "country": "España",
+        "country_code": "es"
+      },
+      "boundingbox": [
+        "43.1691916",
+        "43.2191916",
+        "-3.2532734",
+        "-3.1782400"
+      ]
+    }
+  ];
 
-  constructor(public locationService: LocationService,
-              private geocodingService: GeocodingService) {
+  constructor(private adressFinder: AddressFinderService,
+              private router: Router) {
   }
 
   ngOnInit() {
-    this.mapInit()
-    this.getCurrentPosition();
-    this.watchPosition();
+
   }
 
-  setPosition() {
-    const leafletCenter = this.leafletMap.getCenter();
-    this.geocodingService.getAddressFromLatLng(leafletCenter.lat,leafletCenter.lng).subscribe(res => {
-      console.warn(res)
-    })
-  }
+  openMap(resultAddress: Address | null) {
 
-  flyTo(userCoords: GeolocationCoordinates): void {
-    console.warn(userCoords.latitude)
-    if (userCoords)
-      this.leafletMap.flyTo([userCoords.latitude, userCoords.longitude], 16, {
-        animate: true,
-        duration: 1
-      });
-  }
-
-  getCurrentPosition(): void {
-    this.locationService.getCurrentPosition().subscribe(
-      (position) => {
-        this.leafletMap.setView([position.coords.latitude, position.coords.longitude], this.zoom);
-        this.flyTo(position.coords)
-      },
-      (error) => {
-        console.error('Error getting current position:', error);
+    const navigationExtras: NavigationExtras = {
+      state: {
+        address: resultAddress
       }
-    );
+    };
+    this.router.navigateByUrl('home/publish/map', navigationExtras);
   }
 
-  mapInit() {
-    this.leafletMap = new L.Map('leafletMap')
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(this.leafletMap);
-    this.leafletMap.setView([environment.defaultPosition.latitude, environment.defaultPosition.lontitude], this.zoom);
-    this.leafletMap.whenReady(() => {
-      setTimeout(() => {
-        this.leafletMap.invalidateSize();
-      }, 10);
-    });
+  handleInput(event: any) {
+    // const queryText = event.target.value.toLowerCase();
+    // this.adressFinder.findAddress(queryText).subscribe(results => {
+    //   this.results = results
+    // })
   }
 
-  watchPosition(): void {
-    this.locationService.watchPosition().subscribe(
-      (position) => {
-        console.log('Updated Position:', position);
-      },
-      (error) => {
-        console.error('Error watching position:', error);
-        // Handle error
-      }
-    );
-  }
 }

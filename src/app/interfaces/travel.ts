@@ -3,19 +3,19 @@ import {DestinyPlace} from "./destinyPlace";
 
 export interface Travel {
 
-  travelID: number;
+  travelID: string;
   userID: string;
-  origin: OriginPlace;
-  destiny: DestinyPlace;
+  origin?: OriginPlace;
+  destiny?: DestinyPlace;
 
-  travelStartDate: Date;
-  travelStartTime: Date;
+  travelStartDate?: Date;
+  travelStartTime?: Date;
 
   travelEndDate?: Date;
   travelEndTime?: Date;
 
-  estimatedPrice: number;
-  numberOfSeatsAvailable: number;
+  estimatedPrice?: number;
+  numberOfSeatsAvailable?: number;
   comments?: string;
 
 }
