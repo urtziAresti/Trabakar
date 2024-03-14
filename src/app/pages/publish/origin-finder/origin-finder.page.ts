@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {AddressFinderService} from "../../services/address-finder.service";
-import {Address} from "../../interfaces/address";
+import {AddressFinderService} from "../../../services/address-finder.service";
+import {Address} from "../../../interfaces/address";
 import {NavigationExtras, Router} from "@angular/router";
 
 @Component({

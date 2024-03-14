@@ -13,7 +13,7 @@ const routes: Routes = [
       },
       {
         path: 'publish',
-        loadChildren: () => import('../pages/publish/origin-finder.module').then(m => m.OriginFinderPageModule)
+        loadChildren: () => import('../pages/publish/origin-finder/origin-finder.module').then(m => m.OriginFinderPageModule)
       },
       {
         path: 'chat',

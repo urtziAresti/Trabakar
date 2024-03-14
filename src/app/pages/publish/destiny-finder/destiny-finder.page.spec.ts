@@ -1,12 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { OriginPlaceMap } from './map.page';
+import { DestinyFinderPage } from './destiny-finder.page';
 
-describe('MapPage', () => {
-  let component: OriginPlaceMap;
-  let fixture: ComponentFixture<OriginPlaceMap>;
+describe('DestinyFinderPage', () => {
+  let component: DestinyFinderPage;
+  let fixture: ComponentFixture<DestinyFinderPage>;
 
   beforeEach(async(() => {
-    fixture = TestBed.createComponent(OriginPlaceMap);
+    fixture = TestBed.createComponent(DestinyFinderPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

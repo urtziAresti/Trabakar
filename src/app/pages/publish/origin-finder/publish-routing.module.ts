@@ -9,11 +9,15 @@ const routes: Routes = [
   },
   {
     path: 'origin-place-map',
-    loadChildren: () => import('./map/origin-place.module').then(m => m.OriginPlacePageModule)
+    loadChildren: () => import('../map/origin-place.module').then(m => m.OriginPlacePageModule)
   },
   {
     path: 'origin-departure-time',
-    loadChildren: () => import('./origin-departure-time/origin-departure-time.module').then( m => m.OriginDepartureTimePageModule)
+    loadChildren: () => import('../origin-departure-time/origin-departure-time.module').then(m => m.OriginDepartureTimePageModule)
+  },
+  {
+    path: 'destiny-finder',
+    loadChildren: () => import('../destiny-finder/destiny-finder.module').then( m => m.DestinyFinderPageModule)
   }
 ];
 
