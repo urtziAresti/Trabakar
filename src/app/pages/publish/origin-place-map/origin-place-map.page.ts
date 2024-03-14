@@ -10,7 +10,7 @@ import {TravelPublisherService} from "../../../services/travel-publisher.service
 import {TravelModel} from "../../../models/travel-model";
 
 @Component({
-  selector: 'app-map',
+  selector: 'app-origin-place-map',
   templateUrl: './origin-place.page.html',
   styleUrls: ['./origin-place.page.scss'],
 })

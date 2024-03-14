@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: 'origin-place-map',
-    loadChildren: () => import('../map/origin-place.module').then(m => m.OriginPlacePageModule)
+    loadChildren: () => import('../origin-place-map/origin-place.module').then(m => m.OriginPlacePageModule)
   },
   {
     path: 'origin-departure-time',
@@ -18,7 +18,11 @@ const routes: Routes = [
   {
     path: 'destiny-finder',
     loadChildren: () => import('../destiny-finder/destiny-finder.module').then( m => m.DestinyFinderPageModule)
-  }
+  },
+  {
+    path: 'destiny-place-map',
+    loadChildren: () => import('../destiny-place-map/destiny-place-map.module').then( m => m.DestinyPlaceMapPageModule)
+  },
 ];
 
 @NgModule({

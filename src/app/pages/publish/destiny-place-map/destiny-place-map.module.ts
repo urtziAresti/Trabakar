@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MapPageRoutingModule } from './origin-place-routing.module';
+import { DestinyPlaceMapPageRoutingModule } from './destiny-place-map-routing.module';
 
-import { OriginPlaceMap} from './map.page';
+import { DestinyPlaceMapPage } from './destiny-place-map.page';
 import {TranslateModule} from "@ngx-translate/core";
 
 @NgModule({
@@ -14,9 +14,9 @@ import {TranslateModule} from "@ngx-translate/core";
     CommonModule,
     FormsModule,
     IonicModule,
-    MapPageRoutingModule,
+    DestinyPlaceMapPageRoutingModule,
     TranslateModule
   ],
-  declarations: [OriginPlaceMap]
+  declarations: [DestinyPlaceMapPage]
 })
-export class OriginPlacePageModule {}
+export class DestinyPlaceMapPageModule {}
