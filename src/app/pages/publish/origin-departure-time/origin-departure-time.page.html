@@ -9,7 +9,9 @@
 
 <ion-content>
   <div class="padding-y-xxl time-container " (click)="openTimePicker()">
-    <ion-label class="head1 bold time-value padding-x-xl">{{ selectedHour |date:'HH:mm' }}</ion-label>
+    <ion-label class="head1 bold time-value padding-left-xl padding-right-xs">{{ selectedHour |date:'HH:mm' }}
+      <ion-icon slot="end" name="chevron-down-outline"></ion-icon>
+    </ion-label>
   </div>
 
   <ion-popover #timePopover [keepContentsMounted]="true"
