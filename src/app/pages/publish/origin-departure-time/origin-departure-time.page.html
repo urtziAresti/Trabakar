@@ -1,0 +1,25 @@
+<ion-header class="ion-no-border">
+  <ion-buttons slot="start">
+    <ion-back-button default-href="/" [text]="'BACK' | translate"></ion-back-button>
+  </ion-buttons>
+  <div class="padding-top-xs padding-left-xl">
+    <ion-label class="head2 bold ion-text-center">A que hora sales ?</ion-label>
+  </div>
+</ion-header>
+
+<ion-content>
+  <div class="padding-y-xxl time-container " (click)="openTimePicker()">
+    <ion-label class="head1 bold time-value padding-x-xl">{{ selectedHour |date:'HH:mm' }}</ion-label>
+  </div>
+
+  <ion-popover #timePopover [keepContentsMounted]="true"
+               [isOpen]="showTimePicker"
+               alignment="center" mode="ios">
+    <ng-template>
+      <ion-datetime id="dateBtn" [preferWheel]="true" presentation="time"
+                    (ionChange)="onTimeSelected($event)"
+      ></ion-datetime>
+    </ng-template>
+  </ion-popover>
+
+</ion-content>

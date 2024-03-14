@@ -52,6 +52,7 @@ export class MapPage implements OnInit {
         originPostalCode: addressResult.addressData.postcode,
         originCoords: {lat: addressResult.lat, lng: addressResult.lon}
       };
+      this.router.navigateByUrl('home/publish/origin-departure-time');
     })
   }
 
