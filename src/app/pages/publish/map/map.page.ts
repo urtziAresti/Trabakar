@@ -11,10 +11,10 @@ import {TravelModel} from "../../../models/travel-model";
 
 @Component({
   selector: 'app-map',
-  templateUrl: './map.page.html',
-  styleUrls: ['./map.page.scss'],
+  templateUrl: './origin-place.page.html',
+  styleUrls: ['./origin-place.page.scss'],
 })
-export class MapPage implements OnInit {
+export class OriginPlaceMap implements OnInit {
   leafletMap: any;
   zoom: number = environment.mapZoom
   selectedAddress!: Address;

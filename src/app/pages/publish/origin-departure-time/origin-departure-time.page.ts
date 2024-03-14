@@ -1,5 +1,8 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {IonPopover, PopoverController} from "@ionic/angular";
+import {IonPopover} from "@ionic/angular";
+import {TravelPublisherService} from "../../../services/travel-publisher.service";
+import {TravelModel} from "../../../models/travel-model";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-origin-departure-time',
@@ -11,7 +14,9 @@ export class OriginDepartureTimePage implements OnInit {
   showTimePicker: boolean = false;
   @ViewChild('timePopover', {static: false}) timePopover!: IonPopover;
 
-  constructor() {
+  constructor(
+    private travelService: TravelPublisherService,
+    private router: Router) {
   }
 
   ngOnInit() {
@@ -21,7 +26,7 @@ export class OriginDepartureTimePage implements OnInit {
   subscribeToPopoverDismissEvent() {
     if (this.timePopover) {
       this.timePopover.onDidDismiss().then((data) => {
-        if(data.role == 'backdrop'){
+        if (data.role == 'backdrop') {
           this.closeTimePicker()
         }
       });
@@ -35,20 +40,25 @@ export class OriginDepartureTimePage implements OnInit {
 
   openTimePicker() {
     this.showTimePicker = true;
-    this.subscribeToPopoverDismissEvent(); // Subscribe to popover events
-
-
+    this.subscribeToPopoverDismissEvent();
   }
 
   closeTimePicker() {
     // Close the time picker only if it's open
     if (this.showTimePicker) {
       this.showTimePicker = false;
-      // Close the popover using ViewChild reference
-      if (this.timePopover) {
-        this.timePopover.dismiss();
-      }
+
     }
+  }
+
+  nextPage() {
+    const travelData: TravelModel = this.travelService.travelData;
+    travelData.origin = {
+      departureTime: this.selectedHour,
+      ...travelData.origin
+    };
+    this.router.navigateByUrl('home/publish/');
+
   }
 
 }

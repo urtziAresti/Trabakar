@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MapPageRoutingModule } from './map-routing.module';
+import { MapPageRoutingModule } from './origin-place-routing.module';
 
-import { MapPage } from './map.page';
+import { OriginPlaceMap} from './map.page';
 import {TranslateModule} from "@ngx-translate/core";
 
 @NgModule({
@@ -17,6 +17,6 @@ import {TranslateModule} from "@ngx-translate/core";
     MapPageRoutingModule,
     TranslateModule
   ],
-  declarations: [MapPage]
+  declarations: [OriginPlaceMap]
 })
-export class MapPageModule {}
+export class OriginPlacePageModule {}

@@ -57,14 +57,8 @@ export class PublishPage implements OnInit {
         address: resultAddress
       }
     };
-    this.router.navigateByUrl('home/publish/map', navigationExtras);
+    this.router.navigateByUrl('home/publish/origin-place-map', navigationExtras);
   }
 
-  handleInput(event: any) {
-    // const queryText = event.target.value.toLowerCase();
-    // this.adressFinder.findAddress(queryText).subscribe(results => {
-    //   this.results = results
-    // })
-  }
 
 }

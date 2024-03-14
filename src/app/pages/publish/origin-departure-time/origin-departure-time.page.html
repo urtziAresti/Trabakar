@@ -14,6 +14,9 @@
     </ion-label>
   </div>
 
+
+
+
   <ion-popover #timePopover [keepContentsMounted]="true"
                [isOpen]="showTimePicker"
                alignment="center" mode="ios">
@@ -25,3 +28,9 @@
   </ion-popover>
 
 </ion-content>
+
+<ion-footer class="padding-bottom-l padding-right-l ">
+  <ion-fab-button class="align-right" (click)="nextPage()" >
+    <ion-icon name="arrow-forward-outline"></ion-icon>
+  </ion-fab-button>
+</ion-footer>

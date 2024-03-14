@@ -1,9 +1,9 @@
 import {Coordinates} from "./Coordinates";
 
 export interface OriginPlace {
-  name: string,
+  name?: string,
   originPlaceComments?: string;
-  originPostalCode: string;
+  originPostalCode?: string;
   departureTime?: Date;
-  originCoords: Coordinates;
+  originCoords?: Coordinates;
 }

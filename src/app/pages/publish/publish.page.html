@@ -5,7 +5,7 @@
 </ion-header>
 <ion-content>
 
-  <ion-searchbar [debounce]="1000" [(ngModel)]="searchQuery" (ionInput)="handleInput($event)"
+  <ion-searchbar [debounce]="1000" [(ngModel)]="searchQuery"
                  show-clear-button="always"></ion-searchbar>
   <ion-list lines="none">
     <ion-item detail="true" (click)="openMap(null)">

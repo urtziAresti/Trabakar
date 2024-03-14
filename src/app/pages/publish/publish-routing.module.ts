@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { PublishPage } from './publish.page';
 
 const routes: Routes = [
@@ -9,8 +8,8 @@ const routes: Routes = [
     component: PublishPage
   },
   {
-    path: 'map',
-    loadChildren: () => import('./map/map.module').then( m => m.MapPageModule)
+    path: 'origin-place-map',
+    loadChildren: () => import('./map/origin-place.module').then(m => m.OriginPlacePageModule)
   },
   {
     path: 'origin-departure-time',
