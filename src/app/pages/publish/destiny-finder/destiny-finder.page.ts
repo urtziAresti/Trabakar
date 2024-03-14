@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Address} from "../../../interfaces/address";
 import {AddressFinderService} from "../../../services/address-finder.service";
 import {NavigationExtras, Router} from "@angular/router";
@@ -54,10 +54,10 @@ export class DestinyFinderPage implements OnInit {
 
     const navigationExtras: NavigationExtras = {
       state: {
-        address: resultAddress
+        destinyAddress: resultAddress
       }
     };
-    this.router.navigateByUrl('home/publish/destiny-place-map', navigationExtras);
+    this.router.navigateByUrl('home/publish/map', navigationExtras);
   }
 
 }

@@ -8,8 +8,8 @@ const routes: Routes = [
     component: OriginFinderPage
   },
   {
-    path: 'origin-place-map',
-    loadChildren: () => import('../origin-place-map/origin-place.module').then(m => m.OriginPlacePageModule)
+    path: 'map',
+    loadChildren: () => import('../map/map.module').then(m => m.MapPageModule)
   },
   {
     path: 'origin-departure-time',
@@ -18,11 +18,7 @@ const routes: Routes = [
   {
     path: 'destiny-finder',
     loadChildren: () => import('../destiny-finder/destiny-finder.module').then( m => m.DestinyFinderPageModule)
-  },
-  {
-    path: 'destiny-place-map',
-    loadChildren: () => import('../destiny-place-map/destiny-place-map.module').then( m => m.DestinyPlaceMapPageModule)
-  },
+  }
 ];
 
 @NgModule({

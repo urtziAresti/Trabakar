@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { DestinyPlaceMapPage } from './destiny-place-map.page';
+import { TrailPage } from './trail.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: DestinyPlaceMapPage
+    component: TrailPage
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class DestinyPlaceMapPageRoutingModule {}
+export class TrailPageRoutingModule {}

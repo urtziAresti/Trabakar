@@ -54,10 +54,10 @@ export class OriginFinderPage implements OnInit {
 
     const navigationExtras: NavigationExtras = {
       state: {
-        address: resultAddress
+        originAddress: resultAddress
       }
     };
-    this.router.navigateByUrl('home/publish/origin-place-map', navigationExtras);
+    this.router.navigateByUrl('home/publish/map', navigationExtras);
   }
 
 

@@ -1,12 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { DestinyFinderPage } from './destiny-finder.page';
+import { TrailPage } from './trail.page';
 
-describe('DestinyFinderPage', () => {
-  let component: DestinyFinderPage;
-  let fixture: ComponentFixture<DestinyFinderPage>;
+describe('TrailPage', () => {
+  let component: TrailPage;
+  let fixture: ComponentFixture<TrailPage>;
 
   beforeEach(async(() => {
-    fixture = TestBed.createComponent(DestinyFinderPage);
+    fixture = TestBed.createComponent(TrailPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

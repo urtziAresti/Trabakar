@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {Map} from "./map.page";
 
-import { OriginPlaceMap } from './origin-place-map.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: OriginPlaceMap
+    component: Map
   }
 ];
 
