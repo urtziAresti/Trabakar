@@ -31,7 +31,7 @@ const routes: Routes = [
   },
   {
     path: 'publish',
-    loadChildren: () => import('./pages/publish/publish.module').then( m => m.PublishPageModule)
+    loadChildren: () => import('./pages/publish/origin-finder.module').then(m => m.OriginFinderPageModule)
   },
   {
     path: 'chat',

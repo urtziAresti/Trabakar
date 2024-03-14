@@ -57,7 +57,7 @@ export class OriginDepartureTimePage implements OnInit {
       departureTime: this.selectedHour,
       ...travelData.origin
     };
-    this.router.navigateByUrl('home/publish/');
+    this.router.navigateByUrl('home/publish/destiny-finder');
 
   }
 

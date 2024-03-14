@@ -5,10 +5,10 @@ import {NavigationExtras, Router} from "@angular/router";
 
 @Component({
   selector: 'app-publish',
-  templateUrl: './publish.page.html',
-  styleUrls: ['./publish.page.scss'],
+  templateUrl: './origin-finder.page.html',
+  styleUrls: ['./origin-finder.page.scss'],
 })
-export class PublishPage implements OnInit {
+export class OriginFinderPage implements OnInit {
   searchQuery: string = '';
   results: Address[] = [
     {

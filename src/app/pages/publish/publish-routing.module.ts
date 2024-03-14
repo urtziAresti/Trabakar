@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PublishPage } from './publish.page';
+import { OriginFinderPage } from './origin-finder.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: PublishPage
+    component: OriginFinderPage
   },
   {
     path: 'origin-place-map',
