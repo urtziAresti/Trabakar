@@ -12,8 +12,8 @@ const routes: Routes = [
     loadChildren: () => import('../map/map.module').then(m => m.MapPageModule)
   },
   {
-    path: 'origin-departure-time',
-    loadChildren: () => import('../origin-departure-time/origin-departure-time.module').then(m => m.OriginDepartureTimePageModule)
+    path: 'time-selector',
+    loadChildren: () => import('../time-selector/time-selector.module').then(m => m.OriginDepartureTimePageModule)
   },
   {
     path: 'trail',

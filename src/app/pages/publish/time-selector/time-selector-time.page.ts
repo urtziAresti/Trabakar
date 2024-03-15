@@ -5,11 +5,11 @@ import {TravelModel} from "../../../models/travel-model";
 import {ActivatedRoute, NavigationExtras, Router} from "@angular/router";
 
 @Component({
-  selector: 'app-origin-departure-time',
-  templateUrl: './origin-departure-time.page.html',
-  styleUrls: ['./origin-departure-time.page.scss']
+  selector: 'app-time-selector',
+  templateUrl: './time-selector-time.page.html',
+  styleUrls: ['./time-selector-time.page.scss']
 })
-export class OriginDepartureTimePage implements OnInit {
+export class TimeSelectorTimePage implements OnInit {
   selectedHour: Date = new Date()
   showTimePicker: boolean = false;
   origin: boolean = false;

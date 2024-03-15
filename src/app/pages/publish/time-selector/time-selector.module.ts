@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { OriginDepartureTimePageRoutingModule } from './origin-departure-time-routing.module';
+import { OriginDepartureTimePageRoutingModule } from './time-selector-routing.module';
 
-import { OriginDepartureTimePage } from './origin-departure-time.page';
+import { TimeSelectorTimePage } from './time-selector-time.page';
 import {TranslateModule} from "@ngx-translate/core";
 
 @NgModule({
@@ -17,6 +17,6 @@ import {TranslateModule} from "@ngx-translate/core";
     TranslateModule,
     OriginDepartureTimePageRoutingModule
   ],
-  declarations: [OriginDepartureTimePage]
+  declarations: [TimeSelectorTimePage]
 })
 export class OriginDepartureTimePageModule {}

@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { OriginDepartureTimePage } from './origin-departure-time.page';
+import { TimeSelectorTimePage } from './time-selector-time.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: OriginDepartureTimePage
+    component: TimeSelectorTimePage
   }
 ];
 
