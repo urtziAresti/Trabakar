@@ -81,18 +81,21 @@ export class TimeSelectorTimePage implements OnInit {
       };
       this.router.navigateByUrl('home/publish', navigationExtras);
 
-    } else if(this.destiny) {
+    } else if (this.destiny) {
       travelData.destiny = {
-        expectedArrivalTime : this.selectedHour,
+        expectedArrivalTime: this.selectedHour,
         ...travelData.destiny
       };
       console.warn(travelData)
-      this.router.navigateByUrl('home/publish/trail');
+      const navigationExtras: NavigationExtras = {
+        state: {
+          trailInfo: true
+        }
+      };
+      this.router.navigateByUrl('home/publish/map',navigationExtras);
 
 
     }
-
-
 
 
   }

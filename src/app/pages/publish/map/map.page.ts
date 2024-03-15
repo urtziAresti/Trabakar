@@ -8,6 +8,10 @@ import {Address} from "../../../interfaces/address";
 import {Coordinates} from "../../../interfaces/Coordinates";
 import {TravelService} from "../../../services/travel.service";
 import {TravelModel} from "../../../models/travel-model";
+import {TrailService} from "../../../services/trail.service";
+import {Route, RouteData} from "../../../interfaces/route";
+import {GeoJSON} from "leaflet";
+import {GeoJsonObject} from "geojson";
 
 @Component({
   selector: 'app-map',
@@ -27,12 +31,14 @@ export class Map implements OnInit {
               private geocodingService: GeocodingService,
               private route: ActivatedRoute,
               private router: Router,
-              private travelService: TravelService) {
+              private travelService: TravelService,
+              private trailService: TrailService) {
   }
 
 
   ngOnInit() {
     this.route.queryParams.subscribe(() => {
+
         const currentNavigation = this.router.getCurrentNavigation();
         if (currentNavigation && currentNavigation.extras?.state) {
           if (currentNavigation.extras.state['originAddress']) {
@@ -44,17 +50,70 @@ export class Map implements OnInit {
             this.destinyAddress = currentNavigation.extras.state['destinyAddress'] as Address;
             this.destiny = true;
             this.origin = false
-            // this.setCenter({lat: this.destinyAddress.lat, lng: this.destinyAddress.lon})
             this.mapInit({lat: this.destinyAddress.lat, lng: this.destinyAddress.lon})
+          } else if (currentNavigation.extras.state['trailInfo']) {
+            //     this.getRouteTrail()
+            this.mapInit({
+              lat: environment.defaultPosition.latitude,
+              lng: environment.defaultPosition.lontitude
+            })
           } else {
             this.mapInit({
               lat: environment.defaultPosition.latitude,
               lng: environment.defaultPosition.lontitude
             })
           }
+        } else {
+          this.mapInit({
+            lat: environment.defaultPosition.latitude,
+            lng: environment.defaultPosition.lontitude
+          })
         }
       }
     )
+    this.getRouteTrail()
+  }
+
+
+  getRouteTrail() {
+    const travelData: TravelModel = this.travelService.travelData;
+    console.warn(travelData)
+
+    if (travelData.origin?.originCoords && travelData.destiny?.destinyCoords) {
+      this.trailService.getRouteTrail(travelData.origin.originCoords, travelData.destiny.destinyCoords).subscribe(res => {
+        console.warn(res)
+      })
+
+    } else {
+      const mockedTravelData: TravelModel = this.travelService.travelData;
+      mockedTravelData.origin = {
+        originCoords: {lat: 43.190913, lng: -3.199353}
+      }
+      mockedTravelData.destiny = {
+        destinyCoords: {lat: 43.211713, lng: -3.138442}
+      }
+      if (mockedTravelData.origin?.originCoords && mockedTravelData.destiny?.destinyCoords)
+        this.trailService.getRouteTrail(mockedTravelData.origin.originCoords, mockedTravelData.destiny.destinyCoords).subscribe(trailData => {
+          this.drawRoute(trailData)
+        })
+    }
+  }
+
+  drawRoute(trailData: RouteData) {
+    const pathStyle = {
+      "color": "blue",
+      "weight": 4,
+      "opacity": 0.9
+    };
+
+    // @ts-ignore
+    const geoJSON = L.geoJSON(trailData.routes[0].geometry, {
+      style: pathStyle
+    }).addTo(this.leafletMap);
+    this.leafletMap.fitBounds(geoJSON.getBounds(), {
+      padding: [10, 10],
+      animate: true
+    })
   }
 
   setPosition() {
@@ -116,8 +175,8 @@ export class Map implements OnInit {
     )
   }
 
-  setCenter(centerPosition: Coordinates) {
-    this.leafletMap.setView([centerPosition.lat, centerPosition.lng], this.zoom);
+  setCenter(centerPosition: Coordinates, zoom: number) {
+    this.leafletMap.setView([centerPosition.lat, centerPosition.lng], zoom);
     this.leafletMap.whenReady(() => {
       setTimeout(() => {
         this.leafletMap.invalidateSize();

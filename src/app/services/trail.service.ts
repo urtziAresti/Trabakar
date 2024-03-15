@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Coordinates} from "../interfaces/Coordinates";
 import {Observable} from "rxjs";
-import {Route} from "../interfaces/route";
+import {Route, RouteData} from "../interfaces/route";
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +12,8 @@ export class TrailService {
   constructor(private httpClient: HttpClient) {
   }
 
-  getRouteTrail(originCoords: Coordinates, destinyCoords: Coordinates) : Observable<Route> {
-    return this.httpClient.get<Route>('http://router.project-osrm.org/route/v1/car/' + originCoords.lng + ',' + originCoords.lat +
+  getRouteTrail(originCoords: Coordinates, destinyCoords: Coordinates) : Observable<RouteData> {
+    return this.httpClient.get<RouteData>('http://router.project-osrm.org/route/v1/car/' + originCoords.lng + ',' + originCoords.lat +
       ';' + destinyCoords.lng + ',' + destinyCoords.lat +
       '?alternatives=false&steps=true&geometries=geojson&overview=full&annotations=false')
   }

@@ -12,7 +12,7 @@ export class TrailPage implements OnInit {
 
   constructor(
     private travelService: TravelService,
-              private trailService: TrailService
+    private trailService: TrailService
   ) {
   }
 
@@ -20,13 +20,24 @@ export class TrailPage implements OnInit {
     const travelData: TravelModel = this.travelService.travelData;
     console.warn(travelData)
 
-    if(travelData.origin?.originCoords && travelData.destiny?.destinyCoords){
-      this.trailService.getRouteTrail(travelData.origin.originCoords,travelData.destiny.destinyCoords).subscribe(res => {
+    if (travelData.origin?.originCoords && travelData.destiny?.destinyCoords) {
+      this.trailService.getRouteTrail(travelData.origin.originCoords, travelData.destiny.destinyCoords).subscribe(res => {
         console.warn(res)
       })
 
+    } else {
+      const mockedTravelData: TravelModel = this.travelService.travelData;
+      mockedTravelData.origin = {
+        originCoords: {lat: 43.190913, lng: -3.199353}
+      }
+      mockedTravelData.destiny = {
+        destinyCoords: {lat: 43.211713, lng: -3.138442}
+      }
+      if (mockedTravelData.origin?.originCoords && mockedTravelData.destiny?.destinyCoords)
+        this.trailService.getRouteTrail(mockedTravelData.origin.originCoords, mockedTravelData.destiny.destinyCoords).subscribe(res => {
+          console.warn(res)
+        })
     }
-
   }
 
 }

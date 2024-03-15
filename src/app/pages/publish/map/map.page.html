@@ -11,11 +11,11 @@
 <ion-content>
 
   <div id="leafletMap">
-    <div class="pinned-position-container">
+    <div class="pinned-position-container" *ngIf="origin || destiny">
       <ion-icon src="assets/icon/pinned-point.svg" class="pinned-icon"></ion-icon>
     </div>
 
-    <div class="floating-button-div">
+    <div class="floating-button-div" *ngIf="origin || destiny">
       <ion-button (click)="setPosition()" class="floating-set-position-button">
         <ion-label *ngIf="origin" class="caption1 bold">
           Seleciona origen

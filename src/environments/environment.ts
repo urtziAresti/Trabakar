@@ -7,10 +7,9 @@ export const environment = {
   defaultLanguage: 'es',
   availableLanguages: ['es', 'eu', 'en'],
   prefix: 'TRABACAR_',
-
   defaultPosition: {
-    lontitude: -2.9266229,
-    latitude: 43.2633289
+    lontitude: -3.199353,
+    latitude: 43.190913
   },
   mapZoom : 16,
 

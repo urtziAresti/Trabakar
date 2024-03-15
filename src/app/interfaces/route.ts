@@ -16,7 +16,7 @@ export interface Route {
 }
 
 export interface Geometry {
-  coordinates: number[][]
+  coordinates: ReverseCoordinates[]
   type: string
 }
 
