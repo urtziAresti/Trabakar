@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {TravelModel} from "../../../../models/travel-model";
+import {TravelService} from "../../../../services/travel.service";
 
 @Component({
   selector: 'app-trail',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrailPage implements OnInit {
 
-  constructor() { }
+  constructor(private travelService:TravelService) { }
 
   ngOnInit() {
+
+    const travelData : TravelModel = this.travelService.travelData;
+
+    console.warn(travelData)
   }
 
 }

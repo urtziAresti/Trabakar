@@ -1,6 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {IonPopover} from "@ionic/angular";
-import {TravelPublisherService} from "../../../services/travel-publisher.service";
+import {TravelService} from "../../../services/travel.service";
 import {TravelModel} from "../../../models/travel-model";
 import {ActivatedRoute, NavigationExtras, Router} from "@angular/router";
 
@@ -17,7 +17,7 @@ export class TimeSelectorTimePage implements OnInit {
   @ViewChild('timePopover', {static: false}) timePopover!: IonPopover;
 
   constructor(
-    private travelService: TravelPublisherService,
+    private travelService: TravelService,
     private router: Router,
     private route: ActivatedRoute) {
   }

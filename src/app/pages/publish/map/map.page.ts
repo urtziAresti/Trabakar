@@ -6,7 +6,7 @@ import {environment} from "../../../../environments/environment";
 import {ActivatedRoute, NavigationExtras, Router} from "@angular/router";
 import {Address} from "../../../interfaces/address";
 import {Coordinates} from "../../../interfaces/Coordinates";
-import {TravelPublisherService} from "../../../services/travel-publisher.service";
+import {TravelService} from "../../../services/travel.service";
 import {TravelModel} from "../../../models/travel-model";
 
 @Component({
@@ -27,7 +27,7 @@ export class Map implements OnInit {
               private geocodingService: GeocodingService,
               private route: ActivatedRoute,
               private router: Router,
-              private travelService: TravelPublisherService) {
+              private travelService: TravelService) {
   }
 
 
