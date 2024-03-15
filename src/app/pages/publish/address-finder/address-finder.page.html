@@ -1,6 +1,8 @@
 <ion-header class="ion-no-border">
   <div class="padding-top-xs padding-left-xl">
-    <ion-label class="head2 bold ion-text-center">Desde donde sales?</ion-label>
+    <ion-label *ngIf="origin" class="head2 bold ion-text-center">Desde donde sales?</ion-label>
+    <ion-label *ngIf="destiny" class="head2 bold ion-text-center">A donde vas ?</ion-label>
+
   </div>
 </ion-header>
 <ion-content>

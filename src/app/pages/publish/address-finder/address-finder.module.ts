@@ -1,9 +1,12 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
+
 import {IonicModule} from '@ionic/angular';
-import {DestinyFinderPageRoutingModule} from './destiny-finder-routing.module';
-import {DestinyFinderPage} from './destiny-finder.page';
+
+import {PublishPageRoutingModule} from './publish-routing.module';
+
+import {AddressFinderPage} from './address-finder.page';
 import {TranslateModule} from "@ngx-translate/core";
 
 @NgModule({
@@ -11,10 +14,10 @@ import {TranslateModule} from "@ngx-translate/core";
     CommonModule,
     FormsModule,
     IonicModule,
-    DestinyFinderPageRoutingModule,
+    PublishPageRoutingModule,
     TranslateModule
   ],
-  declarations: [DestinyFinderPage]
+  declarations: [AddressFinderPage]
 })
-export class DestinyFinderPageModule {
+export class OriginFinderPageModule {
 }

@@ -1,15 +1,17 @@
 import {Component, OnInit} from '@angular/core';
 import {AddressFinderService} from "../../../services/address-finder.service";
 import {Address} from "../../../interfaces/address";
-import {NavigationExtras, Router} from "@angular/router";
+import {ActivatedRoute, NavigationExtras, Router} from "@angular/router";
 
 @Component({
   selector: 'app-publish',
-  templateUrl: './origin-finder.page.html',
-  styleUrls: ['./origin-finder.page.scss'],
+  templateUrl: './address-finder.page.html',
+  styleUrls: ['./address-finder.page.scss'],
 })
-export class OriginFinderPage implements OnInit {
+export class AddressFinderPage implements OnInit {
   searchQuery: string = '';
+  origin: boolean = false
+  destiny: boolean = true;
   results: Address[] = [
     {
       "place_id": 282802195,
@@ -43,22 +45,44 @@ export class OriginFinderPage implements OnInit {
   ];
 
   constructor(private adressFinder: AddressFinderService,
-              private router: Router) {
+              private router: Router,
+              private route: ActivatedRoute,
+  ) {
   }
 
   ngOnInit() {
 
+    this.route.queryParams.subscribe(() => {
+        const currentNavigation = this.router.getCurrentNavigation();
+        if (currentNavigation && currentNavigation.extras?.state) {
+          if (currentNavigation.extras.state['destiny']) {
+            this.destiny = true;
+            this.origin = false;
+          }
+        } else {
+          this.destiny = false;
+          this.origin = true;
+        }
+      }
+    )
+
   }
 
   openMap(resultAddress: Address | null) {
-
-    const navigationExtras: NavigationExtras = {
-      state: {
-        originAddress: resultAddress
-      }
-    };
-    this.router.navigateByUrl('home/publish/map', navigationExtras);
+    if (this.origin) {
+      const navigationExtras: NavigationExtras = {
+        state: {
+          originAddress: resultAddress
+        }
+      };
+      this.router.navigateByUrl('home/publish/map', navigationExtras);
+    } else if (this.destiny) {
+      const navigationExtras: NavigationExtras = {
+        state: {
+          destinyAddress: resultAddress
+        }
+      };
+      this.router.navigateByUrl('home/publish/map', navigationExtras);
+    }
   }
-
-
 }

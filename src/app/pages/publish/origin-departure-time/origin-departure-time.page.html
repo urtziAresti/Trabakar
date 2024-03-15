@@ -3,7 +3,9 @@
     <ion-back-button default-href="/" [text]="'BACK' | translate"></ion-back-button>
   </ion-buttons>
   <div class="padding-top-xs padding-left-xl">
-    <ion-label class="head2 bold ion-text-center">A que hora sales ?</ion-label>
+    <ion-label *ngIf="origin" class="head2 bold ion-text-center">A que hora sales ?</ion-label>
+    <ion-label *ngIf="destiny" class="head2 bold ion-text-center">A que hora llegas ? </ion-label>
+
   </div>
 </ion-header>
 

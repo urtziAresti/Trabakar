@@ -3,7 +3,7 @@ import {LocationService} from "../../../services/location.service";
 import {GeocodingService} from "../../../services/geocoding.service";
 import * as L from "leaflet";
 import {environment} from "../../../../environments/environment";
-import {ActivatedRoute, Router} from "@angular/router";
+import {ActivatedRoute, NavigationExtras, Router} from "@angular/router";
 import {Address} from "../../../interfaces/address";
 import {Coordinates} from "../../../interfaces/Coordinates";
 import {TravelPublisherService} from "../../../services/travel-publisher.service";
@@ -44,8 +44,8 @@ export class Map implements OnInit {
                         this.destinyAddress = currentNavigation.extras.state['destinyAddress'] as Address;
                         this.destiny = true;
                         this.origin = false
-                        this.setCenter({lat: this.destinyAddress.lat, lng: this.destinyAddress.lon})
-                        // this.mapInit({lat: this.destinyAddress.lat, lng: this.destinyAddress.lon})
+                        // this.setCenter({lat: this.destinyAddress.lat, lng: this.destinyAddress.lon})
+                        this.mapInit({lat: this.destinyAddress.lat, lng: this.destinyAddress.lon})
                     } else {
                         this.mapInit({
                             lat: environment.defaultPosition.latitude,
@@ -60,27 +60,38 @@ export class Map implements OnInit {
     setPosition() {
         const leafletCenter = this.leafletMap.getCenter();
         this.geocodingService.getAddressFromLatLng(leafletCenter.lat, leafletCenter.lng).subscribe(addressResult => {
-
             if (this.origin) {
-                debugger
                 const travelData: TravelModel = this.travelService.travelData;
                 travelData.origin = {
                     name: addressResult.name,
                     originPostalCode: addressResult.addressData.postcode,
                     originCoords: {lat: addressResult.lat, lng: addressResult.lon}
                 };
+                const navigationExtras: NavigationExtras = {
+                    state: {
+                        origin: true
+                    }
+                };
+
+                this.router.navigateByUrl('home/publish/origin-departure-time', navigationExtras);
             }
             if (this.destiny) {
-                debugger
                 const travelData: TravelModel = this.travelService.travelData;
                 travelData.destiny = {
                     name: addressResult.name,
                     destinyPostalCode: addressResult.addressData.postcode,
                     destinyCoords: {lat: addressResult.lat, lng: addressResult.lon}
                 };
+                const navigationExtras: NavigationExtras = {
+                    state: {
+                        destiny: true
+                    }
+                };
+
+                this.router.navigateByUrl('home/publish/origin-departure-time', navigationExtras);
+
             }
 
-            this.router.navigateByUrl('home/publish/origin-departure-time');
 
         })
     }
