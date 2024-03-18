@@ -71,7 +71,7 @@ export class TimeSelectorTimePage implements OnInit {
 
     if (this.origin) {
       travelData.origin = {
-        departureTime: this.selectedHour,
+        departureTime: this.selectedHour.toString(),
         ...travelData.origin
       };
       const navigationExtras: NavigationExtras = {
@@ -83,7 +83,7 @@ export class TimeSelectorTimePage implements OnInit {
 
     } else if (this.destiny) {
       travelData.destiny = {
-        expectedArrivalTime: this.selectedHour,
+        expectedArrivalTime: this.selectedHour.toString(),
         ...travelData.destiny
       };
       console.warn(travelData)

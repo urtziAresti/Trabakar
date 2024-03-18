@@ -4,6 +4,6 @@ export interface OriginPlace {
   name?: string,
   originPlaceComments?: string;
   originPostalCode?: string;
-  departureTime?: Date;
+  departureTime?: string;
   originCoords?: Coordinates;
 }

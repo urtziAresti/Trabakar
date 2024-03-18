@@ -7,12 +7,10 @@ export interface Travel {
   userID: string;
   origin?: OriginPlace;
   destiny?: DestinyPlace;
-
   travelStartDates?: Date[];
   travelStartTime?: Date;
-
   estimatedPrice?: number;
   numberOfSeatsAvailable?: number;
   comments?: string;
-
+  publishDate?: Date;
 }

@@ -15,26 +15,26 @@ export class TravelService {
   }
 
 
-  async publisTravel() {
-    debugger
-    try {
+  async publisTravel(): Promise<void> {
+    return new Promise<void>((resolve, reject) => {
       const userDocRef = doc(this.firestore, `travels/${this.travelData.travelID}`);
-      await setDoc(userDocRef, {
+      setDoc(userDocRef, {
         travelID: this.travelData.travelID,
         userID: this.auth.currentUser?.uid,
-        origin : this.travelData.origin,
-        destiny:this.travelData.destiny,
+        origin: this.travelData.origin,
+        destiny: this.travelData.destiny,
         travelStartDates: this.travelData.travelStartDates,
         estimatedPrice: this.travelData.estimatedPrice,
-        numberOfSeatsAvailable : this.travelData.numberOfSeatsAvailable,
-        comments : this.travelData.comments,
+        numberOfSeatsAvailable: this.travelData.numberOfSeatsAvailable,
+        comments: this.travelData.comments,
+        publishDate: new Date()
+      }).then((status) => {
+        console.error(status)
+        resolve()
+      }).catch(() => {
+        reject()
       });
-      return true;
-    } catch (e) {
-      console.error(e)
-      return null;
-    }
 
+    })
   }
-
 }

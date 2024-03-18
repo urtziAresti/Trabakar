@@ -4,103 +4,115 @@ import {DestinyPlace} from "../interfaces/destinyPlace";
 import {Md5} from "ts-md5";
 
 export class TravelModel implements Travel {
-    private _travelID: string;
-    private _userID: string;
-    private _origin?: OriginPlace;
-    private _destiny?: DestinyPlace;
-    private _travelStartDates?: Date[];
-    private _estimatedPrice?: number;
-    private _numberOfSeatsAvailable?: number;
-    private _comments?: string;
+  private _travelID: string;
+  private _userID: string;
+  private _origin?: OriginPlace;
+  private _destiny?: DestinyPlace;
+  private _travelStartDates?: Date[];
+  private _estimatedPrice?: number;
+  private _numberOfSeatsAvailable?: number;
+  private _comments?: string;
+  private _publishDate?: Date;
 
-    constructor(
-        userID: string,
-        origin?: OriginPlace,
-        destiny?: DestinyPlace,
-        travelStartDates?: Date[],
-        estimatedPrice?: number,
-        numberOfSeatsAvailable?: number,
-        comments?: string
-    ) {
-        this._travelID = this.generateTravelID();
-        this._userID = userID;
-        this._origin = origin;
-        this._destiny = destiny;
-        this._travelStartDates = travelStartDates;
-        this._estimatedPrice = estimatedPrice;
-        this._numberOfSeatsAvailable = numberOfSeatsAvailable;
-        this._comments = comments;
-    }
+  constructor(
+    userID: string,
+    origin?: OriginPlace,
+    destiny?: DestinyPlace,
+    travelStartDates?: Date[],
+    estimatedPrice?: number,
+    numberOfSeatsAvailable?: number,
+    comments?: string,
+    publishDate?: Date
+  ) {
+    this._travelID = this.generateTravelID();
+    this._userID = userID;
+    this._origin = origin;
+    this._destiny = destiny;
+    this._travelStartDates = travelStartDates;
+    this._estimatedPrice = estimatedPrice;
+    this._numberOfSeatsAvailable = numberOfSeatsAvailable;
+    this._comments = comments;
+    this._publishDate = publishDate;
+  }
 
-    generateTravelID() {
-        return Md5.hashStr(new Date().toString());
-    }
-
-
-    // Getters
-    get travelID(): string {
-        return this._travelID;
-    }
-
-    get userID(): string {
-        return this._userID;
-    }
-
-    get origin(): OriginPlace | undefined {
-        return this._origin;
-    }
-
-    get destiny(): DestinyPlace | undefined {
-        return this._destiny;
-    }
-
-    get travelStartDates(): Date[] | undefined {
-        return this._travelStartDates;
-    }
+  generateTravelID() {
+    return Md5.hashStr(new Date().toString());
+  }
 
 
-    get estimatedPrice(): number | undefined {
-        return this._estimatedPrice;
-    }
+  // Getters
+  get travelID(): string {
+    return this._travelID;
+  }
 
-    get numberOfSeatsAvailable(): number | undefined {
-        return this._numberOfSeatsAvailable;
-    }
+  get userID(): string {
+    return this._userID;
+  }
 
-    get comments(): string | undefined {
-        return this._comments;
-    }
+  get origin(): OriginPlace | undefined {
+    return this._origin;
+  }
 
-    // Setters
-    set travelID(value: string) {
-        this._travelID = value;
-    }
+  get destiny(): DestinyPlace | undefined {
+    return this._destiny;
+  }
 
-    set userID(value: string) {
-        this._userID = value;
-    }
+  get travelStartDates(): Date[] | undefined {
+    return this._travelStartDates;
+  }
 
-    set origin(value: OriginPlace | undefined) {
-        this._origin = value;
-    }
 
-    set destiny(value: DestinyPlace | undefined) {
-        this._destiny = value;
-    }
+  get publishDate(): Date | undefined {
+    return this._publishDate;
+  }
 
-    set travelStartDates(value: Date[] | undefined) {
-        this._travelStartDates = value;
-    }
 
-    set estimatedPrice(value: number | undefined) {
-        this._estimatedPrice = value;
-    }
+  get estimatedPrice(): number | undefined {
+    return this._estimatedPrice;
+  }
 
-    set numberOfSeatsAvailable(value: number | undefined) {
-        this._numberOfSeatsAvailable = value;
-    }
+  get numberOfSeatsAvailable(): number | undefined {
+    return this._numberOfSeatsAvailable;
+  }
 
-    set comments(value: string | undefined) {
-        this._comments = value;
-    }
+  get comments(): string | undefined {
+    return this._comments;
+  }
+
+  // Setters
+  set travelID(value: string) {
+    this._travelID = value;
+  }
+
+  set userID(value: string) {
+    this._userID = value;
+  }
+
+  set origin(value: OriginPlace | undefined) {
+    this._origin = value;
+  }
+
+  set destiny(value: DestinyPlace | undefined) {
+    this._destiny = value;
+  }
+
+  set travelStartDates(value: Date[] | undefined) {
+    this._travelStartDates = value;
+  }
+
+  set publishDate(value: Date | undefined) {
+    this._publishDate = value;
+  }
+
+  set estimatedPrice(value: number | undefined) {
+    this._estimatedPrice = value;
+  }
+
+  set numberOfSeatsAvailable(value: number | undefined) {
+    this._numberOfSeatsAvailable = value;
+  }
+
+  set comments(value: string | undefined) {
+    this._comments = value;
+  }
 }

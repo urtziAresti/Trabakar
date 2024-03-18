@@ -4,6 +4,6 @@ export interface DestinyPlace {
   name?: string;
   destinyPlaceComments?: string;
   destinyPostalCode?: string;
-  expectedArrivalTime?: Date;
+  expectedArrivalTime?: string;
   destinyCoords?: Coordinates;
 }
