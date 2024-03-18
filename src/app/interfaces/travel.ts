@@ -8,7 +8,7 @@ export interface Travel {
   origin?: OriginPlace;
   destiny?: DestinyPlace;
 
-  travelStartDate?: Date;
+  travelStartDates?: Date[];
   travelStartTime?: Date;
 
   travelEndDate?: Date;

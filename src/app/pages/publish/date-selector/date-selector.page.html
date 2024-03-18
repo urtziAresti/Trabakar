@@ -1,0 +1,31 @@
+<ion-header class="ion-no-border">
+  <ion-buttons slot="start">
+    <ion-back-button default-href="/" [text]="'BACK' | translate"></ion-back-button>
+  </ion-buttons>
+  <div class="padding-top-xs padding-left-xs">
+    <ion-label class="head2 bold ion-text-center">Que Dia haces el viaje ?</ion-label>
+  </div>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-datetime
+      color="secondary"
+      size="cover"
+      first-day-of-week="1"
+      mode="ios"
+      presentation="date"
+      [(ngModel)]="selectedDates"
+      [multiple]="true"
+      [preferWheel]="false"
+    ></ion-datetime>
+  </div>
+
+
+</ion-content>
+
+<ion-footer class="padding-bottom-l padding-right-l ">
+  <ion-fab-button class="align-right" (click)="nextPage()">
+    <ion-icon name="arrow-forward-outline"></ion-icon>
+  </ion-fab-button>
+</ion-footer>

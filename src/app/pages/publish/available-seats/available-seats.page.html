@@ -1,0 +1,33 @@
+<ion-header class="ion-no-border">
+  <ion-buttons slot="start">
+    <ion-back-button default-href="/" [text]="'BACK' | translate"></ion-back-button>
+  </ion-buttons>
+  <div class="padding-top-xs padding-left-xs">
+    <ion-label class="head3 bold ion-text-center">Cuantos huecos tienes disponibles ?</ion-label>
+  </div>
+</ion-header>
+
+<ion-content>
+
+
+  <div class="padding-y-xxl seats-container">
+    <div class="seat-container-value  padding-left-xl padding-right-xs">
+      <ion-label class="head1 bold ">{{ availableSeats }}
+      </ion-label>
+      <div class="icons">
+        <ion-icon (click)="availableSeats < 7 && addSeat()" name="add-outline"></ion-icon>
+        <ion-icon (click)="availableSeats > 1 && removeSeat()" name="remove-outline"></ion-icon>
+      </div>
+
+
+    </div>
+  </div>
+
+</ion-content>
+
+
+<ion-footer class="padding-bottom-l padding-right-l ">
+  <ion-fab-button class="align-right" (click)="nextPage()">
+    <ion-icon name="arrow-forward-outline"></ion-icon>
+  </ion-fab-button>
+</ion-footer>

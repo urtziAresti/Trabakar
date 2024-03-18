@@ -18,6 +18,14 @@ const routes: Routes = [
   {
     path: 'trail',
     loadChildren: () => import('../travel-trail/trail/trail.module').then(m => m.TrailPageModule)
+  },
+  {
+    path: 'date-selector',
+    loadChildren: () => import('../date-selector/date-selector.module').then( m => m.DateSelectorPageModule)
+  },
+  {
+    path: 'available-seats',
+    loadChildren: () => import('../available-seats/available-seats.module').then( m => m.AvailableSeatsPageModule)
   }
 ];
 

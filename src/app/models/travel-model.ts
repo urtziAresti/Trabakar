@@ -8,7 +8,7 @@ export class TravelModel implements Travel {
     private _userID: string;
     private _origin?: OriginPlace;
     private _destiny?: DestinyPlace;
-    private _travelStartDate?: Date;
+    private _travelStartDates?: Date[];
     private _travelStartTime?: Date;
     private _travelEndDate?: Date;
     private _travelEndTime?: Date;
@@ -20,7 +20,7 @@ export class TravelModel implements Travel {
         userID: string,
         origin?: OriginPlace,
         destiny?: DestinyPlace,
-        travelStartDate?: Date,
+        travelStartDates?: Date[],
         travelStartTime?: Date,
         travelEndDate?: Date,
         travelEndTime?: Date,
@@ -32,7 +32,7 @@ export class TravelModel implements Travel {
         this._userID = userID;
         this._origin = origin;
         this._destiny = destiny;
-        this._travelStartDate = travelStartDate;
+        this._travelStartDates = travelStartDates;
         this._travelStartTime = travelStartTime;
         this._travelEndDate = travelEndDate;
         this._travelEndTime = travelEndTime;
@@ -63,8 +63,8 @@ export class TravelModel implements Travel {
         return this._destiny;
     }
 
-    get travelStartDate(): Date | undefined {
-        return this._travelStartDate;
+    get travelStartDates(): Date[] | undefined {
+        return this._travelStartDates;
     }
 
     get travelStartTime(): Date | undefined {
@@ -108,8 +108,8 @@ export class TravelModel implements Travel {
         this._destiny = value;
     }
 
-    set travelStartDate(value: Date | undefined) {
-        this._travelStartDate = value;
+    set travelStartDates(value: Date[] | undefined) {
+        this._travelStartDates = value;
     }
 
     set travelStartTime(value: Date | undefined) {

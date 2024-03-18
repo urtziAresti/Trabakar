@@ -6,5 +6,6 @@ npm run build-deploy to generate prod app and deploy to firebase hosting
 -Date selector (with range of dates) : range types entresemana, dia suelto, findes
 -Seats selector
 -Price Selector
--
+-Car model type Form in app database
+
 
