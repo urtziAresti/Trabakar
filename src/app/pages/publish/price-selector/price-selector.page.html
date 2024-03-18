@@ -3,27 +3,30 @@
     <ion-back-button default-href="/" [text]="'BACK' | translate"></ion-back-button>
   </ion-buttons>
   <div class="padding-top-xs padding-left-xs">
-    <ion-label class="head3 bold ion-text-center">Cuantos huecos tienes disponibles ?</ion-label>
+    <ion-label class="head2 bold ion-text-center">Cuanto cobras ?</ion-label>
   </div>
 </ion-header>
 
 <ion-content>
-
-
   <div class="padding-y-xxl seats-container">
     <div class="seat-container-value  padding-left-xl padding-right-xs">
-      <ion-label class="head1 bold ">{{ availableSeats }}
+      <ion-label class="head1 bold ">{{ estimatedPrice }}
       </ion-label>
       <div class="icons">
-        <ion-icon (click)="availableSeats < 7 && addSeat()" name="add-outline"></ion-icon>
-        <ion-icon (click)="availableSeats > 1 && removeSeat()" name="remove-outline"></ion-icon>
+        <ion-icon (click)="addEur()" name="add-outline"></ion-icon>
+        <ion-icon (click)="estimatedPrice > 0 && removeEur()" name="remove-outline"></ion-icon>
       </div>
-
-
+      <ion-icon name="logo-euro"></ion-icon>
     </div>
   </div>
 
+  <div class="padding-x-xl">
+    <ion-textarea [(ngModel)]="travelComments" placeholder="Introduce algun comentario si es necesario">
+    </ion-textarea>
+  </div>
+
 </ion-content>
+
 
 <ion-footer class="padding-bottom-l padding-right-l ">
   <ion-fab-button class="align-right" (click)="nextPage()">

@@ -26,7 +26,12 @@ const routes: Routes = [
   {
     path: 'available-seats',
     loadChildren: () => import('../available-seats/available-seats.module').then( m => m.AvailableSeatsPageModule)
-  }
+  },
+  {
+    path: 'price-selector',
+    loadChildren: () => import('../price-selector/price-selector.module').then( m => m.PriceSelectorPageModule)
+  },
+
 ];
 
 @NgModule({

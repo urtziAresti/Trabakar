@@ -11,9 +11,6 @@ export interface Travel {
   travelStartDates?: Date[];
   travelStartTime?: Date;
 
-  travelEndDate?: Date;
-  travelEndTime?: Date;
-
   estimatedPrice?: number;
   numberOfSeatsAvailable?: number;
   comments?: string;

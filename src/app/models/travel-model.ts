@@ -9,9 +9,6 @@ export class TravelModel implements Travel {
     private _origin?: OriginPlace;
     private _destiny?: DestinyPlace;
     private _travelStartDates?: Date[];
-    private _travelStartTime?: Date;
-    private _travelEndDate?: Date;
-    private _travelEndTime?: Date;
     private _estimatedPrice?: number;
     private _numberOfSeatsAvailable?: number;
     private _comments?: string;
@@ -21,9 +18,6 @@ export class TravelModel implements Travel {
         origin?: OriginPlace,
         destiny?: DestinyPlace,
         travelStartDates?: Date[],
-        travelStartTime?: Date,
-        travelEndDate?: Date,
-        travelEndTime?: Date,
         estimatedPrice?: number,
         numberOfSeatsAvailable?: number,
         comments?: string
@@ -33,9 +27,6 @@ export class TravelModel implements Travel {
         this._origin = origin;
         this._destiny = destiny;
         this._travelStartDates = travelStartDates;
-        this._travelStartTime = travelStartTime;
-        this._travelEndDate = travelEndDate;
-        this._travelEndTime = travelEndTime;
         this._estimatedPrice = estimatedPrice;
         this._numberOfSeatsAvailable = numberOfSeatsAvailable;
         this._comments = comments;
@@ -67,17 +58,6 @@ export class TravelModel implements Travel {
         return this._travelStartDates;
     }
 
-    get travelStartTime(): Date | undefined {
-        return this._travelStartTime;
-    }
-
-    get travelEndDate(): Date | undefined {
-        return this._travelEndDate;
-    }
-
-    get travelEndTime(): Date | undefined {
-        return this._travelEndTime;
-    }
 
     get estimatedPrice(): number | undefined {
         return this._estimatedPrice;
@@ -110,18 +90,6 @@ export class TravelModel implements Travel {
 
     set travelStartDates(value: Date[] | undefined) {
         this._travelStartDates = value;
-    }
-
-    set travelStartTime(value: Date | undefined) {
-        this._travelStartTime = value;
-    }
-
-    set travelEndDate(value: Date | undefined) {
-        this._travelEndDate = value;
-    }
-
-    set travelEndTime(value: Date | undefined) {
-        this._travelEndTime = value;
     }
 
     set estimatedPrice(value: number | undefined) {

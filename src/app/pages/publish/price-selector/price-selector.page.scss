@@ -1,0 +1,29 @@
+.align-right{
+  float: right;
+}
+.seats-container{
+  display: flex;
+  justify-content: center;
+}
+
+.seat-container-value{
+  border-radius: 20px;
+  border:1px solid darkgray;
+  display: flex;
+  width: 100px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.align-right{
+  float: right;
+}
+
+.icons{
+  display: flex;
+  flex-direction: column;
+  scale: 1.4;
+}
