@@ -3,28 +3,22 @@
     <ion-back-button default-href="/" [text]="'BACK' | translate"></ion-back-button>
   </ion-buttons>
   <div class="padding-top-xs padding-left-xl">
-    <ion-label *ngIf="origin" class="head2 bold ion-text-center">Desde donde sales?</ion-label>
-    <ion-label *ngIf="destiny" class="head2 bold ion-text-center">A donde vas ?</ion-label>
-
+    <ion-label class="head2 bold ion-text-center" *ngIf="origin">Desde donde sales?</ion-label>
+    <ion-label class="head2 bold ion-text-center" *ngIf="destiny">A donde vas ?</ion-label>
   </div>
 </ion-header>
-<ion-content>
 
+<ion-content>
   <div id="leafletMap">
     <div class="pinned-position-container" *ngIf="origin || destiny">
       <ion-icon src="assets/icon/pinned-point.svg" class="pinned-icon"></ion-icon>
     </div>
-
-    <div class="floating-button-div" *ngIf="origin || destiny">
+    <div class="floating-button-div">
       <ion-button (click)="setPosition()" class="floating-set-position-button">
-        <ion-label *ngIf="origin" class="caption1 bold">
-          Seleciona origen
-        </ion-label>
-        <ion-label *ngIf="destiny" class="caption1 bold">
-          Seleciona destino
-        </ion-label>
+        <ion-label class="caption1 bold" *ngIf="origin">Selecciona origen</ion-label>
+        <ion-label class="caption1 bold" *ngIf="destiny">Selecciona destino</ion-label>
+        <ion-label class="caption1 bold" *ngIf="!origin && !destiny">Aceptar Ruta</ion-label>
       </ion-button>
     </div>
   </div>
-
 </ion-content>
