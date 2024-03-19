@@ -36,44 +36,53 @@ export class Map implements OnInit {
 
   ngOnInit() {
     this.route.queryParams.subscribe(() => {
-      const currentNavigation = this.router.getCurrentNavigation();
-      if (currentNavigation && currentNavigation.extras?.state) {
-        const state = currentNavigation.extras.state;
-        if (state['originAddress']) {
-          this.originAddress = state['originAddress'] as Address;
-          this.origin = true;
-          this.destiny = false;
-          this.mapInit();
-          this.setCenter({lat: this.originAddress.lat, lng: this.originAddress.lon}, 16)
-        } else if (state['originAddress'] == null) {
-          this.origin = true;
-          this.destiny = false;
-          this.mapInit();
-          this.getCurrentPosition()
-        } else if (state['destinyAddress']) {
-          this.destinyAddress = state['destinyAddress'] as Address;
-          this.destiny = true;
-          this.origin = false;
-          this.mapInit();
-          this.setCenter({lat: this.destinyAddress.lat, lng: this.destinyAddress.lon}, 16)
-        } else if (['destinyAddress']) {
-          this.destiny = true;
-          this.origin = false;
-          this.mapInit();
-          this.getCurrentPosition()
-        } else if (state['trailInfo']) {
-          console.warn('Trail info');
-          this.destiny = false;
-          this.origin = false;
-          this.getRouteTrail();
+        const currentNavigation = this.router.getCurrentNavigation();
+        if (currentNavigation && currentNavigation.extras?.state) {
+          const state = currentNavigation.extras.state;
+
+          if (state['origin'] == true) {
+            if (state['originAddress']) {
+              this.originAddress = state['originAddress'] as Address;
+              this.origin = true;
+              this.destiny = false;
+              this.mapInit();
+              this.setCenter({lat: this.originAddress.lat, lng: this.originAddress.lon}, 16)
+            } else {
+              this.origin = true;
+              this.destiny = false;
+              this.mapInit();
+              this.getCurrentPosition()
+            }
+          } else if (state['destiny'] == true) {
+            if (state['destinyAddress']) {
+              this.destinyAddress = state['destinyAddress'] as Address;
+              this.destiny = true;
+              this.origin = false;
+              this.mapInit();
+              this.setCenter({lat: this.destinyAddress.lat, lng: this.destinyAddress.lon}, 16)
+            } else {
+              this.destiny = true;
+              this.origin = false;
+              this.mapInit();
+              this.getCurrentPosition()
+            }
+          } else if (state['origin'] == false && state['destiny'] == false) {
+            if (state['trailInfo']) {
+              console.warn('Trail info');
+              this.destiny = false;
+              this.origin = false;
+              this.getRouteTrail();
+            }
+          }
+        } else {
+          this.setCenter({
+            lat: environment.defaultPosition.latitude,
+            lng: environment.defaultPosition.lontitude,
+          }, 16);
         }
-      } else {
-        this.setCenter({
-          lat: environment.defaultPosition.latitude,
-          lng: environment.defaultPosition.lontitude,
-        }, 16);
       }
-    });
+    )
+    ;
   }
 
   mapInit() {
@@ -93,14 +102,19 @@ export class Map implements OnInit {
         const travelData: TravelModel = this.travelService.travelData;
         if (this.origin) {
           travelData.origin = {
-            name: addressResult.name,
+            name: this.originAddress.name,
+            address: addressResult.name,
+            townName: addressResult.addressData.town || this.originAddress.name,
             originPostalCode: addressResult.addressData.postcode,
             originCoords: {lat: addressResult.lat, lng: addressResult.lon},
           };
         }
         if (this.destiny) {
+          debugger
           travelData.destiny = {
-            name: addressResult.name,
+            name: this.destinyAddress.name,
+            address: addressResult.name,
+            townName: addressResult.addressData.town || this.destinyAddress.name,
             destinyPostalCode: addressResult.addressData.postcode,
             destinyCoords: {lat: addressResult.lat, lng: addressResult.lon},
           };
@@ -122,7 +136,9 @@ export class Map implements OnInit {
   //   });
   // }
 
-  getCurrentPosition(): void {
+  getCurrentPosition()
+    :
+    void {
     this.locationService.getCurrentPosition().subscribe({
       next: (position) => {
         this.leafletMap.setView([position.coords.latitude, position.coords.longitude], this.zoom);
@@ -140,7 +156,12 @@ export class Map implements OnInit {
     });
   }
 
-  setCenter(centerPosition: Coordinates, zoom: number) {
+  setCenter(centerPosition
+              :
+              Coordinates, zoom
+              :
+              number
+  ) {
     this.leafletMap.setView([centerPosition.lat, centerPosition.lng], zoom);
     this.loadingPosition = false;
     this.leafletMap.whenReady(() => {
@@ -179,7 +200,10 @@ export class Map implements OnInit {
     }
   }
 
-  drawRoute(trailData: any) {
+  drawRoute(trailData
+              :
+              any
+  ) {
     const pathStyle = {
       color: 'blue',
       weight: 4,
@@ -195,7 +219,9 @@ export class Map implements OnInit {
     });
   }
 
-  watchPosition(): void {
+  watchPosition()
+    :
+    void {
     this.locationService.watchPosition().subscribe({
       next: (position) => {
         console.log('Updated Position:', position);

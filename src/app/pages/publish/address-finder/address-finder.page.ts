@@ -54,14 +54,18 @@ export class AddressFinderPage implements OnInit {
     if (this.origin) {
       const navigationExtras: NavigationExtras = {
         state: {
-          originAddress: resultAddress
+          originAddress: resultAddress,
+          origin: true,
+          destiny: false
         }
       };
       this.router.navigateByUrl('home/publish/map', navigationExtras);
     } else if (this.destiny) {
       const navigationExtras: NavigationExtras = {
         state: {
-          destinyAddress: resultAddress
+          destinyAddress: resultAddress,
+          origin: false,
+          destiny: true
         }
       };
       this.router.navigateByUrl('home/publish/map', navigationExtras);

@@ -89,7 +89,9 @@ export class TimeSelectorTimePage implements OnInit {
       console.warn(travelData)
       const navigationExtras: NavigationExtras = {
         state: {
-          trailInfo: true
+          trailInfo: true,
+          origin:false,
+          destiny:false
         }
       };
       this.router.navigateByUrl('home/publish/map',navigationExtras);

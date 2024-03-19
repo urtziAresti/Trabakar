@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {Travel} from "../../interfaces/travel";
 import {TravelService} from "../../services/travel.service";
 
 @Component({
@@ -9,7 +8,6 @@ import {TravelService} from "../../services/travel.service";
 })
 export class SearchPage implements OnInit {
 
-  travels: Travel[] = [];
   originSearchQuery:string = ''
   destinySearchQuery:string = ''
   selectedDateValue : Date = new Date();
@@ -19,16 +17,5 @@ export class SearchPage implements OnInit {
   }
 
   ngOnInit() {
-    this.travelService.allTravels.subscribe(allTravels => {
-      console.warn(allTravels)
-      this.travels = allTravels;
-
-
-    })
-
-
-    // this.travelService.filterTravelsByOrigin$("del palacio").subscribe(res => {
-    //   console.warn(res)
-    // })
   }
 }
