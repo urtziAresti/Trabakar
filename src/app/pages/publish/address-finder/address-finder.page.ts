@@ -12,37 +12,7 @@ export class AddressFinderPage implements OnInit {
   searchQuery: string = '';
   origin: boolean = false
   destiny: boolean = true;
-  results: Address[] = [
-    {
-      "place_id": 282802195,
-      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-      "osm_type": "relation",
-      "osm_id": 341908,
-      "lat": 43.1940413,
-      "lon": -3.1945492,
-      "category": "boundary",
-      "type": "administrative",
-      "place_rank": 16,
-      "importance": 0.4778744230054683,
-      "addresstype": "town",
-      "name": "Valmaseda",
-      "display_name": "Valmaseda, Vizcaya, País Vasco, 48800, España",
-      "addressData": {
-        "town": "Valmaseda",
-        "province": "Vizcaya",
-        "state": "País Vasco",
-        "postcode": "48800",
-        "country": "España",
-        "country_code": "es"
-      },
-      "boundingbox": [
-        "43.1691916",
-        "43.2191916",
-        "-3.2532734",
-        "-3.1782400"
-      ]
-    }
-  ];
+  results: Address[] = [];
 
   constructor(private adressFinder: AddressFinderService,
               private router: Router,
@@ -66,6 +36,18 @@ export class AddressFinderPage implements OnInit {
       }
     )
 
+  }
+
+  filterAddress() {
+    console.warn(this.searchQuery)
+    if (this.searchQuery.length > 1) {
+      this.adressFinder.findAddress(this.searchQuery).subscribe(addresses => {
+        console.warn(addresses)
+        this.results = addresses;
+      })
+    } else {
+      this.results = [];
+    }
   }
 
   openMap(resultAddress: Address | null) {

@@ -38,3 +38,11 @@
   display: flex;
   justify-content: center;
 }
+
+.loading-position{
+  z-index: 500;
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  scale: 2.0;
+}

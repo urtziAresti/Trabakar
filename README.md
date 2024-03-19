@@ -3,13 +3,12 @@
 npm run build-deploy to generate prod app and deploy to firebase hosting
 ##BREAK DEJAR EN RAMA APARTE stable-skeleton
 
--Comments
--Alert de publicacion correcta
--Traducir
--Subir version
--Car model type Form in app database .csv
--Buscador de Viajes
 
+-Usar ubicacion actual
+-Buscador de Viajes 
+
+-Car model type Form in app database .csv
+-Traducir
 -Probar todo
 -Subir version
 -Poner publicidad

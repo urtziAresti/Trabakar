@@ -8,24 +8,30 @@
 <ion-content>
 
   <ion-searchbar [debounce]="1000" [(ngModel)]="searchQuery"
-                 show-clear-button="always"></ion-searchbar>
+                 (ionInput)="filterAddress()" show-clear-button="always"></ion-searchbar>
   <ion-list lines="none">
     <ion-item detail="true" (click)="openMap(null)">
       <ion-icon slot="start" src="assets/icon/geolocation-icon.svg"></ion-icon>
       <div class="padding-bottom-xs">
         <ion-label class="caption2 bold">Utilizar ubicacion actual</ion-label>
       </div>
-
     </ion-item>
 
     <ion-item *ngFor="let result of results" detail="true" (click)="openMap(result)">
       <div class="padding-bottom-xs">
         <ion-label class="caption2 bold">
           {{ result.name }}
-          {{ result.addressData.province }}
-          ,{{ result.addressData.postcode }}
+          <span *ngIf="result.addressData.province">
+            , {{ result.addressData.province }}
+          </span>
+          <span *ngIf="result.addressData.postcode">
+            , {{ result.addressData.postcode }}
+          </span>
         </ion-label>
       </div>
     </ion-item>
+    <div class="padding-left-l padding-top-l" *ngIf="!results.length">
+      No hay resultados
+    </div>
   </ion-list>
 </ion-content>

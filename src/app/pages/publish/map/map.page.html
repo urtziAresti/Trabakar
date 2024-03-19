@@ -11,10 +11,13 @@
 <ion-content>
   <div id="leafletMap">
     <div class="pinned-position-container" *ngIf="origin || destiny">
-      <ion-icon src="assets/icon/pinned-point.svg" class="pinned-icon"></ion-icon>
+      <ion-spinner class="loading-position" color="primary" *ngIf="loadingPosition">
+      </ion-spinner>
+      <ion-icon src="assets/icon/pinned-point.svg" *ngIf="!loadingPosition" class="pinned-icon"></ion-icon>
     </div>
+
     <div class="floating-button-div">
-      <ion-button (click)="setPosition()" class="floating-set-position-button">
+      <ion-button (click)="setPosition()" [disabled]="loadingPosition" class="floating-set-position-button">
         <ion-label class="caption1 bold" *ngIf="origin">Selecciona origen</ion-label>
         <ion-label class="caption1 bold" *ngIf="destiny">Selecciona destino</ion-label>
         <ion-label class="caption1 bold" *ngIf="!origin && !destiny">Aceptar Ruta</ion-label>

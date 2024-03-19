@@ -14,7 +14,7 @@ export class AddressFinderService {
 
   findAddress(text: string): Observable<Address[]> {
     return this.httpClient.get<IAddress[]>(
-      `https://nominatim.openstreetmap.org/search.php?q=${text}&addressdetails=1&format=jsonv2&limit=3`
+      `https://nominatim.openstreetmap.org/search.php?city=${text}&addressdetails=1&countrycodes=es&format=jsonv2&limit=5`
     ).pipe(
       map(res => {
         return res.map(item => ({

@@ -1,7 +1,11 @@
 import {Injectable} from '@angular/core';
 import {TravelModel} from '../models/travel-model';
-import {doc, Firestore, setDoc} from "@angular/fire/firestore";
+import {collection, collectionData, doc, Firestore, setDoc} from "@angular/fire/firestore";
 import {Auth} from "@angular/fire/auth";
+import {map, Observable} from "rxjs";
+import {Travel} from "../interfaces/travel";
+import {DocumentData} from "@angular/fire/compat/firestore";
+import {UserProfile} from "../interfaces/user-profile";
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +16,45 @@ export class TravelService {
 
   constructor(private auth: Auth,
               private firestore: Firestore) {
+  }
+
+
+  getAllUsers(): Observable<UserProfile[]> {
+    const allUsersCollectionRef = collection(this.firestore, `users`);
+    return collectionData(allUsersCollectionRef).pipe(
+      map((docs: DocumentData[]) => {
+        return docs.map(doc => {
+          return {
+            id: doc['id'],
+            name: doc['name'],
+            surname: doc['surname']
+          };
+        });
+      })
+    );
+  }
+
+
+  getAllTravels(): Observable<Travel[]> {
+    const allUsersCollectionRef = collection(this.firestore, `travels`);
+    return collectionData(allUsersCollectionRef).pipe(
+      map((allTravels: DocumentData[]) => {
+        return allTravels.map(travelData => {
+          return {
+            destiny: travelData['destiny'],
+            origin: travelData['origin'],
+            userID: travelData['userID'],
+            travelID: travelData['travelID'],
+            comments: travelData['comments'],
+            numberOfSeatsAvailable: travelData['numberOfSeatsAvailable'],
+            estimatedPrice: travelData['estimatedPrice'],
+            publishDate: travelData['publishDate'],
+            travelStartDates: travelData['travelStartDates'],
+            travelStartTime: travelData['travelStartTime']
+          };
+        });
+      })
+    );
   }
 
 

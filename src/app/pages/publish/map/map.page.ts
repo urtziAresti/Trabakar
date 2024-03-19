@@ -22,6 +22,7 @@ export class Map implements OnInit {
   destinyAddress!: Address;
   origin: boolean = false;
   destiny: boolean = false;
+  loadingPosition: boolean = true;
 
   constructor(
     public locationService: LocationService,
@@ -42,12 +43,24 @@ export class Map implements OnInit {
           this.originAddress = state['originAddress'] as Address;
           this.origin = true;
           this.destiny = false;
-          this.mapInit({lat: this.originAddress.lat, lng: this.originAddress.lon});
+          this.mapInit();
+          this.setCenter({lat: this.originAddress.lat, lng: this.originAddress.lon}, 16)
+        } else if (state['originAddress'] == null) {
+          this.origin = true;
+          this.destiny = false;
+          this.mapInit();
+          this.getCurrentPosition()
         } else if (state['destinyAddress']) {
           this.destinyAddress = state['destinyAddress'] as Address;
           this.destiny = true;
           this.origin = false;
-          this.mapInit({lat: this.destinyAddress.lat, lng: this.destinyAddress.lon});
+          this.mapInit();
+          this.setCenter({lat: this.destinyAddress.lat, lng: this.destinyAddress.lon}, 16)
+        } else if (['destinyAddress']) {
+          this.destiny = true;
+          this.origin = false;
+          this.mapInit();
+          this.getCurrentPosition()
         } else if (state['trailInfo']) {
           console.warn('Trail info');
           this.destiny = false;
@@ -55,20 +68,92 @@ export class Map implements OnInit {
           this.getRouteTrail();
         }
       } else {
-        debugger
-        this.mapInit({
+        this.setCenter({
           lat: environment.defaultPosition.latitude,
           lng: environment.defaultPosition.lontitude,
-        });
+        }, 16);
       }
     });
   }
 
+  mapInit() {
+    this.leafletMap = new L.Map('leafletMap');
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(this.leafletMap);
+    this.leafletMap.whenReady(() => {
+      setTimeout(() => {
+        this.leafletMap.invalidateSize();
+      }, 10);
+    });
+  }
+
+  setPosition() {
+    if (this.origin || this.destiny) {
+      const leafletCenter = this.leafletMap.getCenter();
+      this.geocodingService.getAddressFromLatLng(leafletCenter.lat, leafletCenter.lng).subscribe(addressResult => {
+        const travelData: TravelModel = this.travelService.travelData;
+        if (this.origin) {
+          travelData.origin = {
+            name: addressResult.name,
+            originPostalCode: addressResult.addressData.postcode,
+            originCoords: {lat: addressResult.lat, lng: addressResult.lon},
+          };
+        }
+        if (this.destiny) {
+          travelData.destiny = {
+            name: addressResult.name,
+            destinyPostalCode: addressResult.addressData.postcode,
+            destinyCoords: {lat: addressResult.lat, lng: addressResult.lon},
+          };
+        }
+        const navigationExtras: NavigationExtras = {
+          state: {origin: this.origin, destiny: this.destiny},
+        };
+        this.router.navigateByUrl('home/publish/time-selector', navigationExtras);
+      });
+    } else {
+      this.router.navigateByUrl('home/publish/date-selector');
+    }
+  }
+
+  // flyTo(userCoords: Coordinates): void {
+  //   this.leafletMap.flyTo([userCoords.lat, userCoords.lng], 16, {
+  //     animate: true,
+  //     duration: 1,
+  //   });
+  // }
+
+  getCurrentPosition(): void {
+    this.locationService.getCurrentPosition().subscribe({
+      next: (position) => {
+        this.leafletMap.setView([position.coords.latitude, position.coords.longitude], this.zoom);
+        this.loadingPosition = false;
+        this.leafletMap.whenReady(() => {
+          setTimeout(() => {
+            this.leafletMap.invalidateSize();
+          }, 10);
+        });
+        // this.flyTo({lat: position.coords.latitude, lng: position.coords.longitude});
+      },
+      error: (error) => {
+        console.error('Error getting current position:', error);
+      },
+    });
+  }
+
+  setCenter(centerPosition: Coordinates, zoom: number) {
+    this.leafletMap.setView([centerPosition.lat, centerPosition.lng], zoom);
+    this.loadingPosition = false;
+    this.leafletMap.whenReady(() => {
+      setTimeout(() => {
+        this.leafletMap.invalidateSize();
+      }, 10);
+    });
+  }
+
+
   getRouteTrail() {
     const mockedTravelData: TravelModel = this.travelService.travelData;
-
     const travelData: TravelModel = this.travelService.travelData;
-    console.warn(travelData)
 
     if (travelData.origin?.originCoords && travelData.destiny?.destinyCoords) {
       this.trailService.getRouteTrail(travelData.origin.originCoords, travelData.destiny.destinyCoords).subscribe(trailData => {
@@ -82,7 +167,11 @@ export class Map implements OnInit {
         destinyCoords: {lat: 43.211713, lng: -3.138442},
       };
       if (mockedTravelData.origin?.originCoords && mockedTravelData.destiny?.destinyCoords) {
-        this.mapInit({lat: mockedTravelData.origin!.originCoords.lat, lng: mockedTravelData.origin!.originCoords.lng});
+        this.mapInit()
+        this.setCenter({
+          lat: mockedTravelData.origin!.originCoords.lat,
+          lng: mockedTravelData.origin!.originCoords.lng
+        }, 16)
         this.trailService.getRouteTrail(mockedTravelData.origin.originCoords, mockedTravelData.destiny.destinyCoords).subscribe(trailData => {
           this.drawRoute(trailData);
         });
@@ -103,79 +192,6 @@ export class Map implements OnInit {
     this.leafletMap.fitBounds(geoJSON.getBounds(), {
       padding: [10, 10],
       animate: true,
-    });
-  }
-
-  setPosition() {
-    if(this.origin || this.destiny){
-
-
-    const leafletCenter = this.leafletMap.getCenter();
-    this.geocodingService.getAddressFromLatLng(leafletCenter.lat, leafletCenter.lng).subscribe(addressResult => {
-      const travelData: TravelModel = this.travelService.travelData;
-      if (this.origin) {
-        travelData.origin = {
-          name: addressResult.name,
-          originPostalCode: addressResult.addressData.postcode,
-          originCoords: {lat: addressResult.lat, lng: addressResult.lon},
-        };
-      }
-      if (this.destiny) {
-        travelData.destiny = {
-          name: addressResult.name,
-          destinyPostalCode: addressResult.addressData.postcode,
-          destinyCoords: {lat: addressResult.lat, lng: addressResult.lon},
-        };
-      }
-      const navigationExtras: NavigationExtras = {
-        state: {origin: this.origin, destiny: this.destiny},
-      };
-      this.router.navigateByUrl('home/publish/time-selector', navigationExtras);
-    });
-    }else {
-      console.warn("acept route")
-      this.router.navigateByUrl('home/publish/date-selector');
-    }
-  }
-
-  flyTo(userCoords: Coordinates): void {
-    console.warn(userCoords);
-    this.leafletMap.flyTo([userCoords.lat, userCoords.lng], 16, {
-      animate: true,
-      duration: 1,
-    });
-  }
-
-  getCurrentPosition(): void {
-    this.locationService.getCurrentPosition().subscribe({
-      next: (position) => {
-        this.leafletMap.setView([position.coords.latitude, position.coords.longitude], this.zoom);
-        this.flyTo({lat: position.coords.latitude, lng: position.coords.longitude});
-      },
-      error: (error) => {
-        console.error('Error getting current position:', error);
-      },
-    });
-  }
-
-  setCenter(centerPosition: Coordinates, zoom: number) {
-    this.leafletMap.setView([centerPosition.lat, centerPosition.lng], zoom);
-    this.leafletMap.whenReady(() => {
-      setTimeout(() => {
-        this.leafletMap.invalidateSize();
-      }, 10);
-    });
-  }
-
-  mapInit(centerPosition: Coordinates) {
-    console.warn("map init")
-    this.leafletMap = new L.Map('leafletMap');
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(this.leafletMap);
-    this.leafletMap.setView([centerPosition.lat, centerPosition.lng], this.zoom);
-    this.leafletMap.whenReady(() => {
-      setTimeout(() => {
-        this.leafletMap.invalidateSize();
-      }, 10);
     });
   }
 
