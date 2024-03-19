@@ -5,15 +5,39 @@
 </ion-header>
 
 <ion-content>
-
   <div>
-    <ion-searchbar [debounce]="1000" [(ngModel)]="originSearchQuery"
-                   show-clear-button="always"></ion-searchbar>
+    <ion-item>
+      <ion-searchbar [debounce]="1000" [(ngModel)]="originSearchQuery"
+                     placeholder="De"
+                     show-clear-button="always"></ion-searchbar>
+    </ion-item>
+    <ion-item class="padding-top-xs">
+      <ion-searchbar [debounce]="1000" [(ngModel)]="destinySearchQuery"
+                     placeholder="A"
+                     show-clear-button="always"></ion-searchbar>
+    </ion-item>
 
+    <ion-item class="padding-top-xs">
+      <div class="padding-left-l">
+        <ion-icon slot="start" class="padding-right-xs icon-size" name="calendar-outline"></ion-icon>
+        <span *ngIf="selectedDateValue.getTime() == todayDateValue.getTime()">Hoy</span>
+        <span *ngIf="selectedDateValue.getTime() != todayDateValue.getTime()">
+        {{ selectedDateValue |date:'dd/mm/YYYY' }}
+      </span>
+      </div>
+    </ion-item>
+
+    <ion-item class="padding-top-xs">
+      <div class="padding-left-l">
+        <ion-icon slot="start" class="padding-right-xs icon-size" name="person-outline"></ion-icon>
+        <span>1</span>
+      </div>
+    </ion-item>
   </div>
-<!--  <ion-list>-->
-<!--    <ion-item *ngFor="let travel of travels">-->
-<!--      <ion-label>{{ travel.origin?.name }} ==> {{ travel.destiny?.name }}</ion-label>-->
-<!--    </ion-item>-->
-<!--  </ion-list>-->
+  <ion-list>
+    <ion-item
+      *ngFor="let travel of (travelService.filterTravelsByOriginAndDestination$(originSearchQuery,destinySearchQuery) | async)">
+      <ion-label>{{ travel.origin?.name }} ==> {{ travel.destiny?.name }}</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

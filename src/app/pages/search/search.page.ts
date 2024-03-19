@@ -11,20 +11,24 @@ export class SearchPage implements OnInit {
 
   travels: Travel[] = [];
   originSearchQuery:string = ''
+  destinySearchQuery:string = ''
+  selectedDateValue : Date = new Date();
+  todayDateValue : Date = new Date();
 
-  constructor(private travelService: TravelService) {
+  constructor(public travelService: TravelService) {
   }
 
   ngOnInit() {
-
-    // this.getAllTravels()
-  }
-
-  getAllTravels() {
-    this.travelService.getAllTravels().subscribe(allTravels => {
+    this.travelService.allTravels.subscribe(allTravels => {
       console.warn(allTravels)
       this.travels = allTravels;
-    })
-  }
 
+
+    })
+
+
+    // this.travelService.filterTravelsByOrigin$("del palacio").subscribe(res => {
+    //   console.warn(res)
+    // })
+  }
 }

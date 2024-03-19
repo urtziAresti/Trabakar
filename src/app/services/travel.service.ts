@@ -2,44 +2,48 @@ import {Injectable} from '@angular/core';
 import {TravelModel} from '../models/travel-model';
 import {collection, collectionData, doc, Firestore, setDoc} from "@angular/fire/firestore";
 import {Auth} from "@angular/fire/auth";
-import {map, Observable} from "rxjs";
+import {BehaviorSubject, map, Observable, tap} from "rxjs";
 import {Travel} from "../interfaces/travel";
 import {DocumentData} from "@angular/fire/compat/firestore";
-import {UserProfile} from "../interfaces/user-profile";
-
 @Injectable({
   providedIn: 'root'
 })
 export class TravelService {
 
   public travelData: TravelModel = new TravelModel('');
+  public travels: Travel[] = []
 
-  constructor(private auth: Auth,
-              private firestore: Firestore) {
-  }
+  private _allTravels$: BehaviorSubject<Travel[]> = new BehaviorSubject<Travel[]>([]);
 
+  public readonly allTravels: Observable<Travel[]> =
+    this._allTravels$.asObservable()
 
-  getAllUsers(): Observable<UserProfile[]> {
-    const allUsersCollectionRef = collection(this.firestore, `users`);
-    return collectionData(allUsersCollectionRef).pipe(
-      map((docs: DocumentData[]) => {
-        return docs.map(doc => {
-          return {
-            id: doc['id'],
-            name: doc['name'],
-            surname: doc['surname']
-          };
+  public readonly filterTravelsByOriginAndDestination$: (
+    origin: string,
+    destiny: string
+  ) => Observable<Travel[] | null> = (origin, destiny) =>
+    this._allTravels$.pipe(
+      map(travels => {
+        const filteredTravels = travels.filter(travel => {
+          const originMatch = travel.origin?.name?.toLowerCase().includes(origin.toLowerCase());
+          const destinationMatch = travel.destiny?.name?.toLowerCase().includes(destiny.toLowerCase());
+          return originMatch && destinationMatch;
         });
+        return filteredTravels.length > 0 ? filteredTravels : null;
       })
     );
-  }
 
+  constructor(
+    private auth: Auth,
+    private firestore: Firestore) {
+    this.getAllTravels().subscribe();
+  }
 
   getAllTravels(): Observable<Travel[]> {
     const allUsersCollectionRef = collection(this.firestore, `travels`);
     return collectionData(allUsersCollectionRef).pipe(
       map((allTravels: DocumentData[]) => {
-        return allTravels.map(travelData => {
+        this.travels = allTravels.map(travelData => {
           return {
             destiny: travelData['destiny'],
             origin: travelData['origin'],
@@ -51,9 +55,11 @@ export class TravelService {
             publishDate: travelData['publishDate'],
             travelStartDates: travelData['travelStartDates'],
             travelStartTime: travelData['travelStartTime']
-          };
+          } as Travel;
         });
-      })
+        return this.travels;
+      }),
+      tap(allTravels => this._allTravels$.next(allTravels)), // Emit the retrieved data
     );
   }
 
