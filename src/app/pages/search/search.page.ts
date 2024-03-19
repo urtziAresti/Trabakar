@@ -16,6 +16,9 @@ export class SearchPage implements OnInit {
   constructor(public travelService: TravelService) {
   }
 
+  getRange(num: number): number[] {
+    return Array(num).fill(0).map((x, i) => i);
+  }
   ngOnInit() {
   }
 }

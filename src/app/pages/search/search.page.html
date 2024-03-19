@@ -37,7 +37,40 @@
   <ion-list>
     <ion-item
       *ngFor="let travel of (travelService.filterTravelsByOriginAndDestination$(originSearchQuery,destinySearchQuery) | async)">
-      <ion-label>{{ travel.origin?.name }} ==> {{ travel.destiny?.name }}</ion-label>
+      <div class="padding-y-xl padding-left-l">
+        <ion-label class="caption1 ">
+          {{ travel.origin?.departureTime | date:'HH:mm' }}
+        </ion-label>
+        <ion-label class="caption1 padding-top-xs">
+          6h00
+          <!--duration-->
+        </ion-label>
+        <ion-label class="caption1 padding-top-xs ">
+          {{ travel.destiny?.expectedArrivalTime| date:'HH:mm' }}
+        </ion-label>
+      </div>
+
+      <div class="padding-left-l route-line">
+        <ion-icon src="assets/sgvs/point.svg" class="start-point"></ion-icon>
+        <ion-icon src="assets/sgvs/point.svg" class="end-point"></ion-icon>
+        <ion-label class="caption1 ">
+          {{ travel.origin?.name }}
+        </ion-label>
+        <ion-label class="caption1 padding-top-xs">
+          <div *ngIf="travel.numberOfSeatsAvailable !== undefined">
+            {{ travel.numberOfSeatsAvailable }} X
+            <ion-icon name="person-outline"></ion-icon>
+          </div>
+        </ion-label>
+        <ion-label class="caption1 padding-top-xs ">
+          {{ travel.destiny?.name }}
+        </ion-label>
+      </div>
+      <div class="price-label">
+        <ion-label class="head2 bold">
+          {{ travel.estimatedPrice }}€
+        </ion-label>
+      </div>
     </ion-item>
   </ion-list>
 </ion-content>
