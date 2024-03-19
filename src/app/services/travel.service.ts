@@ -5,6 +5,8 @@ import {Auth} from "@angular/fire/auth";
 import {BehaviorSubject, map, Observable, tap} from "rxjs";
 import {Travel} from "../interfaces/travel";
 import {DocumentData} from "@angular/fire/compat/firestore";
+import FuzzySet from 'fuzzyset'
+
 @Injectable({
   providedIn: 'root'
 })
@@ -24,10 +26,22 @@ export class TravelService {
   ) => Observable<Travel[] | null> = (origin, destiny) =>
     this._allTravels$.pipe(
       map(travels => {
+        const originFuzzySet = FuzzySet(travels.map(
+          travel => travel.origin?.name).filter(name => name !== undefined
+        ) as string[]);
+        const destinyFuzzySet = FuzzySet(travels.map(travel => travel.destiny?.name).filter(name => name !== undefined) as string[]);
+
+        const originMatches = originFuzzySet.get(origin.toLowerCase());
+        const destinyMatches = destinyFuzzySet.get(destiny.toLowerCase());
+
+        const similarityThreshold = 0.4;
+
         const filteredTravels = travels.filter(travel => {
-          const originMatch = travel.origin?.name?.toLowerCase().includes(origin.toLowerCase());
-          const destinationMatch = travel.destiny?.name?.toLowerCase().includes(destiny.toLowerCase());
-          return originMatch && destinationMatch;
+          const originMatch =
+            originMatches ? originMatches.some(match => match[0] > similarityThreshold) : false;
+          const destinyMatch =
+            destinyMatches ? destinyMatches.some(match => match[0] > similarityThreshold) : false;
+          return originMatch || destinyMatch;
         });
         return filteredTravels.length > 0 ? filteredTravels : null;
       })
