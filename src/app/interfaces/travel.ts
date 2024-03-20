@@ -13,4 +13,5 @@ export interface Travel {
   numberOfSeatsAvailable?: number;
   comments?: string;
   publishDate?: Date;
+  travelDuration? :string;
 }

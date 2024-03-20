@@ -13,6 +13,7 @@ export class TravelModel implements Travel {
   private _numberOfSeatsAvailable?: number;
   private _comments?: string;
   private _publishDate?: Date;
+  private _travelDuration?: string;
 
   constructor(
     userID: string,
@@ -22,7 +23,8 @@ export class TravelModel implements Travel {
     estimatedPrice?: number,
     numberOfSeatsAvailable?: number,
     comments?: string,
-    publishDate?: Date
+    publishDate?: Date,
+    travelDuration?: string,
   ) {
     this._travelID = this.generateTravelID();
     this._userID = userID;
@@ -33,6 +35,7 @@ export class TravelModel implements Travel {
     this._numberOfSeatsAvailable = numberOfSeatsAvailable;
     this._comments = comments;
     this._publishDate = publishDate;
+    this._travelDuration = travelDuration;
   }
 
   generateTravelID() {
@@ -64,6 +67,10 @@ export class TravelModel implements Travel {
 
   get publishDate(): Date | undefined {
     return this._publishDate;
+  }
+
+  get travelDuration(): string | undefined {
+    return this._travelDuration;
   }
 
 
@@ -102,6 +109,10 @@ export class TravelModel implements Travel {
 
   set publishDate(value: Date | undefined) {
     this._publishDate = value;
+  }
+
+  set TravelDuration(value: string | undefined) {
+    this._travelDuration = value;
   }
 
   set estimatedPrice(value: number | undefined) {

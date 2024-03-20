@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>search</ion-title>
+    <ion-title>Busca un Viaje</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -17,8 +17,8 @@
                      show-clear-button="always"></ion-searchbar>
     </ion-item>
 
-    <ion-item class="padding-top-xs">
-      <div class="padding-left-l" (click)="openCalendar()">
+    <ion-item class="padding-top-xs" (click)="openCalendar()">
+      <div class="padding-left-l">
         <ion-icon slot="start" class="padding-right-xs icon-size" name="calendar-outline"></ion-icon>
         <span *ngIf="selectedDateValue.getTime() == todayDateValue.getTime()">Hoy</span>
         <span *ngIf="selectedDateValue.getTime() != todayDateValue.getTime()">
@@ -38,23 +38,37 @@
       </div>
     </ion-item>
 
-    <ion-item class="padding-top-xs">
+    <ion-item class="padding-top-xs" (click)="openSeatsSelector()">
       <div class="padding-left-l">
         <ion-icon slot="start" class="padding-right-xs icon-size" name="person-outline"></ion-icon>
-        <span>1</span>
+        <span>{{ seatsToFind }}</span>
+        <ion-popover
+          #seatsPopover [keepContentsMounted]="true"
+          [isOpen]="showSeatsSelector"
+          alignment="center" mode="ios">
+          <ng-template>
+            <div class="seats-selector">
+              <ion-label class="head3 bold padding-right-l">{{ seatsToFind }}</ion-label>
+              <ion-icon slot="start" class="padding-right-xs icon-size" name="person-outline"></ion-icon>
+              <div class="icons padding-left-xs">
+                <ion-icon (click)="seatsToFind < 7 && addSeat()" name="add-outline"></ion-icon>
+                <ion-icon (click)="seatsToFind > 1 && removeSeat()" name="remove-outline" class=""></ion-icon>
+              </div>
+            </div>
+          </ng-template>
+        </ion-popover>
       </div>
     </ion-item>
   </div>
   <ion-list>
     <ion-item
-      *ngFor="let travel of (travelService.filterTravelsByOriginAndDestination$(originSearchQuery,destinySearchQuery) | async)">
+      *ngFor="let travel of (travelService.filterTravelsByFormValues$(originSearchQuery,destinySearchQuery,selectedDateValue,seatsToFind) | async)">
       <div class="padding-y-xl padding-left-l">
         <ion-label class="caption1 ">
           {{ travel.origin?.departureTime | date:'HH:mm' }}
         </ion-label>
         <ion-label class="caption1 padding-top-xs">
-          6h00
-          <!--duration-->
+          {{travel.travelDuration }}h
         </ion-label>
         <ion-label class="caption1 padding-top-xs ">
           {{ travel.destiny?.expectedArrivalTime| date:'HH:mm' }}
@@ -62,8 +76,8 @@
       </div>
 
       <div class="padding-left-l route-line">
-        <ion-icon src="assets/sgvs/point.svg" class="start-point"></ion-icon>
-        <ion-icon src="assets/sgvs/point.svg" class="end-point"></ion-icon>
+<!--        <ion-icon src="assets/sgvs/point.svg" class="start-point"></ion-icon>-->
+<!--        <ion-icon src="assets/sgvs/point.svg" class="end-point"></ion-icon>-->
         <ion-label class="caption1 ">
           {{ travel.origin?.name }}
         </ion-label>

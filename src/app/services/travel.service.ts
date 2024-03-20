@@ -20,16 +20,20 @@ export class TravelService {
   public readonly allTravels: Observable<Travel[]> =
     this._allTravels$.asObservable()
 
-  public readonly filterTravelsByOriginAndDestination$: (
+  public readonly filterTravelsByFormValues$: (
     origin: string,
-    destiny: string
-  ) => Observable<Travel[] | null> = (origin, destiny) =>
+    destiny: string,
+    selectedDate: Date,
+    requestedSeats: number
+  ) => Observable<Travel[] | null> = (origin, destiny, selectedDate, requestedSeats) =>
     this._allTravels$.pipe(
       map(travels => {
         const originFuzzySet = FuzzySet(travels.map(
           travel => travel.origin?.name).filter(name => name !== undefined
         ) as string[]);
-        const destinyFuzzySet = FuzzySet(travels.map(travel => travel.destiny?.name).filter(name => name !== undefined) as string[]);
+        const destinyFuzzySet = FuzzySet(travels.map(
+          travel => travel.destiny?.name).filter(name => name !== undefined
+        ) as string[]);
 
         const originMatches = originFuzzySet.get(origin.toLowerCase());
         const destinyMatches = destinyFuzzySet.get(destiny.toLowerCase());
@@ -37,11 +41,20 @@ export class TravelService {
         const similarityThreshold = 0.4;
 
         const filteredTravels = travels.filter(travel => {
-          const originMatch =
-            originMatches ? originMatches.some(match => match[0] > similarityThreshold) : false;
-          const destinyMatch =
-            destinyMatches ? destinyMatches.some(match => match[0] > similarityThreshold) : false;
-          return originMatch || destinyMatch;
+          const originMatch = originMatches ? originMatches.some(match => match[0] > similarityThreshold) : false;
+          const destinyMatch = destinyMatches ? destinyMatches.some(match => match[0] > similarityThreshold) : false;
+          const seatsMatch = travel.numberOfSeatsAvailable! >= requestedSeats;
+          const dateMatch = selectedDate ? travel.travelStartDates!.some(date => new Date(date!).toDateString() === selectedDate.toDateString()) : true;
+
+          if (origin === '' && destiny === '') {
+            return seatsMatch && dateMatch;
+          } else if (origin !== '' && destiny === '') {
+            return originMatch && seatsMatch && dateMatch;
+          } else if (destiny !== '' && origin === '') {
+            return destinyMatch && seatsMatch && dateMatch;
+          } else {
+            return originMatch && destinyMatch && seatsMatch && dateMatch;
+          }
         });
         return filteredTravels.length > 0 ? filteredTravels : null;
       })
@@ -68,7 +81,8 @@ export class TravelService {
             estimatedPrice: travelData['estimatedPrice'],
             publishDate: travelData['publishDate'],
             travelStartDates: travelData['travelStartDates'],
-            travelStartTime: travelData['travelStartTime']
+            travelStartTime: travelData['travelStartTime'],
+            travelDuration: travelData['travelDuration']
           } as Travel;
         });
         return this.travels;
@@ -90,7 +104,8 @@ export class TravelService {
         estimatedPrice: this.travelData.estimatedPrice,
         numberOfSeatsAvailable: this.travelData.numberOfSeatsAvailable,
         comments: this.travelData.comments,
-        publishDate: new Date()
+        publishDate: new Date(),
+        travelDuration: this.calculateTravelDuration()
       }).then((status) => {
         console.error(status)
         resolve()
@@ -99,5 +114,24 @@ export class TravelService {
       });
 
     })
+  }
+
+  calculateTravelDuration(): string {
+    debugger
+    const start = new Date(this.travelData.origin?.departureTime!);
+    const end = new Date(this.travelData.destiny?.expectedArrivalTime!);
+
+    const timeDifference = end.getTime() - start.getTime();
+
+    // Convert milliseconds to hours and minutes
+    const hours = Math.floor(timeDifference / (1000 * 60 * 60));
+    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    // Format hours and minutes to HH:mm
+    const formattedHours = String(hours).padStart(2, '0');
+    const formattedMinutes = String(minutes).padStart(2, '0');
+
+    return `${formattedHours}:${formattedMinutes}`;
+
   }
 }

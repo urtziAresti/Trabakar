@@ -110,7 +110,6 @@ export class Map implements OnInit {
           };
         }
         if (this.destiny) {
-          debugger
           travelData.destiny = {
             name: this.destinyAddress.name,
             address: addressResult.name,
