@@ -102,18 +102,18 @@ export class Map implements OnInit {
         const travelData: TravelModel = this.travelService.travelData;
         if (this.origin) {
           travelData.origin = {
-            name: this.originAddress.name,
+            name: this.originAddress?.name || addressResult.display_name.split(',')[3],
             address: addressResult.name,
-            townName: addressResult.addressData.town || this.originAddress.name,
+            townName: addressResult.addressData?.town || addressResult.display_name.split(',')[3] || this.originAddress.name,
             originPostalCode: addressResult.addressData.postcode,
             originCoords: {lat: addressResult.lat, lng: addressResult.lon},
           };
         }
         if (this.destiny) {
           travelData.destiny = {
-            name: this.destinyAddress.name,
+            name: this.destinyAddress.name || addressResult.display_name.split(',')[3],
             address: addressResult.name,
-            townName: addressResult.addressData.town || this.destinyAddress.name,
+            townName: addressResult.addressData.town || addressResult.display_name.split(',')[3] || this.destinyAddress.name,
             destinyPostalCode: addressResult.addressData.postcode,
             destinyCoords: {lat: addressResult.lat, lng: addressResult.lon},
           };

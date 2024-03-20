@@ -61,23 +61,23 @@
     </ion-item>
   </div>
   <ion-list>
-    <ion-item
+    <ion-item button (click)="openTravel()" detail="false"
       *ngFor="let travel of (travelService.filterTravelsByFormValues$(originSearchQuery,destinySearchQuery,selectedDateValue,seatsToFind) | async)">
       <div class="padding-y-xl padding-left-l">
-        <ion-label class="caption1 ">
+        <ion-label class="caption1 bold ">
           {{ travel.origin?.departureTime | date:'HH:mm' }}
         </ion-label>
-        <ion-label class="caption1 padding-top-xs">
-          {{travel.travelDuration }}h
+        <ion-label class="caption2 padding-top-xs">
+          {{ travel.travelDuration }}h
         </ion-label>
-        <ion-label class="caption1 padding-top-xs ">
+        <ion-label class="caption1 bold padding-top-xs ">
           {{ travel.destiny?.expectedArrivalTime| date:'HH:mm' }}
         </ion-label>
       </div>
 
       <div class="padding-left-l route-line">
-<!--        <ion-icon src="assets/sgvs/point.svg" class="start-point"></ion-icon>-->
-<!--        <ion-icon src="assets/sgvs/point.svg" class="end-point"></ion-icon>-->
+        <!--        <ion-icon src="assets/sgvs/point.svg" class="start-point"></ion-icon>-->
+        <!--        <ion-icon src="assets/sgvs/point.svg" class="end-point"></ion-icon>-->
         <ion-label class="caption1 ">
           {{ travel.origin?.name }}
         </ion-label>

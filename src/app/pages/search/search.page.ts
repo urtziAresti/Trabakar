@@ -1,6 +1,7 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {TravelService} from "../../services/travel.service";
 import {IonPopover} from "@ionic/angular";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-search',
@@ -19,12 +20,12 @@ export class SearchPage implements OnInit {
   @ViewChild('seatsPopover', {static: false}) seatsPopover!: IonPopover;
 
 
-  constructor(public travelService: TravelService) {
+  constructor(public travelService: TravelService,
+              private router: Router) {
   }
 
   ngOnInit() {
   }
-
 
 
   onTimeSelected(value: CustomEvent) {
@@ -80,6 +81,10 @@ export class SearchPage implements OnInit {
 
   removeSeat() {
     this.seatsToFind--;
+  }
+
+  openTravel() {
+    this.router.navigateByUrl('/home/search/travel-detail')
   }
 
 }
