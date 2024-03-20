@@ -1,0 +1,6068 @@
+[
+  {
+    "Automaker": "AC",
+    "Automaker_ID": 1,
+    "Genmodel": "Cobra",
+    "Genmodel_ID": "1_1"
+  },
+  {
+    "Automaker": "Abarth",
+    "Automaker_ID": 2,
+    "Genmodel": "124 Spider",
+    "Genmodel_ID": "2_1"
+  },
+  {
+    "Automaker": "Abarth",
+    "Automaker_ID": 2,
+    "Genmodel": 500,
+    "Genmodel_ID": "2_2"
+  },
+  {
+    "Automaker": "Abarth",
+    "Automaker_ID": 2,
+    "Genmodel": "500C",
+    "Genmodel_ID": "2_3"
+  },
+  {
+    "Automaker": "Abarth",
+    "Automaker_ID": 2,
+    "Genmodel": 595,
+    "Genmodel_ID": "2_4"
+  },
+  {
+    "Automaker": "Abarth",
+    "Automaker_ID": 2,
+    "Genmodel": "595C",
+    "Genmodel_ID": "2_5"
+  },
+  {
+    "Automaker": "Abarth",
+    "Automaker_ID": 2,
+    "Genmodel": 695,
+    "Genmodel_ID": "2_6"
+  },
+  {
+    "Automaker": "Abarth",
+    "Automaker_ID": 2,
+    "Genmodel": "695C",
+    "Genmodel_ID": "2_7"
+  },
+  {
+    "Automaker": "Abarth",
+    "Automaker_ID": 2,
+    "Genmodel": "Grande Punto",
+    "Genmodel_ID": "2_8"
+  },
+  {
+    "Automaker": "Abarth",
+    "Automaker_ID": 2,
+    "Genmodel": "Punto Evo",
+    "Genmodel_ID": "2_9"
+  },
+  {
+    "Automaker": "Aixam",
+    "Automaker_ID": 3,
+    "Genmodel": "Crossline",
+    "Genmodel_ID": "3_1"
+  },
+  {
+    "Automaker": "Aixam",
+    "Automaker_ID": 3,
+    "Genmodel": 400,
+    "Genmodel_ID": "3_2"
+  },
+  {
+    "Automaker": "Aixam",
+    "Automaker_ID": 3,
+    "Genmodel": 500,
+    "Genmodel_ID": "3_3"
+  },
+  {
+    "Automaker": "Aixam",
+    "Automaker_ID": 3,
+    "Genmodel": "a751",
+    "Genmodel_ID": "3_4"
+  },
+  {
+    "Automaker": "Aixam",
+    "Automaker_ID": 3,
+    "Genmodel": "coupe",
+    "Genmodel_ID": "3_5"
+  },
+  {
+    "Automaker": "Aixam",
+    "Automaker_ID": 3,
+    "Genmodel": "crossover",
+    "Genmodel_ID": "3_6"
+  },
+  {
+    "Automaker": "Aixam",
+    "Automaker_ID": 3,
+    "Genmodel": "mega",
+    "Genmodel_ID": "3_7"
+  },
+  {
+    "Automaker": "Aixam",
+    "Automaker_ID": 3,
+    "Genmodel": "scouty",
+    "Genmodel_ID": "3_8"
+  },
+  {
+    "Automaker": "Alfa Romeo",
+    "Automaker_ID": 4,
+    "Genmodel": 147,
+    "Genmodel_ID": "4_1"
+  },
+  {
+    "Automaker": "Alfa Romeo",
+    "Automaker_ID": 4,
+    "Genmodel": 156,
+    "Genmodel_ID": "4_2"
+  },
+  {
+    "Automaker": "Alfa Romeo",
+    "Automaker_ID": 4,
+    "Genmodel": "156 Sportwagon",
+    "Genmodel_ID": "4_3"
+  },
+  {
+    "Automaker": "Alfa Romeo",
+    "Automaker_ID": 4,
+    "Genmodel": 159,
+    "Genmodel_ID": "4_4"
+  },
+  {
+    "Automaker": "Alfa Romeo",
+    "Automaker_ID": 4,
+    "Genmodel": "159 Sportwagon",
+    "Genmodel_ID": "4_5"
+  },
+  {
+    "Automaker": "Alfa Romeo",
+    "Automaker_ID": 4,
+    "Genmodel": 166,
+    "Genmodel_ID": "4_6"
+  },
+  {
+    "Automaker": "Alfa Romeo",
+    "Automaker_ID": 4,
+    "Genmodel": "4C",
+    "Genmodel_ID": "4_7"
+  },
+  {
+    "Automaker": "Alfa Romeo",
+    "Automaker_ID": 4,
+    "Genmodel": "8C",
+    "Genmodel_ID": "4_8"
+  },
+  {
+    "Automaker": "Alfa Romeo",
+    "Automaker_ID": 4,
+    "Genmodel": "Brera",
+    "Genmodel_ID": "4_9"
+  },
+  {
+    "Automaker": "Alfa Romeo",
+    "Automaker_ID": 4,
+    "Genmodel": "Giulia",
+    "Genmodel_ID": "4_10"
+  },
+  {
+    "Automaker": "Alfa Romeo",
+    "Automaker_ID": 4,
+    "Genmodel": "Giulietta",
+    "Genmodel_ID": "4_11"
+  },
+  {
+    "Automaker": "Alfa Romeo",
+    "Automaker_ID": 4,
+    "Genmodel": "GT",
+    "Genmodel_ID": "4_12"
+  },
+  {
+    "Automaker": "Alfa Romeo",
+    "Automaker_ID": 4,
+    "Genmodel": "GTV",
+    "Genmodel_ID": "4_13"
+  },
+  {
+    "Automaker": "Alfa Romeo",
+    "Automaker_ID": 4,
+    "Genmodel": "MiTo",
+    "Genmodel_ID": "4_14"
+  },
+  {
+    "Automaker": "Alfa Romeo",
+    "Automaker_ID": 4,
+    "Genmodel": "Spider",
+    "Genmodel_ID": "4_15"
+  },
+  {
+    "Automaker": "Alfa Romeo",
+    "Automaker_ID": 4,
+    "Genmodel": "Stelvio",
+    "Genmodel_ID": "4_16"
+  },
+  {
+    "Automaker": "Alfa Romeo",
+    "Automaker_ID": 4,
+    "Genmodel": "SZ",
+    "Genmodel_ID": "4_17"
+  },
+  {
+    "Automaker": "Alfa Romeo",
+    "Automaker_ID": 4,
+    "Genmodel": 33,
+    "Genmodel_ID": "4_18"
+  },
+  {
+    "Automaker": "Ariel",
+    "Automaker_ID": 5,
+    "Genmodel": "Atom",
+    "Genmodel_ID": "5_1"
+  },
+  {
+    "Automaker": "Aston Martin",
+    "Automaker_ID": 6,
+    "Genmodel": "Cygnet",
+    "Genmodel_ID": "6_1"
+  },
+  {
+    "Automaker": "Aston Martin",
+    "Automaker_ID": 6,
+    "Genmodel": "DB11",
+    "Genmodel_ID": "6_2"
+  },
+  {
+    "Automaker": "Aston Martin",
+    "Automaker_ID": 6,
+    "Genmodel": "DB7",
+    "Genmodel_ID": "6_3"
+  },
+  {
+    "Automaker": "Aston Martin",
+    "Automaker_ID": 6,
+    "Genmodel": "DB9",
+    "Genmodel_ID": "6_4"
+  },
+  {
+    "Automaker": "Aston Martin",
+    "Automaker_ID": 6,
+    "Genmodel": "DBS",
+    "Genmodel_ID": "6_5"
+  },
+  {
+    "Automaker": "Aston Martin",
+    "Automaker_ID": 6,
+    "Genmodel": "Rapide",
+    "Genmodel_ID": "6_6"
+  },
+  {
+    "Automaker": "Aston Martin",
+    "Automaker_ID": 6,
+    "Genmodel": "Rapide S",
+    "Genmodel_ID": "6_7"
+  },
+  {
+    "Automaker": "Aston Martin",
+    "Automaker_ID": 6,
+    "Genmodel": "Vanquish",
+    "Genmodel_ID": "6_8"
+  },
+  {
+    "Automaker": "Aston Martin",
+    "Automaker_ID": 6,
+    "Genmodel": "Vantage",
+    "Genmodel_ID": "6_9"
+  },
+  {
+    "Automaker": "Aston Martin",
+    "Automaker_ID": 6,
+    "Genmodel": "Virage",
+    "Genmodel_ID": "6_10"
+  },
+  {
+    "Automaker": "Aston Martin",
+    "Automaker_ID": 6,
+    "Genmodel": "Vulcan",
+    "Genmodel_ID": "6_11"
+  },
+  {
+    "Automaker": "Aston Martin",
+    "Automaker_ID": 6,
+    "Genmodel": "DB5",
+    "Genmodel_ID": "6_12"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "A1",
+    "Genmodel_ID": "7_1"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "A2",
+    "Genmodel_ID": "7_2"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "A3",
+    "Genmodel_ID": "7_3"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "A3 Cabriolet",
+    "Genmodel_ID": "7_4"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "A4",
+    "Genmodel_ID": "7_5"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "A4 Allroad",
+    "Genmodel_ID": "7_6"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "A4 Avant",
+    "Genmodel_ID": "7_7"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "A4 Cabriolet",
+    "Genmodel_ID": "7_8"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "A5",
+    "Genmodel_ID": "7_9"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "A5 Cabriolet",
+    "Genmodel_ID": "7_10"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "A6",
+    "Genmodel_ID": "7_11"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "A7",
+    "Genmodel_ID": "7_15"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "A8",
+    "Genmodel_ID": "7_16"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "Allroad",
+    "Genmodel_ID": "7_17"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "Q2",
+    "Genmodel_ID": "7_18"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "Q3",
+    "Genmodel_ID": "7_19"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "Q5",
+    "Genmodel_ID": "7_20"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "Q7",
+    "Genmodel_ID": "7_21"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "quattro",
+    "Genmodel_ID": "7_22"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "R8",
+    "Genmodel_ID": "7_23"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "RS Q3",
+    "Genmodel_ID": "7_24"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "RS3",
+    "Genmodel_ID": "7_25"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "RS4",
+    "Genmodel_ID": "7_26"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "RS4 Avant",
+    "Genmodel_ID": "7_27"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "RS4 Cabriolet",
+    "Genmodel_ID": "7_28"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "RS4 Saloon",
+    "Genmodel_ID": "7_29"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "RS5",
+    "Genmodel_ID": "7_30"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "RS6",
+    "Genmodel_ID": "7_31"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "RS6 Avant",
+    "Genmodel_ID": "7_32"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "RS7",
+    "Genmodel_ID": "7_33"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "S1",
+    "Genmodel_ID": "7_34"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "S3",
+    "Genmodel_ID": "7_35"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "S4",
+    "Genmodel_ID": "7_36"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "S4 Avant",
+    "Genmodel_ID": "7_37"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "S4 Cabriolet",
+    "Genmodel_ID": "7_38"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "S5",
+    "Genmodel_ID": "7_39"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "S6 Avant",
+    "Genmodel_ID": "7_40"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "S6 Saloon",
+    "Genmodel_ID": "7_41"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "S7",
+    "Genmodel_ID": "7_42"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "S8",
+    "Genmodel_ID": "7_43"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "SQ5",
+    "Genmodel_ID": "7_44"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "SQ7",
+    "Genmodel_ID": "7_45"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "TT",
+    "Genmodel_ID": "7_46"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "TT RS",
+    "Genmodel_ID": "7_47"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "TTS",
+    "Genmodel_ID": "7_48"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "Q8",
+    "Genmodel_ID": "7_49"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "SQ2",
+    "Genmodel_ID": "7_50"
+  },
+  {
+    "Automaker": "Audi",
+    "Automaker_ID": 7,
+    "Genmodel": "E-TRON",
+    "Genmodel_ID": "7_51"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "1 Series",
+    "Genmodel_ID": "8_1"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "2 Series",
+    "Genmodel_ID": "8_2"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "2 Series Active Tourer",
+    "Genmodel_ID": "8_3"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "2 Series Gran Tourer",
+    "Genmodel_ID": "8_4"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "3 Series",
+    "Genmodel_ID": "8_5"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "3 Series Gran Turismo",
+    "Genmodel_ID": "8_6"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "4 Series",
+    "Genmodel_ID": "8_7"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "4 Series Gran Coupe",
+    "Genmodel_ID": "8_8"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "5 Series",
+    "Genmodel_ID": "8_9"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "5 Series Gran Turismo",
+    "Genmodel_ID": "8_10"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "6 Series",
+    "Genmodel_ID": "8_11"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "6 Series Gran Coupe",
+    "Genmodel_ID": "8_12"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "6 Series Gran Turismo",
+    "Genmodel_ID": "8_13"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "7 Series",
+    "Genmodel_ID": "8_14"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "Alpina B10",
+    "Genmodel_ID": "8_15"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "Alpina B3",
+    "Genmodel_ID": "8_16"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "Alpina B3 Bi-Turbo",
+    "Genmodel_ID": "8_17"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "Alpina B5",
+    "Genmodel_ID": "8_18"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "Alpina B6",
+    "Genmodel_ID": "8_19"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "Alpina D3",
+    "Genmodel_ID": "8_20"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "Alpina D3 Bi-Turbo",
+    "Genmodel_ID": "8_21"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "Alpina D4",
+    "Genmodel_ID": "8_22"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "Alpina D5 Bi-Turbo",
+    "Genmodel_ID": "8_23"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "Alpina Roadster",
+    "Genmodel_ID": "8_24"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "Alpina Unspecified Models",
+    "Genmodel_ID": "8_25"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "Alpina Xd3 Bi-Turbo",
+    "Genmodel_ID": "8_26"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "i3",
+    "Genmodel_ID": "8_27"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "i8",
+    "Genmodel_ID": "8_28"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "M2",
+    "Genmodel_ID": "8_29"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "M3",
+    "Genmodel_ID": "8_30"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "M4",
+    "Genmodel_ID": "8_31"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "M5",
+    "Genmodel_ID": "8_32"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "M6",
+    "Genmodel_ID": "8_33"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "M6 Gran Coupe",
+    "Genmodel_ID": "8_34"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "X1",
+    "Genmodel_ID": "8_35"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "X2",
+    "Genmodel_ID": "8_36"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "X3",
+    "Genmodel_ID": "8_37"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "X4",
+    "Genmodel_ID": "8_38"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "X5",
+    "Genmodel_ID": "8_39"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "X5M",
+    "Genmodel_ID": "8_40"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "X6",
+    "Genmodel_ID": "8_41"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "X6M",
+    "Genmodel_ID": "8_42"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "Z3",
+    "Genmodel_ID": "8_43"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "Z3M",
+    "Genmodel_ID": "8_44"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "Z4",
+    "Genmodel_ID": "8_45"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "Z4M",
+    "Genmodel_ID": "8_46"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "Z8",
+    "Genmodel_ID": "8_47"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "M1",
+    "Genmodel_ID": "8_48"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "8 Series",
+    "Genmodel_ID": "8_49"
+  },
+  {
+    "Automaker": "BMW",
+    "Automaker_ID": 8,
+    "Genmodel": "X7",
+    "Genmodel_ID": "8_50"
+  },
+  {
+    "Automaker": "Bac",
+    "Automaker_ID": 9,
+    "Genmodel": "Mono",
+    "Genmodel_ID": "9_1"
+  },
+  {
+    "Automaker": "Bentley",
+    "Automaker_ID": 10,
+    "Genmodel": "Arnage",
+    "Genmodel_ID": "10_1"
+  },
+  {
+    "Automaker": "Bentley",
+    "Automaker_ID": 10,
+    "Genmodel": "Azure",
+    "Genmodel_ID": "10_2"
+  },
+  {
+    "Automaker": "Bentley",
+    "Automaker_ID": 10,
+    "Genmodel": "Bentayga",
+    "Genmodel_ID": "10_3"
+  },
+  {
+    "Automaker": "Bentley",
+    "Automaker_ID": 10,
+    "Genmodel": "Brooklands",
+    "Genmodel_ID": "10_4"
+  },
+  {
+    "Automaker": "Bentley",
+    "Automaker_ID": 10,
+    "Genmodel": "Continental",
+    "Genmodel_ID": "10_5"
+  },
+  {
+    "Automaker": "Bentley",
+    "Automaker_ID": 10,
+    "Genmodel": "Flying Spur",
+    "Genmodel_ID": "10_6"
+  },
+  {
+    "Automaker": "Bentley",
+    "Automaker_ID": 10,
+    "Genmodel": "Mulsanne",
+    "Genmodel_ID": "10_7"
+  },
+  {
+    "Automaker": "Bentley",
+    "Automaker_ID": 10,
+    "Genmodel": "Series I",
+    "Genmodel_ID": "10_8"
+  },
+  {
+    "Automaker": "Bristol",
+    "Automaker_ID": 11,
+    "Genmodel": "Fighter",
+    "Genmodel_ID": "11_1"
+  },
+  {
+    "Automaker": "Brooke",
+    "Automaker_ID": 12,
+    "Genmodel": "Double R",
+    "Genmodel_ID": "12_1"
+  },
+  {
+    "Automaker": "Bugatti",
+    "Automaker_ID": 13,
+    "Genmodel": "Veyron",
+    "Genmodel_ID": "13_1"
+  },
+  {
+    "Automaker": "Cadillac",
+    "Automaker_ID": 14,
+    "Genmodel": "BLS",
+    "Genmodel_ID": "14_1"
+  },
+  {
+    "Automaker": "Cadillac",
+    "Automaker_ID": 14,
+    "Genmodel": "CTS",
+    "Genmodel_ID": "14_2"
+  },
+  {
+    "Automaker": "Cadillac",
+    "Automaker_ID": 14,
+    "Genmodel": "Escalade",
+    "Genmodel_ID": "14_3"
+  },
+  {
+    "Automaker": "Cadillac",
+    "Automaker_ID": 14,
+    "Genmodel": "SRX",
+    "Genmodel_ID": "14_4"
+  },
+  {
+    "Automaker": "Cadillac",
+    "Automaker_ID": 14,
+    "Genmodel": "STS",
+    "Genmodel_ID": "14_5"
+  },
+  {
+    "Automaker": "Caterham",
+    "Automaker_ID": 15,
+    "Genmodel": "Seven",
+    "Genmodel_ID": "15_1"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Astro",
+    "Genmodel_ID": "16_1"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Aveo",
+    "Genmodel_ID": "16_2"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Blazer",
+    "Genmodel_ID": "16_3"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Camaro",
+    "Genmodel_ID": "16_4"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Captiva",
+    "Genmodel_ID": "16_5"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Corvette",
+    "Genmodel_ID": "16_6"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Cruze",
+    "Genmodel_ID": "16_7"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Epica",
+    "Genmodel_ID": "16_8"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Impala",
+    "Genmodel_ID": "16_9"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Kalos",
+    "Genmodel_ID": "16_10"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Lacetti",
+    "Genmodel_ID": "16_11"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Matiz",
+    "Genmodel_ID": "16_12"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Orlando",
+    "Genmodel_ID": "16_13"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Spark",
+    "Genmodel_ID": "16_14"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Ssr",
+    "Genmodel_ID": "16_15"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Tacuma",
+    "Genmodel_ID": "16_16"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Tahoe",
+    "Genmodel_ID": "16_17"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Trax",
+    "Genmodel_ID": "16_18"
+  },
+  {
+    "Automaker": "Chevrolet",
+    "Automaker_ID": 16,
+    "Genmodel": "Volt",
+    "Genmodel_ID": "16_19"
+  },
+  {
+    "Automaker": "Chrysler",
+    "Automaker_ID": 17,
+    "Genmodel": "300C",
+    "Genmodel_ID": "17_1"
+  },
+  {
+    "Automaker": "Chrysler",
+    "Automaker_ID": 17,
+    "Genmodel": "Crossfire",
+    "Genmodel_ID": "17_2"
+  },
+  {
+    "Automaker": "Chrysler",
+    "Automaker_ID": 17,
+    "Genmodel": "Delta",
+    "Genmodel_ID": "17_3"
+  },
+  {
+    "Automaker": "Chrysler",
+    "Automaker_ID": 17,
+    "Genmodel": "Grand Voyager",
+    "Genmodel_ID": "17_4"
+  },
+  {
+    "Automaker": "Chrysler",
+    "Automaker_ID": 17,
+    "Genmodel": "Neon",
+    "Genmodel_ID": "17_5"
+  },
+  {
+    "Automaker": "Chrysler",
+    "Automaker_ID": 17,
+    "Genmodel": "Prowler",
+    "Genmodel_ID": "17_6"
+  },
+  {
+    "Automaker": "Chrysler",
+    "Automaker_ID": 17,
+    "Genmodel": "PT Cruiser",
+    "Genmodel_ID": "17_7"
+  },
+  {
+    "Automaker": "Chrysler",
+    "Automaker_ID": 17,
+    "Genmodel": "Sebring",
+    "Genmodel_ID": "17_8"
+  },
+  {
+    "Automaker": "Chrysler",
+    "Automaker_ID": 17,
+    "Genmodel": "Voyager",
+    "Genmodel_ID": "17_9"
+  },
+  {
+    "Automaker": "Chrysler",
+    "Automaker_ID": 17,
+    "Genmodel": "Ypsilon",
+    "Genmodel_ID": "17_10"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "2 CV",
+    "Genmodel_ID": "18_1"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "Berlingo",
+    "Genmodel_ID": "18_2"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "Berlingo Multispace",
+    "Genmodel_ID": "18_3"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "C-Crosser",
+    "Genmodel_ID": "18_4"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "C-Zero",
+    "Genmodel_ID": "18_5"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "C1",
+    "Genmodel_ID": "18_6"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "C2",
+    "Genmodel_ID": "18_7"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "C3",
+    "Genmodel_ID": "18_8"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "C3 Aircross",
+    "Genmodel_ID": "18_9"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "C3 Picasso",
+    "Genmodel_ID": "18_10"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "C3 Pluriel",
+    "Genmodel_ID": "18_11"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "C4",
+    "Genmodel_ID": "18_12"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "C4 Cactus",
+    "Genmodel_ID": "18_13"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "C4 Picasso",
+    "Genmodel_ID": "18_14"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "C5",
+    "Genmodel_ID": "18_15"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "C6",
+    "Genmodel_ID": "18_16"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "C8",
+    "Genmodel_ID": "18_17"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "Dispatch",
+    "Genmodel_ID": "18_18"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "Grand C4 Picasso",
+    "Genmodel_ID": "18_24"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "Nemo Multispace",
+    "Genmodel_ID": "18_25"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "Saxo",
+    "Genmodel_ID": "18_26"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "SpaceTourer",
+    "Genmodel_ID": "18_27"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "Synergie",
+    "Genmodel_ID": "18_28"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "Xsara",
+    "Genmodel_ID": "18_29"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "Xsara Picasso",
+    "Genmodel_ID": "18_30"
+  },
+  {
+    "Automaker": "Citroen",
+    "Automaker_ID": 18,
+    "Genmodel": "Xantia",
+    "Genmodel_ID": "18_31"
+  },
+  {
+    "Automaker": "Corvette",
+    "Automaker_ID": 19,
+    "Genmodel": "C6",
+    "Genmodel_ID": "19_1"
+  },
+  {
+    "Automaker": "Corvette",
+    "Automaker_ID": 19,
+    "Genmodel": "C7",
+    "Genmodel_ID": "19_2"
+  },
+  {
+    "Automaker": "Corvette",
+    "Automaker_ID": 19,
+    "Genmodel": "Stingray",
+    "Genmodel_ID": "19_3"
+  },
+  {
+    "Automaker": "DAX",
+    "Automaker_ID": 20,
+    "Genmodel": "Tojeiro",
+    "Genmodel_ID": "20_1"
+  },
+  {
+    "Automaker": "DS",
+    "Automaker_ID": 21,
+    "Genmodel": 3,
+    "Genmodel_ID": "21_1"
+  },
+  {
+    "Automaker": "DS",
+    "Automaker_ID": 21,
+    "Genmodel": "3 Cabrio",
+    "Genmodel_ID": "21_2"
+  },
+  {
+    "Automaker": "DS",
+    "Automaker_ID": 21,
+    "Genmodel": 4,
+    "Genmodel_ID": "21_3"
+  },
+  {
+    "Automaker": "DS",
+    "Automaker_ID": 21,
+    "Genmodel": "4 Crossback",
+    "Genmodel_ID": "21_4"
+  },
+  {
+    "Automaker": "DS",
+    "Automaker_ID": 21,
+    "Genmodel": 5,
+    "Genmodel_ID": "21_5"
+  },
+  {
+    "Automaker": "DS",
+    "Automaker_ID": 21,
+    "Genmodel": 7,
+    "Genmodel_ID": "21_6"
+  },
+  {
+    "Automaker": "Dacia",
+    "Automaker_ID": 22,
+    "Genmodel": "Duster",
+    "Genmodel_ID": "22_1"
+  },
+  {
+    "Automaker": "Dacia",
+    "Automaker_ID": 22,
+    "Genmodel": "Logan MCV",
+    "Genmodel_ID": "22_2"
+  },
+  {
+    "Automaker": "Dacia",
+    "Automaker_ID": 22,
+    "Genmodel": "Sandero",
+    "Genmodel_ID": "22_3"
+  },
+  {
+    "Automaker": "Dacia",
+    "Automaker_ID": 22,
+    "Genmodel": "Sandero Stepway",
+    "Genmodel_ID": "22_4"
+  },
+  {
+    "Automaker": "Daewoo",
+    "Automaker_ID": 23,
+    "Genmodel": "Kalos",
+    "Genmodel_ID": "23_1"
+  },
+  {
+    "Automaker": "Daewoo",
+    "Automaker_ID": 23,
+    "Genmodel": "Lacetti",
+    "Genmodel_ID": "23_2"
+  },
+  {
+    "Automaker": "Daewoo",
+    "Automaker_ID": 23,
+    "Genmodel": "Matiz",
+    "Genmodel_ID": "23_3"
+  },
+  {
+    "Automaker": "Daewoo",
+    "Automaker_ID": 23,
+    "Genmodel": "Nubira",
+    "Genmodel_ID": "23_4"
+  },
+  {
+    "Automaker": "Daewoo",
+    "Automaker_ID": 23,
+    "Genmodel": "Tacuma",
+    "Genmodel_ID": "23_5"
+  },
+  {
+    "Automaker": "Daewoo",
+    "Automaker_ID": 23,
+    "Genmodel": "Lanos",
+    "Genmodel_ID": "23_6"
+  },
+  {
+    "Automaker": "Daewoo",
+    "Automaker_ID": 23,
+    "Genmodel": "Leganza",
+    "Genmodel_ID": "23_7"
+  },
+  {
+    "Automaker": "Daewoo",
+    "Automaker_ID": 23,
+    "Genmodel": "Musso",
+    "Genmodel_ID": "23_8"
+  },
+  {
+    "Automaker": "Daihatsu",
+    "Automaker_ID": 24,
+    "Genmodel": "Atrai 7",
+    "Genmodel_ID": "24_1"
+  },
+  {
+    "Automaker": "Daihatsu",
+    "Automaker_ID": 24,
+    "Genmodel": "Charade",
+    "Genmodel_ID": "24_2"
+  },
+  {
+    "Automaker": "Daihatsu",
+    "Automaker_ID": 24,
+    "Genmodel": "Copen",
+    "Genmodel_ID": "24_3"
+  },
+  {
+    "Automaker": "Daihatsu",
+    "Automaker_ID": 24,
+    "Genmodel": "Cuore",
+    "Genmodel_ID": "24_4"
+  },
+  {
+    "Automaker": "Daihatsu",
+    "Automaker_ID": 24,
+    "Genmodel": "Fourtrak",
+    "Genmodel_ID": "24_5"
+  },
+  {
+    "Automaker": "Daihatsu",
+    "Automaker_ID": 24,
+    "Genmodel": "Materia",
+    "Genmodel_ID": "24_6"
+  },
+  {
+    "Automaker": "Daihatsu",
+    "Automaker_ID": 24,
+    "Genmodel": "Sirion",
+    "Genmodel_ID": "24_7"
+  },
+  {
+    "Automaker": "Daihatsu",
+    "Automaker_ID": 24,
+    "Genmodel": "Terios",
+    "Genmodel_ID": "24_8"
+  },
+  {
+    "Automaker": "Daihatsu",
+    "Automaker_ID": 24,
+    "Genmodel": "YRV",
+    "Genmodel_ID": "24_9"
+  },
+  {
+    "Automaker": "Daimler",
+    "Automaker_ID": 25,
+    "Genmodel": "Super Eight",
+    "Genmodel_ID": "25_1"
+  },
+  {
+    "Automaker": "Daimler",
+    "Automaker_ID": 25,
+    "Genmodel": "XJ Series",
+    "Genmodel_ID": "25_2"
+  },
+  {
+    "Automaker": "Dodge",
+    "Automaker_ID": 26,
+    "Genmodel": "Avenger",
+    "Genmodel_ID": "26_1"
+  },
+  {
+    "Automaker": "Dodge",
+    "Automaker_ID": 26,
+    "Genmodel": "Caliber",
+    "Genmodel_ID": "26_2"
+  },
+  {
+    "Automaker": "Dodge",
+    "Automaker_ID": 26,
+    "Genmodel": "Challenger",
+    "Genmodel_ID": "26_3"
+  },
+  {
+    "Automaker": "Dodge",
+    "Automaker_ID": 26,
+    "Genmodel": "Charger",
+    "Genmodel_ID": "26_4"
+  },
+  {
+    "Automaker": "Dodge",
+    "Automaker_ID": 26,
+    "Genmodel": "Journey",
+    "Genmodel_ID": "26_5"
+  },
+  {
+    "Automaker": "Dodge",
+    "Automaker_ID": 26,
+    "Genmodel": "Nitro",
+    "Genmodel_ID": "26_6"
+  },
+  {
+    "Automaker": "Dodge",
+    "Automaker_ID": 26,
+    "Genmodel": "RAM",
+    "Genmodel_ID": "26_7"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": 308,
+    "Genmodel_ID": "27_1"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": 360,
+    "Genmodel_ID": "27_2"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": 430,
+    "Genmodel_ID": "27_3"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": 456,
+    "Genmodel_ID": "27_4"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": "456M",
+    "Genmodel_ID": "27_5"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": 458,
+    "Genmodel_ID": "27_6"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": 488,
+    "Genmodel_ID": "27_7"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": 550,
+    "Genmodel_ID": "27_8"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": "575M",
+    "Genmodel_ID": "27_9"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": 599,
+    "Genmodel_ID": "27_10"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": 612,
+    "Genmodel_ID": "27_11"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": "812 Superfast",
+    "Genmodel_ID": "27_12"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": "California",
+    "Genmodel_ID": "27_13"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": "Dino",
+    "Genmodel_ID": "27_14"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": "Enzo",
+    "Genmodel_ID": "27_15"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": "F12berlinetta",
+    "Genmodel_ID": "27_16"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": "F355",
+    "Genmodel_ID": "27_17"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": "F430",
+    "Genmodel_ID": "27_18"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": "FF",
+    "Genmodel_ID": "27_19"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": "Gtc4lusso",
+    "Genmodel_ID": "27_20"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": "Laferrari",
+    "Genmodel_ID": "27_21"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": "Scuderia Spider",
+    "Genmodel_ID": "27_22"
+  },
+  {
+    "Automaker": "Ferrari",
+    "Automaker_ID": 27,
+    "Genmodel": "Portofino",
+    "Genmodel_ID": "27_23"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "124 Spider",
+    "Genmodel_ID": "28_1"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": 500,
+    "Genmodel_ID": "28_2"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "500C",
+    "Genmodel_ID": "28_3"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "500L",
+    "Genmodel_ID": "28_4"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "500X",
+    "Genmodel_ID": "28_5"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": 850,
+    "Genmodel_ID": "28_6"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Abarth",
+    "Genmodel_ID": "28_7"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Barchetta",
+    "Genmodel_ID": "28_8"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Brava",
+    "Genmodel_ID": "28_9"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Bravo",
+    "Genmodel_ID": "28_10"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Croma",
+    "Genmodel_ID": "28_11"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Doblo",
+    "Genmodel_ID": "28_12"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Fiorino",
+    "Genmodel_ID": "28_13"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Fullback",
+    "Genmodel_ID": "28_14"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Grande Punto",
+    "Genmodel_ID": "28_15"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Idea",
+    "Genmodel_ID": "28_16"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Multipla",
+    "Genmodel_ID": "28_17"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Panda",
+    "Genmodel_ID": "28_18"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Punto",
+    "Genmodel_ID": "28_19"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Punto Evo",
+    "Genmodel_ID": "28_20"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Qubo",
+    "Genmodel_ID": "28_21"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Scudo",
+    "Genmodel_ID": "28_22"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Sedici",
+    "Genmodel_ID": "28_23"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Seicento",
+    "Genmodel_ID": "28_24"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Spider",
+    "Genmodel_ID": "28_25"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Stilo",
+    "Genmodel_ID": "28_26"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Talento",
+    "Genmodel_ID": "28_27"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Tipo",
+    "Genmodel_ID": "28_28"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Ulysse",
+    "Genmodel_ID": "28_29"
+  },
+  {
+    "Automaker": "Fiat",
+    "Automaker_ID": 28,
+    "Genmodel": "Marea",
+    "Genmodel_ID": "28_30"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "B-Max",
+    "Genmodel_ID": "29_1"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "C-Max",
+    "Genmodel_ID": "29_2"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Cougar",
+    "Genmodel_ID": "29_3"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "EcoSport",
+    "Genmodel_ID": "29_4"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Edge",
+    "Genmodel_ID": "29_5"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Escape",
+    "Genmodel_ID": "29_6"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Escort",
+    "Genmodel_ID": "29_7"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Expedition",
+    "Genmodel_ID": "29_8"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Explorer",
+    "Genmodel_ID": "29_9"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "F1",
+    "Genmodel_ID": "29_10"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "F150",
+    "Genmodel_ID": "29_11"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "F250",
+    "Genmodel_ID": "29_12"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Fiesta",
+    "Genmodel_ID": "29_13"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Focus",
+    "Genmodel_ID": "29_14"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Focus C-Max",
+    "Genmodel_ID": "29_15"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Focus CC",
+    "Genmodel_ID": "29_16"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Freda",
+    "Genmodel_ID": "29_17"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Fusion",
+    "Genmodel_ID": "29_18"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Galaxy",
+    "Genmodel_ID": "29_19"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Grand C-Max",
+    "Genmodel_ID": "29_20"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Grand Tourneo Connect",
+    "Genmodel_ID": "29_21"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "GT",
+    "Genmodel_ID": "29_22"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Ka",
+    "Genmodel_ID": "29_23"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Ka+",
+    "Genmodel_ID": "29_24"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Kuga",
+    "Genmodel_ID": "29_25"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Maverick",
+    "Genmodel_ID": "29_26"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Mondeo",
+    "Genmodel_ID": "29_27"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Mustang",
+    "Genmodel_ID": "29_28"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Puma",
+    "Genmodel_ID": "29_29"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Ranger",
+    "Genmodel_ID": "29_30"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "S-Max",
+    "Genmodel_ID": "29_31"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Streetka",
+    "Genmodel_ID": "29_32"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Thames",
+    "Genmodel_ID": "29_33"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Tourneo Connect",
+    "Genmodel_ID": "29_34"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Tourneo Custom",
+    "Genmodel_ID": "29_35"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Transit Connect",
+    "Genmodel_ID": "29_36"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Transit Courier",
+    "Genmodel_ID": "29_37"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Transit Custom",
+    "Genmodel_ID": "29_38"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Tourneo Courier",
+    "Genmodel_ID": "29_39"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Freedom",
+    "Genmodel_ID": "29_40"
+  },
+  {
+    "Automaker": "Ford",
+    "Automaker_ID": 29,
+    "Genmodel": "Independence",
+    "Genmodel_ID": "29_41"
+  },
+  {
+    "Automaker": "GMC",
+    "Automaker_ID": 30,
+    "Genmodel": "Sierra",
+    "Genmodel_ID": "30_1"
+  },
+  {
+    "Automaker": "GMC",
+    "Automaker_ID": 30,
+    "Genmodel": "Yukon",
+    "Genmodel_ID": "30_2"
+  },
+  {
+    "Automaker": "Ginetta",
+    "Automaker_ID": 31,
+    "Genmodel": "G40R",
+    "Genmodel_ID": "31_1"
+  },
+  {
+    "Automaker": "Great Wall",
+    "Automaker_ID": 32,
+    "Genmodel": "Steed",
+    "Genmodel_ID": "32_1"
+  },
+  {
+    "Automaker": "Grinnall",
+    "Automaker_ID": 33,
+    "Genmodel": "Scorpion",
+    "Genmodel_ID": "33_1"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "Accord",
+    "Genmodel_ID": "34_1"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "Civic",
+    "Genmodel_ID": "34_2"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "CR-V",
+    "Genmodel_ID": "34_3"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "CR-Z",
+    "Genmodel_ID": "34_4"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "Element",
+    "Genmodel_ID": "34_5"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "Elysion",
+    "Genmodel_ID": "34_6"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "FR-V",
+    "Genmodel_ID": "34_7"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "HR-V",
+    "Genmodel_ID": "34_8"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "Insight",
+    "Genmodel_ID": "34_9"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "Integra",
+    "Genmodel_ID": "34_10"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "Jazz",
+    "Genmodel_ID": "34_11"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "Legend",
+    "Genmodel_ID": "34_12"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "NSX",
+    "Genmodel_ID": "34_13"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "Odyssey",
+    "Genmodel_ID": "34_14"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "S-Mx",
+    "Genmodel_ID": "34_15"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "S2000",
+    "Genmodel_ID": "34_16"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "Stepwagon",
+    "Genmodel_ID": "34_17"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "Stream",
+    "Genmodel_ID": "34_18"
+  },
+  {
+    "Automaker": "Honda",
+    "Automaker_ID": 34,
+    "Genmodel": "Prelude",
+    "Genmodel_ID": "34_19"
+  },
+  {
+    "Automaker": "Hummer",
+    "Automaker_ID": 35,
+    "Genmodel": "H1",
+    "Genmodel_ID": "35_1"
+  },
+  {
+    "Automaker": "Hummer",
+    "Automaker_ID": 35,
+    "Genmodel": "H2",
+    "Genmodel_ID": "35_2"
+  },
+  {
+    "Automaker": "Hummer",
+    "Automaker_ID": 35,
+    "Genmodel": "H3",
+    "Genmodel_ID": "35_3"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "Accent",
+    "Genmodel_ID": "36_1"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "Amica",
+    "Genmodel_ID": "36_2"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "Coupe",
+    "Genmodel_ID": "36_3"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "Elantra",
+    "Genmodel_ID": "36_4"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "Genesis",
+    "Genmodel_ID": "36_5"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "Getz",
+    "Genmodel_ID": "36_6"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "Grandeur",
+    "Genmodel_ID": "36_7"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "i10",
+    "Genmodel_ID": "36_8"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "i20",
+    "Genmodel_ID": "36_9"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "i30",
+    "Genmodel_ID": "36_10"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "I30 N",
+    "Genmodel_ID": "36_11"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "i40",
+    "Genmodel_ID": "36_12"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "i800",
+    "Genmodel_ID": "36_13"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "Ioniq",
+    "Genmodel_ID": "36_14"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "ix20",
+    "Genmodel_ID": "36_15"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "ix35",
+    "Genmodel_ID": "36_16"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "Kona",
+    "Genmodel_ID": "36_17"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "Matrix",
+    "Genmodel_ID": "36_18"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "S-Coupe",
+    "Genmodel_ID": "36_19"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "Santa Fe",
+    "Genmodel_ID": "36_20"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "Sonata",
+    "Genmodel_ID": "36_21"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "Terracan",
+    "Genmodel_ID": "36_22"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "Trajet",
+    "Genmodel_ID": "36_23"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "Tucson",
+    "Genmodel_ID": "36_24"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "Veloster",
+    "Genmodel_ID": "36_25"
+  },
+  {
+    "Automaker": "Hyundai",
+    "Automaker_ID": 36,
+    "Genmodel": "XG30",
+    "Genmodel_ID": "36_26"
+  },
+  {
+    "Automaker": "Infiniti",
+    "Automaker_ID": 37,
+    "Genmodel": "EX",
+    "Genmodel_ID": "37_1"
+  },
+  {
+    "Automaker": "Infiniti",
+    "Automaker_ID": 37,
+    "Genmodel": "FX",
+    "Genmodel_ID": "37_2"
+  },
+  {
+    "Automaker": "Infiniti",
+    "Automaker_ID": 37,
+    "Genmodel": "G",
+    "Genmodel_ID": "37_3"
+  },
+  {
+    "Automaker": "Infiniti",
+    "Automaker_ID": 37,
+    "Genmodel": "M",
+    "Genmodel_ID": "37_4"
+  },
+  {
+    "Automaker": "Infiniti",
+    "Automaker_ID": 37,
+    "Genmodel": "Q30",
+    "Genmodel_ID": "37_5"
+  },
+  {
+    "Automaker": "Infiniti",
+    "Automaker_ID": 37,
+    "Genmodel": "Q50",
+    "Genmodel_ID": "37_6"
+  },
+  {
+    "Automaker": "Infiniti",
+    "Automaker_ID": 37,
+    "Genmodel": "Q60",
+    "Genmodel_ID": "37_7"
+  },
+  {
+    "Automaker": "Infiniti",
+    "Automaker_ID": 37,
+    "Genmodel": "Q70",
+    "Genmodel_ID": "37_8"
+  },
+  {
+    "Automaker": "Infiniti",
+    "Automaker_ID": 37,
+    "Genmodel": "QX30",
+    "Genmodel_ID": "37_9"
+  },
+  {
+    "Automaker": "Infiniti",
+    "Automaker_ID": 37,
+    "Genmodel": "QX50",
+    "Genmodel_ID": "37_10"
+  },
+  {
+    "Automaker": "Infiniti",
+    "Automaker_ID": 37,
+    "Genmodel": "QX70",
+    "Genmodel_ID": "37_11"
+  },
+  {
+    "Automaker": "Infiniti",
+    "Automaker_ID": 37,
+    "Genmodel": "Vettel",
+    "Genmodel_ID": "37_12"
+  },
+  {
+    "Automaker": "Isuzu",
+    "Automaker_ID": 38,
+    "Genmodel": "Bighorn",
+    "Genmodel_ID": "38_1"
+  },
+  {
+    "Automaker": "Isuzu",
+    "Automaker_ID": 38,
+    "Genmodel": "D-Max",
+    "Genmodel_ID": "38_2"
+  },
+  {
+    "Automaker": "Isuzu",
+    "Automaker_ID": 38,
+    "Genmodel": "Rodeo",
+    "Genmodel_ID": "38_3"
+  },
+  {
+    "Automaker": "Isuzu",
+    "Automaker_ID": 38,
+    "Genmodel": "Trooper",
+    "Genmodel_ID": "38_4"
+  },
+  {
+    "Automaker": "Jaguar",
+    "Automaker_ID": 39,
+    "Genmodel": "E-PACE",
+    "Genmodel_ID": "39_1"
+  },
+  {
+    "Automaker": "Jaguar",
+    "Automaker_ID": 39,
+    "Genmodel": "F-PACE",
+    "Genmodel_ID": "39_2"
+  },
+  {
+    "Automaker": "Jaguar",
+    "Automaker_ID": 39,
+    "Genmodel": "F-Type",
+    "Genmodel_ID": "39_3"
+  },
+  {
+    "Automaker": "Jaguar",
+    "Automaker_ID": 39,
+    "Genmodel": "S-Type",
+    "Genmodel_ID": "39_4"
+  },
+  {
+    "Automaker": "Jaguar",
+    "Automaker_ID": 39,
+    "Genmodel": "X-Type",
+    "Genmodel_ID": "39_5"
+  },
+  {
+    "Automaker": "Jaguar",
+    "Automaker_ID": 39,
+    "Genmodel": "XE",
+    "Genmodel_ID": "39_6"
+  },
+  {
+    "Automaker": "Jaguar",
+    "Automaker_ID": 39,
+    "Genmodel": "XF",
+    "Genmodel_ID": "39_7"
+  },
+  {
+    "Automaker": "Jaguar",
+    "Automaker_ID": 39,
+    "Genmodel": "XJ",
+    "Genmodel_ID": "39_8"
+  },
+  {
+    "Automaker": "Jaguar",
+    "Automaker_ID": 39,
+    "Genmodel": "XK",
+    "Genmodel_ID": "39_9"
+  },
+  {
+    "Automaker": "Jaguar",
+    "Automaker_ID": 39,
+    "Genmodel": "XK8",
+    "Genmodel_ID": "39_10"
+  },
+  {
+    "Automaker": "Jaguar",
+    "Automaker_ID": 39,
+    "Genmodel": "XKR",
+    "Genmodel_ID": "39_11"
+  },
+  {
+    "Automaker": "Jaguar",
+    "Automaker_ID": 39,
+    "Genmodel": "XKR-S",
+    "Genmodel_ID": "39_12"
+  },
+  {
+    "Automaker": "Jaguar",
+    "Automaker_ID": 39,
+    "Genmodel": "I-PACE",
+    "Genmodel_ID": "39_13"
+  },
+  {
+    "Automaker": "Jaguar",
+    "Automaker_ID": 39,
+    "Genmodel": "EAGLE",
+    "Genmodel_ID": "39_14"
+  },
+  {
+    "Automaker": "Jeep",
+    "Automaker_ID": 40,
+    "Genmodel": "Cherokee",
+    "Genmodel_ID": "40_1"
+  },
+  {
+    "Automaker": "Jeep",
+    "Automaker_ID": 40,
+    "Genmodel": "Commander",
+    "Genmodel_ID": "40_2"
+  },
+  {
+    "Automaker": "Jeep",
+    "Automaker_ID": 40,
+    "Genmodel": "Compass",
+    "Genmodel_ID": "40_3"
+  },
+  {
+    "Automaker": "Jeep",
+    "Automaker_ID": 40,
+    "Genmodel": "Grand Cherokee",
+    "Genmodel_ID": "40_4"
+  },
+  {
+    "Automaker": "Jeep",
+    "Automaker_ID": 40,
+    "Genmodel": "Patriot",
+    "Genmodel_ID": "40_5"
+  },
+  {
+    "Automaker": "Jeep",
+    "Automaker_ID": 40,
+    "Genmodel": "Renegade",
+    "Genmodel_ID": "40_6"
+  },
+  {
+    "Automaker": "Jeep",
+    "Automaker_ID": 40,
+    "Genmodel": "Wrangler",
+    "Genmodel_ID": "40_7"
+  },
+  {
+    "Automaker": "Jensen",
+    "Automaker_ID": 41,
+    "Genmodel": "GT",
+    "Genmodel_ID": "41_1"
+  },
+  {
+    "Automaker": "KTM",
+    "Automaker_ID": 42,
+    "Genmodel": "X-Bow",
+    "Genmodel_ID": "42_1"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "Carens",
+    "Genmodel_ID": "43_1"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "'Cee''d'",
+    "Genmodel_ID": "43_2"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "Cerato",
+    "Genmodel_ID": "43_3"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "Magentis",
+    "Genmodel_ID": "43_4"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "Niro",
+    "Genmodel_ID": "43_5"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "Optima",
+    "Genmodel_ID": "43_6"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "Picanto",
+    "Genmodel_ID": "43_7"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "'Pro_Cee''d'",
+    "Genmodel_ID": "43_8"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "Rio",
+    "Genmodel_ID": "43_9"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "Sedona",
+    "Genmodel_ID": "43_10"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "Sorento",
+    "Genmodel_ID": "43_11"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "Soul",
+    "Genmodel_ID": "43_12"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "Sportage",
+    "Genmodel_ID": "43_13"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "Stinger",
+    "Genmodel_ID": "43_14"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "Stonic",
+    "Genmodel_ID": "43_15"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "Venga",
+    "Genmodel_ID": "43_16"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "Sephia",
+    "Genmodel_ID": "43_17"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "Soul EV",
+    "Genmodel_ID": "43_18"
+  },
+  {
+    "Automaker": "Kia",
+    "Automaker_ID": 43,
+    "Genmodel": "Xceed",
+    "Genmodel_ID": "43_19"
+  },
+  {
+    "Automaker": "Koenigsegg",
+    "Automaker_ID": 44,
+    "Genmodel": "Ccx",
+    "Genmodel_ID": "44_1"
+  },
+  {
+    "Automaker": "Lamborghini",
+    "Automaker_ID": 45,
+    "Genmodel": "Aventador",
+    "Genmodel_ID": "45_1"
+  },
+  {
+    "Automaker": "Lamborghini",
+    "Automaker_ID": 45,
+    "Genmodel": "Diablo",
+    "Genmodel_ID": "45_2"
+  },
+  {
+    "Automaker": "Lamborghini",
+    "Automaker_ID": 45,
+    "Genmodel": "Gallardo",
+    "Genmodel_ID": "45_3"
+  },
+  {
+    "Automaker": "Lamborghini",
+    "Automaker_ID": 45,
+    "Genmodel": "Huracan",
+    "Genmodel_ID": "45_4"
+  },
+  {
+    "Automaker": "Lamborghini",
+    "Automaker_ID": 45,
+    "Genmodel": "Murcielago",
+    "Genmodel_ID": "45_5"
+  },
+  {
+    "Automaker": "Lancia",
+    "Automaker_ID": 46,
+    "Genmodel": "Ypsilon",
+    "Genmodel_ID": "46_1"
+  },
+  {
+    "Automaker": "Land Rover",
+    "Automaker_ID": 47,
+    "Genmodel": 110,
+    "Genmodel_ID": "47_1"
+  },
+  {
+    "Automaker": "Land Rover",
+    "Automaker_ID": 47,
+    "Genmodel": "Defender 110",
+    "Genmodel_ID": "47_2"
+  },
+  {
+    "Automaker": "Land Rover",
+    "Automaker_ID": 47,
+    "Genmodel": "Defender 130",
+    "Genmodel_ID": "47_3"
+  },
+  {
+    "Automaker": "Land Rover",
+    "Automaker_ID": 47,
+    "Genmodel": "Defender 90",
+    "Genmodel_ID": "47_4"
+  },
+  {
+    "Automaker": "Land Rover",
+    "Automaker_ID": 47,
+    "Genmodel": "Defender Unspecified",
+    "Genmodel_ID": "47_5"
+  },
+  {
+    "Automaker": "Land Rover",
+    "Automaker_ID": 47,
+    "Genmodel": "Discovery",
+    "Genmodel_ID": "47_6"
+  },
+  {
+    "Automaker": "Land Rover",
+    "Automaker_ID": 47,
+    "Genmodel": "Discovery 2",
+    "Genmodel_ID": "47_7"
+  },
+  {
+    "Automaker": "Land Rover",
+    "Automaker_ID": 47,
+    "Genmodel": "Discovery 3",
+    "Genmodel_ID": "47_8"
+  },
+  {
+    "Automaker": "Land Rover",
+    "Automaker_ID": 47,
+    "Genmodel": "Discovery 4",
+    "Genmodel_ID": "47_9"
+  },
+  {
+    "Automaker": "Land Rover",
+    "Automaker_ID": 47,
+    "Genmodel": "Discovery Sport",
+    "Genmodel_ID": "47_10"
+  },
+  {
+    "Automaker": "Land Rover",
+    "Automaker_ID": 47,
+    "Genmodel": "Freelander",
+    "Genmodel_ID": "47_11"
+  },
+  {
+    "Automaker": "Land Rover",
+    "Automaker_ID": 47,
+    "Genmodel": "Freelander 2",
+    "Genmodel_ID": "47_12"
+  },
+  {
+    "Automaker": "Land Rover",
+    "Automaker_ID": 47,
+    "Genmodel": "Range Rover",
+    "Genmodel_ID": "47_13"
+  },
+  {
+    "Automaker": "Land Rover",
+    "Automaker_ID": 47,
+    "Genmodel": "Range Rover Evoque",
+    "Genmodel_ID": "47_14"
+  },
+  {
+    "Automaker": "Land Rover",
+    "Automaker_ID": 47,
+    "Genmodel": "Range Rover Sport",
+    "Genmodel_ID": "47_15"
+  },
+  {
+    "Automaker": "Land Rover",
+    "Automaker_ID": 47,
+    "Genmodel": "Range Rover Velar",
+    "Genmodel_ID": "47_16"
+  },
+  {
+    "Automaker": "Land Rover",
+    "Automaker_ID": 47,
+    "Genmodel": "Series III",
+    "Genmodel_ID": "47_17"
+  },
+  {
+    "Automaker": "Lexus",
+    "Automaker_ID": 48,
+    "Genmodel": "CT",
+    "Genmodel_ID": "48_1"
+  },
+  {
+    "Automaker": "Lexus",
+    "Automaker_ID": 48,
+    "Genmodel": "GS",
+    "Genmodel_ID": "48_2"
+  },
+  {
+    "Automaker": "Lexus",
+    "Automaker_ID": 48,
+    "Genmodel": "IS",
+    "Genmodel_ID": "48_8"
+  },
+  {
+    "Automaker": "Lexus",
+    "Automaker_ID": 48,
+    "Genmodel": "LC",
+    "Genmodel_ID": "48_14"
+  },
+  {
+    "Automaker": "Lexus",
+    "Automaker_ID": 48,
+    "Genmodel": "LS",
+    "Genmodel_ID": "48_15"
+  },
+  {
+    "Automaker": "Lexus",
+    "Automaker_ID": 48,
+    "Genmodel": "NX",
+    "Genmodel_ID": "48_18"
+  },
+  {
+    "Automaker": "Lexus",
+    "Automaker_ID": 48,
+    "Genmodel": "RC",
+    "Genmodel_ID": "48_21"
+  },
+  {
+    "Automaker": "Lexus",
+    "Automaker_ID": 48,
+    "Genmodel": "RX",
+    "Genmodel_ID": "48_24"
+  },
+  {
+    "Automaker": "Lexus",
+    "Automaker_ID": 48,
+    "Genmodel": "SC",
+    "Genmodel_ID": "48_30"
+  },
+  {
+    "Automaker": "Lexus",
+    "Automaker_ID": 48,
+    "Genmodel": "UX",
+    "Genmodel_ID": "48_31"
+  },
+  {
+    "Automaker": "Lexus",
+    "Automaker_ID": 48,
+    "Genmodel": "ES",
+    "Genmodel_ID": "48_32"
+  },
+  {
+    "Automaker": "Lincoln",
+    "Automaker_ID": 49,
+    "Genmodel": "Navigator",
+    "Genmodel_ID": "49_1"
+  },
+  {
+    "Automaker": "Lincoln",
+    "Automaker_ID": 49,
+    "Genmodel": "Town Car",
+    "Genmodel_ID": "49_2"
+  },
+  {
+    "Automaker": "London Taxis International",
+    "Automaker_ID": 50,
+    "Genmodel": "TX4",
+    "Genmodel_ID": "50_1"
+  },
+  {
+    "Automaker": "London Taxis International",
+    "Automaker_ID": 50,
+    "Genmodel": "Txi",
+    "Genmodel_ID": "50_2"
+  },
+  {
+    "Automaker": "London Taxis International",
+    "Automaker_ID": 50,
+    "Genmodel": "Txii",
+    "Genmodel_ID": "50_3"
+  },
+  {
+    "Automaker": "Lotus",
+    "Automaker_ID": 51,
+    "Genmodel": "2-Eleven",
+    "Genmodel_ID": "51_1"
+  },
+  {
+    "Automaker": "Lotus",
+    "Automaker_ID": 51,
+    "Genmodel": "3-Eleven",
+    "Genmodel_ID": "51_2"
+  },
+  {
+    "Automaker": "Lotus",
+    "Automaker_ID": 51,
+    "Genmodel": "Elise",
+    "Genmodel_ID": "51_3"
+  },
+  {
+    "Automaker": "Lotus",
+    "Automaker_ID": 51,
+    "Genmodel": "Elise S",
+    "Genmodel_ID": "51_4"
+  },
+  {
+    "Automaker": "Lotus",
+    "Automaker_ID": 51,
+    "Genmodel": "Esprit",
+    "Genmodel_ID": "51_5"
+  },
+  {
+    "Automaker": "Lotus",
+    "Automaker_ID": 51,
+    "Genmodel": "Evora",
+    "Genmodel_ID": "51_6"
+  },
+  {
+    "Automaker": "Lotus",
+    "Automaker_ID": 51,
+    "Genmodel": "Exige",
+    "Genmodel_ID": "51_7"
+  },
+  {
+    "Automaker": "MEV",
+    "Automaker_ID": 52,
+    "Genmodel": "Exocet",
+    "Genmodel_ID": "52_1"
+  },
+  {
+    "Automaker": "MG",
+    "Automaker_ID": 53,
+    "Genmodel": "GS",
+    "Genmodel_ID": "53_1"
+  },
+  {
+    "Automaker": "MG",
+    "Automaker_ID": 53,
+    "Genmodel": "MG3",
+    "Genmodel_ID": "53_2"
+  },
+  {
+    "Automaker": "MG",
+    "Automaker_ID": 53,
+    "Genmodel": "MG6",
+    "Genmodel_ID": "53_3"
+  },
+  {
+    "Automaker": "MG",
+    "Automaker_ID": 53,
+    "Genmodel": "MGF",
+    "Genmodel_ID": "53_4"
+  },
+  {
+    "Automaker": "MG",
+    "Automaker_ID": 53,
+    "Genmodel": "TF",
+    "Genmodel_ID": "53_5"
+  },
+  {
+    "Automaker": "MG",
+    "Automaker_ID": 53,
+    "Genmodel": "ZR",
+    "Genmodel_ID": "53_6"
+  },
+  {
+    "Automaker": "MG",
+    "Automaker_ID": 53,
+    "Genmodel": "ZS",
+    "Genmodel_ID": "53_7"
+  },
+  {
+    "Automaker": "MG",
+    "Automaker_ID": 53,
+    "Genmodel": "ZT",
+    "Genmodel_ID": "53_8"
+  },
+  {
+    "Automaker": "MG",
+    "Automaker_ID": 53,
+    "Genmodel": "ZT-T",
+    "Genmodel_ID": "53_9"
+  },
+  {
+    "Automaker": "MG",
+    "Automaker_ID": 53,
+    "Genmodel": "XS",
+    "Genmodel_ID": "53_10"
+  },
+  {
+    "Automaker": "MINI",
+    "Automaker_ID": 54,
+    "Genmodel": "Clubman",
+    "Genmodel_ID": "54_1"
+  },
+  {
+    "Automaker": "MINI",
+    "Automaker_ID": 54,
+    "Genmodel": "Clubvan",
+    "Genmodel_ID": "54_2"
+  },
+  {
+    "Automaker": "MINI",
+    "Automaker_ID": 54,
+    "Genmodel": "Convertible",
+    "Genmodel_ID": "54_3"
+  },
+  {
+    "Automaker": "MINI",
+    "Automaker_ID": 54,
+    "Genmodel": "Countryman",
+    "Genmodel_ID": "54_4"
+  },
+  {
+    "Automaker": "MINI",
+    "Automaker_ID": 54,
+    "Genmodel": "Coupe",
+    "Genmodel_ID": "54_5"
+  },
+  {
+    "Automaker": "MINI",
+    "Automaker_ID": 54,
+    "Genmodel": "Hatch",
+    "Genmodel_ID": "54_6"
+  },
+  {
+    "Automaker": "MINI",
+    "Automaker_ID": 54,
+    "Genmodel": "Paceman",
+    "Genmodel_ID": "54_7"
+  },
+  {
+    "Automaker": "MINI",
+    "Automaker_ID": 54,
+    "Genmodel": "Roadster",
+    "Genmodel_ID": "54_8"
+  },
+  {
+    "Automaker": "MINI",
+    "Automaker_ID": 54,
+    "Genmodel": "John Cooper Works",
+    "Genmodel_ID": "54_9"
+  },
+  {
+    "Automaker": "MINI",
+    "Automaker_ID": 54,
+    "Genmodel": "Cooper s",
+    "Genmodel_ID": "54_10"
+  },
+  {
+    "Automaker": "MINI",
+    "Automaker_ID": 54,
+    "Genmodel": "Unspecified",
+    "Genmodel_ID": "54_11"
+  },
+  {
+    "Automaker": "Maserati",
+    "Automaker_ID": 55,
+    "Genmodel": 3200,
+    "Genmodel_ID": "55_1"
+  },
+  {
+    "Automaker": "Maserati",
+    "Automaker_ID": 55,
+    "Genmodel": 4200,
+    "Genmodel_ID": "55_2"
+  },
+  {
+    "Automaker": "Maserati",
+    "Automaker_ID": 55,
+    "Genmodel": "Cambiocorsa",
+    "Genmodel_ID": "55_3"
+  },
+  {
+    "Automaker": "Maserati",
+    "Automaker_ID": 55,
+    "Genmodel": "Coupe",
+    "Genmodel_ID": "55_4"
+  },
+  {
+    "Automaker": "Maserati",
+    "Automaker_ID": 55,
+    "Genmodel": "Ghibli",
+    "Genmodel_ID": "55_5"
+  },
+  {
+    "Automaker": "Maserati",
+    "Automaker_ID": 55,
+    "Genmodel": "GranCabrio",
+    "Genmodel_ID": "55_6"
+  },
+  {
+    "Automaker": "Maserati",
+    "Automaker_ID": 55,
+    "Genmodel": "Gransport",
+    "Genmodel_ID": "55_7"
+  },
+  {
+    "Automaker": "Maserati",
+    "Automaker_ID": 55,
+    "Genmodel": "Granturismo",
+    "Genmodel_ID": "55_8"
+  },
+  {
+    "Automaker": "Maserati",
+    "Automaker_ID": 55,
+    "Genmodel": "Levante",
+    "Genmodel_ID": "55_9"
+  },
+  {
+    "Automaker": "Maserati",
+    "Automaker_ID": 55,
+    "Genmodel": "Quattroporte",
+    "Genmodel_ID": "55_10"
+  },
+  {
+    "Automaker": "Maserati",
+    "Automaker_ID": 55,
+    "Genmodel": "Spyder",
+    "Genmodel_ID": "55_11"
+  },
+  {
+    "Automaker": "Maybach",
+    "Automaker_ID": 56,
+    "Genmodel": 57,
+    "Genmodel_ID": "56_1"
+  },
+  {
+    "Automaker": "Maybach",
+    "Automaker_ID": 56,
+    "Genmodel": 62,
+    "Genmodel_ID": "56_2"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": 323,
+    "Genmodel_ID": "57_1"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": 626,
+    "Genmodel_ID": "57_2"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": "B2500",
+    "Genmodel_ID": "57_3"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": "Bongo",
+    "Genmodel_ID": "57_4"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": "BT-50",
+    "Genmodel_ID": "57_5"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": "CX-3",
+    "Genmodel_ID": "57_6"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": "CX-5",
+    "Genmodel_ID": "57_7"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": "CX-7",
+    "Genmodel_ID": "57_8"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": "Demio",
+    "Genmodel_ID": "57_9"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": "Mazda2",
+    "Genmodel_ID": "57_10"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": "Mazda3",
+    "Genmodel_ID": "57_11"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": "Mazda5",
+    "Genmodel_ID": "57_12"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": "Mazda6",
+    "Genmodel_ID": "57_13"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": "MPV",
+    "Genmodel_ID": "57_14"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": "MX-5",
+    "Genmodel_ID": "57_15"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": "MX-5 RF",
+    "Genmodel_ID": "57_16"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": "Premacy",
+    "Genmodel_ID": "57_17"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": "RX-8",
+    "Genmodel_ID": "57_18"
+  },
+  {
+    "Automaker": "Mazda",
+    "Automaker_ID": 57,
+    "Genmodel": "Tribute",
+    "Genmodel_ID": "57_19"
+  },
+  {
+    "Automaker": "McLaren",
+    "Automaker_ID": 58,
+    "Genmodel": "12C",
+    "Genmodel_ID": "58_1"
+  },
+  {
+    "Automaker": "McLaren",
+    "Automaker_ID": 58,
+    "Genmodel": "540C",
+    "Genmodel_ID": "58_2"
+  },
+  {
+    "Automaker": "McLaren",
+    "Automaker_ID": 58,
+    "Genmodel": "570GT",
+    "Genmodel_ID": "58_3"
+  },
+  {
+    "Automaker": "McLaren",
+    "Automaker_ID": 58,
+    "Genmodel": "570S",
+    "Genmodel_ID": "58_4"
+  },
+  {
+    "Automaker": "McLaren",
+    "Automaker_ID": 58,
+    "Genmodel": "650S",
+    "Genmodel_ID": "58_5"
+  },
+  {
+    "Automaker": "McLaren",
+    "Automaker_ID": 58,
+    "Genmodel": "675LT",
+    "Genmodel_ID": "58_6"
+  },
+  {
+    "Automaker": "McLaren",
+    "Automaker_ID": 58,
+    "Genmodel": "720S",
+    "Genmodel_ID": "58_7"
+  },
+  {
+    "Automaker": "McLaren",
+    "Automaker_ID": 58,
+    "Genmodel": "P1",
+    "Genmodel_ID": "58_8"
+  },
+  {
+    "Automaker": "McLaren",
+    "Automaker_ID": 58,
+    "Genmodel": "600LT",
+    "Genmodel_ID": "58_9"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": 200,
+    "Genmodel_ID": "59_1"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": 220,
+    "Genmodel_ID": "59_2"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": 230,
+    "Genmodel_ID": "59_3"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": 250,
+    "Genmodel_ID": "59_4"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": 320,
+    "Genmodel_ID": "59_5"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": 350,
+    "Genmodel_ID": "59_6"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": 500,
+    "Genmodel_ID": "59_7"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "A Class",
+    "Genmodel_ID": "59_8"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "AMG",
+    "Genmodel_ID": "59_9"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "Amg Gt",
+    "Genmodel_ID": "59_10"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "B Class",
+    "Genmodel_ID": "59_11"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "C Class",
+    "Genmodel_ID": "59_12"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "Citan",
+    "Genmodel_ID": "59_13"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "Citan Traveliner",
+    "Genmodel_ID": "59_14"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "CL",
+    "Genmodel_ID": "59_15"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "CLA Class",
+    "Genmodel_ID": "59_16"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "CLC Class",
+    "Genmodel_ID": "59_17"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "CLK",
+    "Genmodel_ID": "59_18"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "CLS",
+    "Genmodel_ID": "59_19"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "E Class",
+    "Genmodel_ID": "59_20"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "G Class",
+    "Genmodel_ID": "59_21"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "GL Class",
+    "Genmodel_ID": "59_22"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "GLA Class",
+    "Genmodel_ID": "59_23"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "GLC Class",
+    "Genmodel_ID": "59_24"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "GLE Class",
+    "Genmodel_ID": "59_25"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "GLS Class",
+    "Genmodel_ID": "59_26"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "M Class",
+    "Genmodel_ID": "59_27"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "R Class",
+    "Genmodel_ID": "59_28"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "S Class",
+    "Genmodel_ID": "59_29"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "SL Class",
+    "Genmodel_ID": "59_30"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "SLC",
+    "Genmodel_ID": "59_31"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "SLK",
+    "Genmodel_ID": "59_32"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "SLR McLaren",
+    "Genmodel_ID": "59_33"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "SLS",
+    "Genmodel_ID": "59_34"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "Sprinter",
+    "Genmodel_ID": "59_35"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "V Class",
+    "Genmodel_ID": "59_36"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "Vaneo",
+    "Genmodel_ID": "59_37"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "Viano",
+    "Genmodel_ID": "59_38"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "Vito",
+    "Genmodel_ID": "59_39"
+  },
+  {
+    "Automaker": "Mercedes-Benz",
+    "Automaker_ID": 59,
+    "Genmodel": "X Class",
+    "Genmodel_ID": "59_40"
+  },
+  {
+    "Automaker": "Messerschmitt",
+    "Automaker_ID": 60,
+    "Genmodel": "KR200",
+    "Genmodel_ID": "60_1"
+  },
+  {
+    "Automaker": "Microcar",
+    "Automaker_ID": 61,
+    "Genmodel": "M.GO",
+    "Genmodel_ID": "61_1"
+  },
+  {
+    "Automaker": "Microcar",
+    "Automaker_ID": 61,
+    "Genmodel": "M",
+    "Genmodel_ID": "61_2"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "ASX",
+    "Genmodel_ID": "62_1"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "Carisma",
+    "Genmodel_ID": "62_2"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "Colt",
+    "Genmodel_ID": "62_3"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "Colt Cabriolet",
+    "Genmodel_ID": "62_4"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "Colt Space Star",
+    "Genmodel_ID": "62_5"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "Delica",
+    "Genmodel_ID": "62_6"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "Eclipse Cross",
+    "Genmodel_ID": "62_7"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "FTO",
+    "Genmodel_ID": "62_8"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "Galant",
+    "Genmodel_ID": "62_9"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "Grandis",
+    "Genmodel_ID": "62_10"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "Gto",
+    "Genmodel_ID": "62_11"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "i",
+    "Genmodel_ID": "62_12"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "L200",
+    "Genmodel_ID": "62_13"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "Lancer",
+    "Genmodel_ID": "62_14"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "Mirage",
+    "Genmodel_ID": "62_15"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "Outlander",
+    "Genmodel_ID": "62_16"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "Pajero",
+    "Genmodel_ID": "62_17"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "Shogun",
+    "Genmodel_ID": "62_18"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "Shogun Pinin",
+    "Genmodel_ID": "62_19"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "Shogun Sport",
+    "Genmodel_ID": "62_20"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "Space Star",
+    "Genmodel_ID": "62_21"
+  },
+  {
+    "Automaker": "Mitsubishi",
+    "Automaker_ID": 62,
+    "Genmodel": "Space Wagon",
+    "Genmodel_ID": "62_22"
+  },
+  {
+    "Automaker": "Morgan",
+    "Automaker_ID": 63,
+    "Genmodel": 4,
+    "Genmodel_ID": "63_1"
+  },
+  {
+    "Automaker": "Morgan",
+    "Automaker_ID": 63,
+    "Genmodel": "Aero",
+    "Genmodel_ID": "63_2"
+  },
+  {
+    "Automaker": "Morgan",
+    "Automaker_ID": 63,
+    "Genmodel": "Plus 4",
+    "Genmodel_ID": "63_3"
+  },
+  {
+    "Automaker": "Morgan",
+    "Automaker_ID": 63,
+    "Genmodel": "Plus 8",
+    "Genmodel_ID": "63_4"
+  },
+  {
+    "Automaker": "Morgan",
+    "Automaker_ID": 63,
+    "Genmodel": "Roadster",
+    "Genmodel_ID": "63_5"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "350 Z",
+    "Genmodel_ID": "64_1"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "370 Z",
+    "Genmodel_ID": "64_2"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Almera",
+    "Genmodel_ID": "64_3"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Almera Tino",
+    "Genmodel_ID": "64_4"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Cube",
+    "Genmodel_ID": "64_5"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Cubic",
+    "Genmodel_ID": "64_6"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "e-NV200",
+    "Genmodel_ID": "64_7"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Elgrand",
+    "Genmodel_ID": "64_8"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "eNV200 Evalia",
+    "Genmodel_ID": "64_9"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Fairlady",
+    "Genmodel_ID": "64_10"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Figaro",
+    "Genmodel_ID": "64_11"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Gloria",
+    "Genmodel_ID": "64_12"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "GT-R",
+    "Genmodel_ID": "64_13"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Juke",
+    "Genmodel_ID": "64_14"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Largo",
+    "Genmodel_ID": "64_15"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Leaf",
+    "Genmodel_ID": "64_16"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Micra",
+    "Genmodel_ID": "64_17"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Micra C+C",
+    "Genmodel_ID": "64_18"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Murano",
+    "Genmodel_ID": "64_19"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Navara",
+    "Genmodel_ID": "64_20"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Note",
+    "Genmodel_ID": "64_21"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "NV200",
+    "Genmodel_ID": "64_22"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "NV300",
+    "Genmodel_ID": "64_23"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Pathfinder",
+    "Genmodel_ID": "64_24"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Patrol",
+    "Genmodel_ID": "64_25"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Patrol GR",
+    "Genmodel_ID": "64_26"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Pickup",
+    "Genmodel_ID": "64_27"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Pixo",
+    "Genmodel_ID": "64_28"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "President",
+    "Genmodel_ID": "64_29"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Primastar",
+    "Genmodel_ID": "64_30"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Primera",
+    "Genmodel_ID": "64_31"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Pulsar",
+    "Genmodel_ID": "64_32"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Qashqai",
+    "Genmodel_ID": "64_33"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Qashqai+2",
+    "Genmodel_ID": "64_34"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Serena",
+    "Genmodel_ID": "64_35"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Skyline",
+    "Genmodel_ID": "64_36"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Stagea",
+    "Genmodel_ID": "64_37"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Terrano",
+    "Genmodel_ID": "64_38"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Terrano II",
+    "Genmodel_ID": "64_39"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "Tiida",
+    "Genmodel_ID": "64_40"
+  },
+  {
+    "Automaker": "Nissan",
+    "Automaker_ID": 64,
+    "Genmodel": "X-Trail",
+    "Genmodel_ID": "64_41"
+  },
+  {
+    "Automaker": "Noble",
+    "Automaker_ID": 65,
+    "Genmodel": "M12",
+    "Genmodel_ID": "65_1"
+  },
+  {
+    "Automaker": "Noble",
+    "Automaker_ID": 65,
+    "Genmodel": "M600",
+    "Genmodel_ID": "65_2"
+  },
+  {
+    "Automaker": "Opel",
+    "Automaker_ID": 66,
+    "Genmodel": "Astra",
+    "Genmodel_ID": "66_1"
+  },
+  {
+    "Automaker": "Opel",
+    "Automaker_ID": 66,
+    "Genmodel": "Insignia",
+    "Genmodel_ID": "66_2"
+  },
+  {
+    "Automaker": "Opel",
+    "Automaker_ID": 66,
+    "Genmodel": "Zafira",
+    "Genmodel_ID": "66_3"
+  },
+  {
+    "Automaker": "Pagani",
+    "Automaker_ID": 67,
+    "Genmodel": "Huayra",
+    "Genmodel_ID": "67_1"
+  },
+  {
+    "Automaker": "Perodua",
+    "Automaker_ID": 68,
+    "Genmodel": "Kelisa",
+    "Genmodel_ID": "68_1"
+  },
+  {
+    "Automaker": "Perodua",
+    "Automaker_ID": 68,
+    "Genmodel": "Myvi",
+    "Genmodel_ID": "68_2"
+  },
+  {
+    "Automaker": "Perodua",
+    "Automaker_ID": 68,
+    "Genmodel": "Kenari",
+    "Genmodel_ID": "68_3"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 1007,
+    "Genmodel_ID": "69_1"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 106,
+    "Genmodel_ID": "69_2"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 107,
+    "Genmodel_ID": "69_3"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 108,
+    "Genmodel_ID": "69_4"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 2008,
+    "Genmodel_ID": "69_5"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 206,
+    "Genmodel_ID": "69_6"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "206 CC",
+    "Genmodel_ID": "69_7"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "206 SW",
+    "Genmodel_ID": "69_8"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 207,
+    "Genmodel_ID": "69_9"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "207 CC",
+    "Genmodel_ID": "69_10"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "207 SW",
+    "Genmodel_ID": "69_11"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 208,
+    "Genmodel_ID": "69_12"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 3008,
+    "Genmodel_ID": "69_13"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 306,
+    "Genmodel_ID": "69_14"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 307,
+    "Genmodel_ID": "69_15"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "307 CC",
+    "Genmodel_ID": "69_16"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "307 SW",
+    "Genmodel_ID": "69_17"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 308,
+    "Genmodel_ID": "69_18"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "308 CC",
+    "Genmodel_ID": "69_19"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "308 SW",
+    "Genmodel_ID": "69_20"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 4007,
+    "Genmodel_ID": "69_21"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 406,
+    "Genmodel_ID": "69_22"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 407,
+    "Genmodel_ID": "69_23"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "407 SW",
+    "Genmodel_ID": "69_24"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 5008,
+    "Genmodel_ID": "69_25"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 508,
+    "Genmodel_ID": "69_26"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "508 SW",
+    "Genmodel_ID": "69_27"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 607,
+    "Genmodel_ID": "69_28"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 807,
+    "Genmodel_ID": "69_29"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "Bipper Tepee",
+    "Genmodel_ID": "69_30"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "Expert",
+    "Genmodel_ID": "69_31"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "Expert Tepee",
+    "Genmodel_ID": "69_32"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "iOn",
+    "Genmodel_ID": "69_33"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "Partner",
+    "Genmodel_ID": "69_34"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "Partner Tepee",
+    "Genmodel_ID": "69_35"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "RCZ",
+    "Genmodel_ID": "69_36"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "Traveller",
+    "Genmodel_ID": "69_37"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": 806,
+    "Genmodel_ID": "69_38"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "Partner Combi",
+    "Genmodel_ID": "69_39"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "Expert Combi",
+    "Genmodel_ID": "69_40"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "Boxer",
+    "Genmodel_ID": "69_41"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "Rifter",
+    "Genmodel_ID": "69_42"
+  },
+  {
+    "Automaker": "Peugeot",
+    "Automaker_ID": 69,
+    "Genmodel": "Independence",
+    "Genmodel_ID": "69_43"
+  },
+  {
+    "Automaker": "Pilgrim",
+    "Automaker_ID": 70,
+    "Genmodel": 3000,
+    "Genmodel_ID": "70_1"
+  },
+  {
+    "Automaker": "Porsche",
+    "Automaker_ID": 71,
+    "Genmodel": 356,
+    "Genmodel_ID": "71_1"
+  },
+  {
+    "Automaker": "Porsche",
+    "Automaker_ID": 71,
+    "Genmodel": "718 Boxster",
+    "Genmodel_ID": "71_2"
+  },
+  {
+    "Automaker": "Porsche",
+    "Automaker_ID": 71,
+    "Genmodel": "718 Cayman",
+    "Genmodel_ID": "71_3"
+  },
+  {
+    "Automaker": "Porsche",
+    "Automaker_ID": 71,
+    "Genmodel": 911,
+    "Genmodel_ID": "71_4"
+  },
+  {
+    "Automaker": "Porsche",
+    "Automaker_ID": 71,
+    "Genmodel": 918,
+    "Genmodel_ID": "71_5"
+  },
+  {
+    "Automaker": "Porsche",
+    "Automaker_ID": 71,
+    "Genmodel": "Boxster",
+    "Genmodel_ID": "71_6"
+  },
+  {
+    "Automaker": "Porsche",
+    "Automaker_ID": 71,
+    "Genmodel": "Carrera Gt",
+    "Genmodel_ID": "71_7"
+  },
+  {
+    "Automaker": "Porsche",
+    "Automaker_ID": 71,
+    "Genmodel": "Cayenne",
+    "Genmodel_ID": "71_8"
+  },
+  {
+    "Automaker": "Porsche",
+    "Automaker_ID": 71,
+    "Genmodel": "Cayman",
+    "Genmodel_ID": "71_9"
+  },
+  {
+    "Automaker": "Porsche",
+    "Automaker_ID": 71,
+    "Genmodel": "Macan",
+    "Genmodel_ID": "71_10"
+  },
+  {
+    "Automaker": "Porsche",
+    "Automaker_ID": 71,
+    "Genmodel": "Panamera",
+    "Genmodel_ID": "71_11"
+  },
+  {
+    "Automaker": "Proton",
+    "Automaker_ID": 72,
+    "Genmodel": "GEN-2",
+    "Genmodel_ID": "72_1"
+  },
+  {
+    "Automaker": "Proton",
+    "Automaker_ID": 72,
+    "Genmodel": "Impian",
+    "Genmodel_ID": "72_2"
+  },
+  {
+    "Automaker": "Proton",
+    "Automaker_ID": 72,
+    "Genmodel": "Jumbuck",
+    "Genmodel_ID": "72_3"
+  },
+  {
+    "Automaker": "Proton",
+    "Automaker_ID": 72,
+    "Genmodel": "Persona",
+    "Genmodel_ID": "72_4"
+  },
+  {
+    "Automaker": "Proton",
+    "Automaker_ID": 72,
+    "Genmodel": "Satria Neo",
+    "Genmodel_ID": "72_5"
+  },
+  {
+    "Automaker": "Proton",
+    "Automaker_ID": 72,
+    "Genmodel": "Savvy",
+    "Genmodel_ID": "72_6"
+  },
+  {
+    "Automaker": "Proton",
+    "Automaker_ID": 72,
+    "Genmodel": "Wira",
+    "Genmodel_ID": "72_7"
+  },
+  {
+    "Automaker": "Radical",
+    "Automaker_ID": 73,
+    "Genmodel": "SR3",
+    "Genmodel_ID": "73_1"
+  },
+  {
+    "Automaker": "Raw",
+    "Automaker_ID": 74,
+    "Genmodel": "Falcrum",
+    "Genmodel_ID": "74_1"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Captur",
+    "Genmodel_ID": "75_1"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Clio",
+    "Genmodel_ID": "75_2"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Espace",
+    "Genmodel_ID": "75_3"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Fluence",
+    "Genmodel_ID": "75_4"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Grand Espace",
+    "Genmodel_ID": "75_5"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Grand Modus",
+    "Genmodel_ID": "75_6"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Grand Scenic",
+    "Genmodel_ID": "75_7"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Kadjar",
+    "Genmodel_ID": "75_8"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Kangoo",
+    "Genmodel_ID": "75_9"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Koleos",
+    "Genmodel_ID": "75_10"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Laguna",
+    "Genmodel_ID": "75_11"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Megane",
+    "Genmodel_ID": "75_12"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Modus",
+    "Genmodel_ID": "75_13"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Scenic",
+    "Genmodel_ID": "75_14"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Scenic RX4",
+    "Genmodel_ID": "75_15"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Scenic Xmod",
+    "Genmodel_ID": "75_16"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Trafic",
+    "Genmodel_ID": "75_17"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Twingo",
+    "Genmodel_ID": "75_18"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Twizy",
+    "Genmodel_ID": "75_19"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Vel Satis",
+    "Genmodel_ID": "75_20"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Wind",
+    "Genmodel_ID": "75_21"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Zoe",
+    "Genmodel_ID": "75_22"
+  },
+  {
+    "Automaker": "Renault",
+    "Automaker_ID": 75,
+    "Genmodel": "Master",
+    "Genmodel_ID": "75_23"
+  },
+  {
+    "Automaker": "Reva",
+    "Automaker_ID": 76,
+    "Genmodel": "G-Wiz",
+    "Genmodel_ID": "76_1"
+  },
+  {
+    "Automaker": "Rolls-Royce",
+    "Automaker_ID": 77,
+    "Genmodel": "Corniche",
+    "Genmodel_ID": "77_1"
+  },
+  {
+    "Automaker": "Rolls-Royce",
+    "Automaker_ID": 77,
+    "Genmodel": "Dawn",
+    "Genmodel_ID": "77_2"
+  },
+  {
+    "Automaker": "Rolls-Royce",
+    "Automaker_ID": 77,
+    "Genmodel": "Ghost",
+    "Genmodel_ID": "77_3"
+  },
+  {
+    "Automaker": "Rolls-Royce",
+    "Automaker_ID": 77,
+    "Genmodel": "Phantom",
+    "Genmodel_ID": "77_4"
+  },
+  {
+    "Automaker": "Rolls-Royce",
+    "Automaker_ID": 77,
+    "Genmodel": "Silver Seraph",
+    "Genmodel_ID": "77_5"
+  },
+  {
+    "Automaker": "Rolls-Royce",
+    "Automaker_ID": 77,
+    "Genmodel": "Wraith",
+    "Genmodel_ID": "77_6"
+  },
+  {
+    "Automaker": "Rover",
+    "Automaker_ID": 78,
+    "Genmodel": 25,
+    "Genmodel_ID": "78_1"
+  },
+  {
+    "Automaker": "Rover",
+    "Automaker_ID": 78,
+    "Genmodel": 45,
+    "Genmodel_ID": "78_2"
+  },
+  {
+    "Automaker": "Rover",
+    "Automaker_ID": 78,
+    "Genmodel": 75,
+    "Genmodel_ID": "78_3"
+  },
+  {
+    "Automaker": "Rover",
+    "Automaker_ID": 78,
+    "Genmodel": "75 Tourer",
+    "Genmodel_ID": "78_4"
+  },
+  {
+    "Automaker": "Rover",
+    "Automaker_ID": 78,
+    "Genmodel": "City Rover",
+    "Genmodel_ID": "78_5"
+  },
+  {
+    "Automaker": "Rover",
+    "Automaker_ID": 78,
+    "Genmodel": "Mini",
+    "Genmodel_ID": "78_6"
+  },
+  {
+    "Automaker": "Rover",
+    "Automaker_ID": 78,
+    "Genmodel": "Streetwise",
+    "Genmodel_ID": "78_7"
+  },
+  {
+    "Automaker": "Rover",
+    "Automaker_ID": 78,
+    "Genmodel": 600,
+    "Genmodel_ID": "78_8"
+  },
+  {
+    "Automaker": "SEAT",
+    "Automaker_ID": 79,
+    "Genmodel": "Alhambra",
+    "Genmodel_ID": "79_1"
+  },
+  {
+    "Automaker": "SEAT",
+    "Automaker_ID": 79,
+    "Genmodel": "Altea",
+    "Genmodel_ID": "79_2"
+  },
+  {
+    "Automaker": "SEAT",
+    "Automaker_ID": 79,
+    "Genmodel": "Altea XL",
+    "Genmodel_ID": "79_3"
+  },
+  {
+    "Automaker": "SEAT",
+    "Automaker_ID": 79,
+    "Genmodel": "Arona",
+    "Genmodel_ID": "79_4"
+  },
+  {
+    "Automaker": "SEAT",
+    "Automaker_ID": 79,
+    "Genmodel": "Arosa",
+    "Genmodel_ID": "79_5"
+  },
+  {
+    "Automaker": "SEAT",
+    "Automaker_ID": 79,
+    "Genmodel": "Ateca",
+    "Genmodel_ID": "79_6"
+  },
+  {
+    "Automaker": "SEAT",
+    "Automaker_ID": 79,
+    "Genmodel": "Cordoba",
+    "Genmodel_ID": "79_7"
+  },
+  {
+    "Automaker": "SEAT",
+    "Automaker_ID": 79,
+    "Genmodel": "Exeo",
+    "Genmodel_ID": "79_8"
+  },
+  {
+    "Automaker": "SEAT",
+    "Automaker_ID": 79,
+    "Genmodel": "Ibiza",
+    "Genmodel_ID": "79_9"
+  },
+  {
+    "Automaker": "SEAT",
+    "Automaker_ID": 79,
+    "Genmodel": "Leon",
+    "Genmodel_ID": "79_10"
+  },
+  {
+    "Automaker": "SEAT",
+    "Automaker_ID": 79,
+    "Genmodel": "Mii",
+    "Genmodel_ID": "79_11"
+  },
+  {
+    "Automaker": "SEAT",
+    "Automaker_ID": 79,
+    "Genmodel": "Toledo",
+    "Genmodel_ID": "79_12"
+  },
+  {
+    "Automaker": "SEAT",
+    "Automaker_ID": 79,
+    "Genmodel": "Tarraco",
+    "Genmodel_ID": "79_13"
+  },
+  {
+    "Automaker": "SKODA",
+    "Automaker_ID": 80,
+    "Genmodel": "Citigo",
+    "Genmodel_ID": "80_1"
+  },
+  {
+    "Automaker": "SKODA",
+    "Automaker_ID": 80,
+    "Genmodel": "Fabia",
+    "Genmodel_ID": "80_2"
+  },
+  {
+    "Automaker": "SKODA",
+    "Automaker_ID": 80,
+    "Genmodel": "Karoq",
+    "Genmodel_ID": "80_3"
+  },
+  {
+    "Automaker": "SKODA",
+    "Automaker_ID": 80,
+    "Genmodel": "Kodiaq",
+    "Genmodel_ID": "80_4"
+  },
+  {
+    "Automaker": "SKODA",
+    "Automaker_ID": 80,
+    "Genmodel": "Octavia",
+    "Genmodel_ID": "80_5"
+  },
+  {
+    "Automaker": "SKODA",
+    "Automaker_ID": 80,
+    "Genmodel": "Rapid",
+    "Genmodel_ID": "80_6"
+  },
+  {
+    "Automaker": "SKODA",
+    "Automaker_ID": 80,
+    "Genmodel": "Rapid Spaceback",
+    "Genmodel_ID": "80_7"
+  },
+  {
+    "Automaker": "SKODA",
+    "Automaker_ID": 80,
+    "Genmodel": "Roomster",
+    "Genmodel_ID": "80_8"
+  },
+  {
+    "Automaker": "SKODA",
+    "Automaker_ID": 80,
+    "Genmodel": "Superb",
+    "Genmodel_ID": "80_9"
+  },
+  {
+    "Automaker": "SKODA",
+    "Automaker_ID": 80,
+    "Genmodel": "Yeti",
+    "Genmodel_ID": "80_10"
+  },
+  {
+    "Automaker": "SKODA",
+    "Automaker_ID": 80,
+    "Genmodel": "Felicia",
+    "Genmodel_ID": "80_11"
+  },
+  {
+    "Automaker": "SKODA",
+    "Automaker_ID": 80,
+    "Genmodel": "Scala",
+    "Genmodel_ID": "80_12"
+  },
+  {
+    "Automaker": "Saab",
+    "Automaker_ID": 81,
+    "Genmodel": "9-3",
+    "Genmodel_ID": "81_1"
+  },
+  {
+    "Automaker": "Saab",
+    "Automaker_ID": 81,
+    "Genmodel": "9-3X",
+    "Genmodel_ID": "81_2"
+  },
+  {
+    "Automaker": "Saab",
+    "Automaker_ID": 81,
+    "Genmodel": "9-5",
+    "Genmodel_ID": "81_3"
+  },
+  {
+    "Automaker": "Santana",
+    "Automaker_ID": 82,
+    "Genmodel": "PS10",
+    "Genmodel_ID": "82_1"
+  },
+  {
+    "Automaker": "Sebring",
+    "Automaker_ID": 83,
+    "Genmodel": "SX",
+    "Genmodel_ID": "83_1"
+  },
+  {
+    "Automaker": "Smart",
+    "Automaker_ID": 84,
+    "Genmodel": "forfour",
+    "Genmodel_ID": "84_1"
+  },
+  {
+    "Automaker": "Smart",
+    "Automaker_ID": 84,
+    "Genmodel": "fortwo",
+    "Genmodel_ID": "84_2"
+  },
+  {
+    "Automaker": "Smart",
+    "Automaker_ID": 84,
+    "Genmodel": "Roadster",
+    "Genmodel_ID": "84_3"
+  },
+  {
+    "Automaker": "Ssangyong",
+    "Automaker_ID": 85,
+    "Genmodel": "Korando",
+    "Genmodel_ID": "85_1"
+  },
+  {
+    "Automaker": "Ssangyong",
+    "Automaker_ID": 85,
+    "Genmodel": "Korando Sports",
+    "Genmodel_ID": "85_2"
+  },
+  {
+    "Automaker": "Ssangyong",
+    "Automaker_ID": 85,
+    "Genmodel": "Kyron",
+    "Genmodel_ID": "85_3"
+  },
+  {
+    "Automaker": "Ssangyong",
+    "Automaker_ID": 85,
+    "Genmodel": "Musso",
+    "Genmodel_ID": "85_4"
+  },
+  {
+    "Automaker": "Ssangyong",
+    "Automaker_ID": 85,
+    "Genmodel": "Rexton",
+    "Genmodel_ID": "85_5"
+  },
+  {
+    "Automaker": "Ssangyong",
+    "Automaker_ID": 85,
+    "Genmodel": "Rodius",
+    "Genmodel_ID": "85_6"
+  },
+  {
+    "Automaker": "Ssangyong",
+    "Automaker_ID": 85,
+    "Genmodel": "Tivoli",
+    "Genmodel_ID": "85_7"
+  },
+  {
+    "Automaker": "Ssangyong",
+    "Automaker_ID": 85,
+    "Genmodel": "Tivoli XLV",
+    "Genmodel_ID": "85_8"
+  },
+  {
+    "Automaker": "Ssangyong",
+    "Automaker_ID": 85,
+    "Genmodel": "Turismo",
+    "Genmodel_ID": "85_9"
+  },
+  {
+    "Automaker": "Subaru",
+    "Automaker_ID": 86,
+    "Genmodel": "BRZ",
+    "Genmodel_ID": "86_1"
+  },
+  {
+    "Automaker": "Subaru",
+    "Automaker_ID": 86,
+    "Genmodel": "Forester",
+    "Genmodel_ID": "86_2"
+  },
+  {
+    "Automaker": "Subaru",
+    "Automaker_ID": 86,
+    "Genmodel": "Impreza",
+    "Genmodel_ID": "86_3"
+  },
+  {
+    "Automaker": "Subaru",
+    "Automaker_ID": 86,
+    "Genmodel": "Justy",
+    "Genmodel_ID": "86_4"
+  },
+  {
+    "Automaker": "Subaru",
+    "Automaker_ID": 86,
+    "Genmodel": "Legacy",
+    "Genmodel_ID": "86_5"
+  },
+  {
+    "Automaker": "Subaru",
+    "Automaker_ID": 86,
+    "Genmodel": "Levorg",
+    "Genmodel_ID": "86_6"
+  },
+  {
+    "Automaker": "Subaru",
+    "Automaker_ID": 86,
+    "Genmodel": "Outback",
+    "Genmodel_ID": "86_7"
+  },
+  {
+    "Automaker": "Subaru",
+    "Automaker_ID": 86,
+    "Genmodel": "Sambar",
+    "Genmodel_ID": "86_8"
+  },
+  {
+    "Automaker": "Subaru",
+    "Automaker_ID": 86,
+    "Genmodel": "Tribeca",
+    "Genmodel_ID": "86_9"
+  },
+  {
+    "Automaker": "Subaru",
+    "Automaker_ID": 86,
+    "Genmodel": "WRX STI",
+    "Genmodel_ID": "86_10"
+  },
+  {
+    "Automaker": "Subaru",
+    "Automaker_ID": 86,
+    "Genmodel": "XV",
+    "Genmodel_ID": "86_11"
+  },
+  {
+    "Automaker": "Suzuki",
+    "Automaker_ID": 87,
+    "Genmodel": "Alto",
+    "Genmodel_ID": "87_1"
+  },
+  {
+    "Automaker": "Suzuki",
+    "Automaker_ID": 87,
+    "Genmodel": "Baleno",
+    "Genmodel_ID": "87_2"
+  },
+  {
+    "Automaker": "Suzuki",
+    "Automaker_ID": 87,
+    "Genmodel": "Celerio",
+    "Genmodel_ID": "87_3"
+  },
+  {
+    "Automaker": "Suzuki",
+    "Automaker_ID": 87,
+    "Genmodel": "Grand Vitara",
+    "Genmodel_ID": "87_4"
+  },
+  {
+    "Automaker": "Suzuki",
+    "Automaker_ID": 87,
+    "Genmodel": "Ignis",
+    "Genmodel_ID": "87_5"
+  },
+  {
+    "Automaker": "Suzuki",
+    "Automaker_ID": 87,
+    "Genmodel": "Jimny",
+    "Genmodel_ID": "87_6"
+  },
+  {
+    "Automaker": "Suzuki",
+    "Automaker_ID": 87,
+    "Genmodel": "Kizashi",
+    "Genmodel_ID": "87_7"
+  },
+  {
+    "Automaker": "Suzuki",
+    "Automaker_ID": 87,
+    "Genmodel": "Liana",
+    "Genmodel_ID": "87_8"
+  },
+  {
+    "Automaker": "Suzuki",
+    "Automaker_ID": 87,
+    "Genmodel": "Splash",
+    "Genmodel_ID": "87_9"
+  },
+  {
+    "Automaker": "Suzuki",
+    "Automaker_ID": 87,
+    "Genmodel": "Swift",
+    "Genmodel_ID": "87_10"
+  },
+  {
+    "Automaker": "Suzuki",
+    "Automaker_ID": 87,
+    "Genmodel": "SX4",
+    "Genmodel_ID": "87_11"
+  },
+  {
+    "Automaker": "Suzuki",
+    "Automaker_ID": 87,
+    "Genmodel": "SX4 S-Cross",
+    "Genmodel_ID": "87_12"
+  },
+  {
+    "Automaker": "Suzuki",
+    "Automaker_ID": 87,
+    "Genmodel": "Vitara",
+    "Genmodel_ID": "87_13"
+  },
+  {
+    "Automaker": "Suzuki",
+    "Automaker_ID": 87,
+    "Genmodel": "Wagon R",
+    "Genmodel_ID": "87_14"
+  },
+  {
+    "Automaker": "TVR",
+    "Automaker_ID": 88,
+    "Genmodel": "Cerbera",
+    "Genmodel_ID": "88_1"
+  },
+  {
+    "Automaker": "TVR",
+    "Automaker_ID": 88,
+    "Genmodel": "Sagaris",
+    "Genmodel_ID": "88_2"
+  },
+  {
+    "Automaker": "TVR",
+    "Automaker_ID": 88,
+    "Genmodel": "T350",
+    "Genmodel_ID": "88_3"
+  },
+  {
+    "Automaker": "TVR",
+    "Automaker_ID": 88,
+    "Genmodel": "Tuscan",
+    "Genmodel_ID": "88_4"
+  },
+  {
+    "Automaker": "Tata",
+    "Automaker_ID": 89,
+    "Genmodel": "Safari",
+    "Genmodel_ID": "89_1"
+  },
+  {
+    "Automaker": "Tesla",
+    "Automaker_ID": 90,
+    "Genmodel": "Model S",
+    "Genmodel_ID": "90_1"
+  },
+  {
+    "Automaker": "Tesla",
+    "Automaker_ID": 90,
+    "Genmodel": "Model X",
+    "Genmodel_ID": "90_2"
+  },
+  {
+    "Automaker": "Tesla",
+    "Automaker_ID": 90,
+    "Genmodel": "Model 3",
+    "Genmodel_ID": "90_3"
+  },
+  {
+    "Automaker": "Tiger",
+    "Automaker_ID": 91,
+    "Genmodel": "Avon",
+    "Genmodel_ID": "91_1"
+  },
+  {
+    "Automaker": "Tiger",
+    "Automaker_ID": 91,
+    "Genmodel": "Super Six",
+    "Genmodel_ID": "91_2"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "4-Runner",
+    "Genmodel_ID": "92_1"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Alphard",
+    "Genmodel_ID": "92_2"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Auris",
+    "Genmodel_ID": "92_3"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Avensis",
+    "Genmodel_ID": "92_4"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Avensis Verso",
+    "Genmodel_ID": "92_5"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "AYGO",
+    "Genmodel_ID": "92_6"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "BB",
+    "Genmodel_ID": "92_7"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "C-HR",
+    "Genmodel_ID": "92_8"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Camry",
+    "Genmodel_ID": "92_9"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Celica",
+    "Genmodel_ID": "92_10"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Corolla",
+    "Genmodel_ID": "92_11"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Corolla Verso",
+    "Genmodel_ID": "92_12"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Emina",
+    "Genmodel_ID": "92_13"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Estima",
+    "Genmodel_ID": "92_14"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Fj Cruiser",
+    "Genmodel_ID": "92_15"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Granvia",
+    "Genmodel_ID": "92_16"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "GT86",
+    "Genmodel_ID": "92_17"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "HiAce",
+    "Genmodel_ID": "92_18"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Hilux",
+    "Genmodel_ID": "92_19"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "iQ",
+    "Genmodel_ID": "92_20"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Land Cruiser",
+    "Genmodel_ID": "92_21"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Land Cruiser Amazon",
+    "Genmodel_ID": "92_22"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Land Cruiser Colorado",
+    "Genmodel_ID": "92_23"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Lucida",
+    "Genmodel_ID": "92_24"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "MR2",
+    "Genmodel_ID": "92_25"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Noah",
+    "Genmodel_ID": "92_26"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Picnic",
+    "Genmodel_ID": "92_27"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Prado",
+    "Genmodel_ID": "92_28"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Previa",
+    "Genmodel_ID": "92_29"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Prius",
+    "Genmodel_ID": "92_30"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Prius+",
+    "Genmodel_ID": "92_31"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Proace",
+    "Genmodel_ID": "92_32"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "PROACE Verso",
+    "Genmodel_ID": "92_33"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "RAV4",
+    "Genmodel_ID": "92_34"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Soarer",
+    "Genmodel_ID": "92_35"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Starlet",
+    "Genmodel_ID": "92_36"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Supra",
+    "Genmodel_ID": "92_37"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Surf",
+    "Genmodel_ID": "92_38"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Urbancruiser",
+    "Genmodel_ID": "92_39"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Verso",
+    "Genmodel_ID": "92_40"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Verso S",
+    "Genmodel_ID": "92_41"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Voxy",
+    "Genmodel_ID": "92_42"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Wish",
+    "Genmodel_ID": "92_43"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Yaris",
+    "Genmodel_ID": "92_44"
+  },
+  {
+    "Automaker": "Toyota",
+    "Automaker_ID": 92,
+    "Genmodel": "Yaris Verso",
+    "Genmodel_ID": "92_45"
+  },
+  {
+    "Automaker": "Ultima",
+    "Automaker_ID": 93,
+    "Genmodel": "Can-Am",
+    "Genmodel_ID": "93_1"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "ADAM",
+    "Genmodel_ID": "94_1"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Agila",
+    "Genmodel_ID": "94_2"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Ampera",
+    "Genmodel_ID": "94_3"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Antara",
+    "Genmodel_ID": "94_4"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Astra",
+    "Genmodel_ID": "94_5"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Astra GTC",
+    "Genmodel_ID": "94_6"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Cascada",
+    "Genmodel_ID": "94_7"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Combo Tour",
+    "Genmodel_ID": "94_8"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Corsa",
+    "Genmodel_ID": "94_9"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Crossland X",
+    "Genmodel_ID": "94_10"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Frontera",
+    "Genmodel_ID": "94_11"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Grandland X",
+    "Genmodel_ID": "94_12"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Insignia",
+    "Genmodel_ID": "94_13"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Meriva",
+    "Genmodel_ID": "94_14"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Mokka",
+    "Genmodel_ID": "94_15"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Mokka X",
+    "Genmodel_ID": "94_16"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Monaro",
+    "Genmodel_ID": "94_17"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Movano",
+    "Genmodel_ID": "94_18"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Omega",
+    "Genmodel_ID": "94_19"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Signum",
+    "Genmodel_ID": "94_20"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Tigra",
+    "Genmodel_ID": "94_21"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Vectra",
+    "Genmodel_ID": "94_22"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Viva",
+    "Genmodel_ID": "94_23"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Vivaro",
+    "Genmodel_ID": "94_24"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "VX220",
+    "Genmodel_ID": "94_25"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "VXR8",
+    "Genmodel_ID": "94_26"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Zafira",
+    "Genmodel_ID": "94_27"
+  },
+  {
+    "Automaker": "Vauxhall",
+    "Automaker_ID": 94,
+    "Genmodel": "Zafira Tourer",
+    "Genmodel_ID": "94_28"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Amarok",
+    "Genmodel_ID": "95_1"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Arteon",
+    "Genmodel_ID": "95_2"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Beetle",
+    "Genmodel_ID": "95_3"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Bora",
+    "Genmodel_ID": "95_4"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Caddy",
+    "Genmodel_ID": "95_5"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Caddy Life",
+    "Genmodel_ID": "95_6"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Caddy Maxi",
+    "Genmodel_ID": "95_7"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Caddy Maxi Life",
+    "Genmodel_ID": "95_8"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "California",
+    "Genmodel_ID": "95_9"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Campervan",
+    "Genmodel_ID": "95_10"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Caravelle",
+    "Genmodel_ID": "95_11"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "CC",
+    "Genmodel_ID": "95_12"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Eos",
+    "Genmodel_ID": "95_13"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Fox",
+    "Genmodel_ID": "95_14"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Golf",
+    "Genmodel_ID": "95_15"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Golf Plus",
+    "Genmodel_ID": "95_16"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Golf SV",
+    "Genmodel_ID": "95_17"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Jetta",
+    "Genmodel_ID": "95_18"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Lupo",
+    "Genmodel_ID": "95_19"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Passat",
+    "Genmodel_ID": "95_20"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Phaeton",
+    "Genmodel_ID": "95_21"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Polo",
+    "Genmodel_ID": "95_22"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Scirocco",
+    "Genmodel_ID": "95_23"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Sharan",
+    "Genmodel_ID": "95_24"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "T-Roc",
+    "Genmodel_ID": "95_25"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Tiguan",
+    "Genmodel_ID": "95_26"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Tiguan Allspace",
+    "Genmodel_ID": "95_27"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Touareg",
+    "Genmodel_ID": "95_28"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Touran",
+    "Genmodel_ID": "95_29"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Transporter",
+    "Genmodel_ID": "95_30"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Transporter Shuttle",
+    "Genmodel_ID": "95_31"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Transporter Sportline",
+    "Genmodel_ID": "95_32"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "up!",
+    "Genmodel_ID": "95_33"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "Vento",
+    "Genmodel_ID": "95_34"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "XL1",
+    "Genmodel_ID": "95_35"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "E-Golf",
+    "Genmodel_ID": "95_36"
+  },
+  {
+    "Automaker": "Volkswagen",
+    "Automaker_ID": 95,
+    "Genmodel": "T-Cross",
+    "Genmodel_ID": "95_37"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "C30",
+    "Genmodel_ID": "96_1"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "C70",
+    "Genmodel_ID": "96_2"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "S40",
+    "Genmodel_ID": "96_3"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "S60",
+    "Genmodel_ID": "96_4"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "S80",
+    "Genmodel_ID": "96_5"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "S90",
+    "Genmodel_ID": "96_6"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "V40",
+    "Genmodel_ID": "96_7"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "V40 Cross Country",
+    "Genmodel_ID": "96_8"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "V50",
+    "Genmodel_ID": "96_9"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "V60",
+    "Genmodel_ID": "96_10"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "V60 Cross Country",
+    "Genmodel_ID": "96_11"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "V70",
+    "Genmodel_ID": "96_12"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "V70 Cross Country",
+    "Genmodel_ID": "96_13"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "V90",
+    "Genmodel_ID": "96_14"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "V90 Cross Country",
+    "Genmodel_ID": "96_15"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "XC60",
+    "Genmodel_ID": "96_16"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "XC70",
+    "Genmodel_ID": "96_17"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "XC90",
+    "Genmodel_ID": "96_18"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "S70",
+    "Genmodel_ID": "96_19"
+  },
+  {
+    "Automaker": "Volvo",
+    "Automaker_ID": 96,
+    "Genmodel": "XC40",
+    "Genmodel_ID": "96_20"
+  },
+  {
+    "Automaker": "Westfield",
+    "Automaker_ID": 97,
+    "Genmodel": "Sport",
+    "Genmodel_ID": "97_1"
+  },
+  {
+    "Automaker": "Westfield",
+    "Automaker_ID": 97,
+    "Genmodel": "XI",
+    "Genmodel_ID": "97_2"
+  },
+  {
+    "Automaker": "Yamaha",
+    "Automaker_ID": 98,
+    "Genmodel": "Yxz 1000r",
+    "Genmodel_ID": "98_1"
+  },
+  {
+    "Automaker": "Zenos",
+    "Automaker_ID": 99,
+    "Genmodel": "E10",
+    "Genmodel_ID": "99_1"
+  },
+  {
+    "Automaker": "Acura",
+    "Automaker_ID": 100,
+    "Genmodel": "TL",
+    "Genmodel_ID": "100_1"
+  },
+  {
+    "Automaker": "Alpine",
+    "Automaker_ID": 101,
+    "Genmodel": "A110",
+    "Genmodel_ID": "101_1"
+  }
+]

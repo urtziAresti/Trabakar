@@ -4,7 +4,6 @@ import {AuthService} from "../../services/auth.service";
 import {Router} from '@angular/router';
 import {Camera, CameraResultType, CameraSource} from '@capacitor/camera';
 import {ActionSheetController, AlertController, LoadingController} from '@ionic/angular';
-import {DocumentData} from "@angular/fire/compat/firestore";
 import {UserProfile} from "../../interfaces/user-profile";
 import {LanguageService} from "../../services/language.service";
 import {TranslateService} from "@ngx-translate/core";
@@ -17,7 +16,6 @@ import {TranslateService} from "@ngx-translate/core";
 export class AccountPage implements OnInit {
   profile: UserProfile | undefined;
   profileAvatar: any;
-
 
   constructor(
     private userDataService: UserDataService,
@@ -36,6 +34,9 @@ export class AccountPage implements OnInit {
     this.userDataService.getUserProfileAvatar().subscribe((data) => {
       this.profileAvatar = data;
     });
+  }
+
+  ngOnInit() {
   }
 
   async openChangeLanguageActionSheet() {
@@ -108,12 +109,15 @@ export class AccountPage implements OnInit {
     this.router.navigateByUrl('home/account/edit-profile')
   }
 
+  openEditVehicleDataPage() {
+    this.router.navigateByUrl('home/account/edit-vehicle-data')
+
+  }
+
   openEditAccessDataPage() {
     this.router.navigateByUrl('home/account/edit-access-data')
-
   }
 
-  ngOnInit() {
-  }
+
 
 }

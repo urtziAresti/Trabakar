@@ -1,0 +1,35 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/" [text]="'BACK' |translate"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      {{ 'EDIT_VEHICLE_DATA.TITLE' | translate }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="padding-x-l padding-top-xl">
+    <ion-label class="body2 bold padding-top-xl">que vehiculo tienes ?</ion-label>
+    <ion-select class="padding-top-xl" [(ngModel)]="selectedAutomaker" (ionChange)="filterCarModels()"
+                placeholder="elije una marca">
+      <ion-select-option *ngFor="let automaker of automakerOptions" [value]="automaker">{{ automaker }}
+      </ion-select-option>
+    </ion-select>
+
+    <ion-select *ngIf="selectedAutomaker" [(ngModel)]="selectedModel">
+      <ion-select-option *ngFor="let model of getModelOptions()" [value]="model">{{ model }}</ion-select-option>
+    </ion-select>
+
+    <ion-select *ngIf="selectedModel" [(ngModel)]="selectedColor">
+      <ion-select-option *ngFor="let color of vehicleColors" [value]="color">{{ color }}</ion-select-option>
+    </ion-select>
+  </div>
+
+  <ion-button class="ion-padding" type="submit" expand="block" (click)="saveVehicleData()"
+              [disabled]="!selectedModel || !selectedAutomaker || !selectedColor">
+    Guardar Vehículo
+  </ion-button>
+
+</ion-content>

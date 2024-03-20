@@ -117,7 +117,6 @@ export class TravelService {
   }
 
   calculateTravelDuration(): string {
-    debugger
     const start = new Date(this.travelData.origin?.departureTime!);
     const end = new Date(this.travelData.destiny?.expectedArrivalTime!);
 

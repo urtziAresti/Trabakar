@@ -14,7 +14,7 @@
     </ion-label>
 
     <ion-avatar class="avatar-image" (click)="changeImage()">
-      <img *ngIf="profileAvatar && profileAvatar.imageUrl; else placeholderAvatar;" [src]="profileAvatar?.imageUrl"/>
+      <img alt="" *ngIf="profileAvatar && profileAvatar.imageUrl; else placeholderAvatar;" [src]="profileAvatar?.imageUrl"/>
       <ng-template #placeholderAvatar>
         <div class="fallback">
           <p> {{ 'ACCOUNT.SELECT_AVATAR' |translate }}
@@ -33,7 +33,6 @@
       </ion-label>
     </ion-button>
 
-
     <ion-button (click)="openEditAccessDataPage()" fill="clear" color="secondary">
       <ion-label class="caption1">
         {{ 'ACCOUNT.EDIT_ACCESS_DATA' |translate }}
@@ -43,6 +42,12 @@
     <ion-button (click)="openEditProfilePage()" fill="clear" color="secondary">
       <ion-label class="caption1">
         {{ 'ACCOUNT.EDIT_PROFILE_DATA' |translate }}
+      </ion-label>
+    </ion-button>
+
+    <ion-button (click)="openEditVehicleDataPage()" fill="clear" color="secondary">
+      <ion-label class="caption1">
+        Datos Vehiculo
       </ion-label>
     </ion-button>
 

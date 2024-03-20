@@ -15,6 +15,10 @@ const routes: Routes = [
   {
     path: 'edit-access-data',
     loadChildren: () => import('./edit-access-data/edit-access-data.module').then( m => m.EditAccessDataPageModule)
+  },
+  {
+    path: 'edit-vehicle-data',
+    loadChildren: () => import('./edit-vehicle-data/edit-vehicle-data.module').then( m => m.EditVehicleDataPageModule)
   }
 ];
 
