@@ -1,7 +1,8 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {TravelService} from "../../services/travel.service";
 import {IonPopover} from "@ionic/angular";
-import {Router} from "@angular/router";
+import {NavigationExtras, Router} from "@angular/router";
+import {Travel} from "../../interfaces/travel";
 
 @Component({
   selector: 'app-search',
@@ -83,8 +84,14 @@ export class SearchPage implements OnInit {
     this.seatsToFind--;
   }
 
-  openTravel() {
-    this.router.navigateByUrl('/home/search/travel-detail')
+  openTravel(travelData: Travel) {
+    const navigationExtras: NavigationExtras = {
+      state: {
+        travelData: travelData,
+        passengersNumber : this.seatsToFind
+      }
+    };
+    this.router.navigateByUrl('/home/search/travel-detail', navigationExtras)
   }
 
 }

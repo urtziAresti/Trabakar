@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { TravelDetailPageRoutingModule } from './travel-detail-routing.module';
 
 import { TravelDetailPage } from './travel-detail.page';
+import {TranslateModule} from "@ngx-translate/core";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    TravelDetailPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        TravelDetailPageRoutingModule,
+        TranslateModule
+    ],
   declarations: [TravelDetailPage]
 })
 export class TravelDetailPageModule {}

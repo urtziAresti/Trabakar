@@ -1,13 +1,46 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>travel-detail</ion-title>
-  </ion-toolbar>
+<ion-header class="ion-no-border">
+  <div class="padding-top-xs padding-left-xl">
+    <ion-label class="head2 bold ion-text-center">Info Viaje</ion-label>
+  </div>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">travel-detail</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <div class="travel-data">
+    <ion-label class="body2 bold">Origen :</ion-label>
+
+    <ion-label
+      class="body1 bold"> {{ travelData.origin?.name }} {{ travelData.origin?.address }}{{ travelData.origin?.originPostalCode }}
+    </ion-label>
+
+    <ion-label class="body2 bold">
+      Hora salida : {{ travelData.origin?.departureTime | date:'HH:mm' }}
+    </ion-label>
+
+    <ion-label class="body2 bold padding-top-xxl">Destino :</ion-label>
+    <ion-label
+      class="body1 bold"> {{ travelData.destiny?.name }} {{ travelData.destiny?.address }} {{ travelData.destiny?.destinyPostalCode }}
+    </ion-label>
+
+    <ion-label class="body2 bold padding-top-xxl">
+      Hora de llegada : {{ travelData.destiny?.expectedArrivalTime | date:'HH:mm' }}
+    </ion-label>
+
+    <ion-label class="body2 bold padding-top-xxl">
+      Duracion : {{ travelData.travelDuration }}
+    </ion-label>
+
+    <ion-label class="body2 bold padding-top-xxl">
+      Sitios disponibles : {{ travelData.numberOfSeatsAvailable }}
+    </ion-label>
+
+    <ion-label class="body1 bold padding-top-xxl">
+      Reservar viaje para : {{ seatsToReserve }} personas
+    </ion-label>
+
+    <span class="padding-top-xs regular caption2"> se abrrira un chat con el publicador para acordar detalles, y el podra aceptar o denegar la solicitud</span>
+  </div>
+
+  <ion-button (click)="openChatWithTravelPublisher()" type="submit" expand="block" class="reserve-place-button padding-x-l padding-top-xxl">
+    Reservar viaje
+  </ion-button>
 </ion-content>

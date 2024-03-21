@@ -67,6 +67,7 @@ export class TravelService {
   }
 
   getAllTravels(): Observable<Travel[]> {
+
     const allUsersCollectionRef = collection(this.firestore, `travels`);
     return collectionData(allUsersCollectionRef).pipe(
       map((allTravels: DocumentData[]) => {

@@ -61,7 +61,7 @@
     </ion-item>
   </div>
   <ion-list>
-    <ion-item button (click)="openTravel()" detail="false"
+    <ion-item button (click)="openTravel(travel)" detail="false"
       *ngFor="let travel of (travelService.filterTravelsByFormValues$(originSearchQuery,destinySearchQuery,selectedDateValue,seatsToFind) | async)">
       <div class="padding-y-xl padding-left-l">
         <ion-label class="caption1 bold ">
