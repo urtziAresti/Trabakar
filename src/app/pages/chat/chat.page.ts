@@ -17,16 +17,16 @@ export class ChatPage implements OnInit {
 
   ngOnInit() {
 
-    this.chatService.getAllUsers().subscribe((res) => {
-      this.users = res;
-    })
+    // this.chatService.getAllUsers().subscribe((res) => {
+    //   this.users = res;
+    // })
   }
 
   openUserChat(user: UserProfile) {
 
     const navigationExtras: NavigationExtras = {
       state: {
-        user: user
+        originaryser: user
       }
     };
     this.router.navigateByUrl('home/chat/chat-detail', navigationExtras);

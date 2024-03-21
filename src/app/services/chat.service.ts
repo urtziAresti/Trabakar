@@ -5,11 +5,8 @@ import {
   addDoc,
   collection,
   collectionData,
-  doc,
-  docData,
   Firestore,
   getDocs,
-  getDocFromCache,
 } from "@angular/fire/firestore";
 import {DocumentData} from "@angular/fire/compat/firestore";
 import {Auth} from "@angular/fire/auth";
@@ -40,17 +37,17 @@ export class ChatService {
     );
   }
 
-  async sendMessage(destinataryUser: UserProfile, message: string) {
+  async sendMessage(destinataryUserUID: string, message: string) {
     const originaryUser = this.auth.currentUser;
 
     const messageData: DocumentData = {
-      destinataryID: destinataryUser!.id,
+      destinataryID: destinataryUserUID,
       originaryID: originaryUser!.uid,
       message_timestamp: new Date().getTime(),
       messageText: message
     }
     try {
-      const chatRoomKey = this.generateUniqueHash(destinataryUser!.id, originaryUser!.uid);
+      const chatRoomKey = this.generateUniqueHash(destinataryUserUID!, originaryUser!.uid);
       const userDocRef = collection(this.firestore, `chatRooms/chatRoom-${chatRoomKey}/chats`);
       await addDoc(userDocRef, messageData);
       return true;
@@ -60,14 +57,14 @@ export class ChatService {
     }
   }
 
-  getMessage(destinataryUser: UserProfile) {
-    const originaryUser = this.auth.currentUser;
-    const chatRoomKey = this.generateUniqueHash(destinataryUser!.id, originaryUser!.uid)
+  getMessage(originaryUser: any, destinataryUser: UserProfile) {
+
+    const chatRoomKey = this.generateUniqueHash(destinataryUser.toString(), originaryUser)
     const userDocRef = collection(this.firestore, `chatRooms/chatRoom-${chatRoomKey}/chats`);
 
     return collectionData(userDocRef).pipe(
       map((docs: DocumentData[]) => {
-        return docs.map((doc, index) => {
+        return docs.map((doc) => {
           return {
             destinataryID: doc['destinataryID'],
             originaryID: doc['originaryID'],

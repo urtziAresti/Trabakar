@@ -40,7 +40,11 @@
     <span class="padding-top-xs regular caption2"> se abrrira un chat con el publicador para acordar detalles, y el podra aceptar o denegar la solicitud</span>
   </div>
 
-  <ion-button (click)="openChatWithTravelPublisher()" type="submit" expand="block" class="reserve-place-button padding-x-l padding-top-xxl">
+  <ion-label color="warning" class="padding-top-xxl regular caption2" *ngIf="travelData.userID == user?.uid">Este viaje lo has publicado tu</ion-label>
+
+  <ion-button [disabled]="travelData.userID == user?.uid"
+    (click)="openChatWithTravelPublisher()" type="submit"
+    expand="block" class="reserve-place-button padding-x-l padding-top-xxl">
     Reservar viaje
   </ion-button>
 </ion-content>

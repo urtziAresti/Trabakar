@@ -13,7 +13,7 @@
     <ion-item *ngFor="let message of messages " lines="none" class="padding-xs">
       <div class="message-text" [ngClass]="{'right-align': message.originaryID == destinataryUser.id}" >
         <ion-label class="caption1 light padding-left-l">{{ message.message_timestamp |date:'HH:mm'}}</ion-label>
-        <ion-label class="caption1 bold">
+        <ion-label class="caption1 regular">
           {{message.messageText}}
         </ion-label>
       </div>

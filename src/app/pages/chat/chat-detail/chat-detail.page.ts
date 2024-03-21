@@ -13,11 +13,12 @@ import {IonContent} from "@ionic/angular";
 })
 export class ChatDetailPage implements OnInit {
   destinataryUser!: UserProfile;
+  originaryUser!: UserProfile;
+
   messages!: ChatMessage[];
   @ViewChild('messageInput', {static: false}) messageInput!: HTMLInputElement;
   @ViewChild('messageList', {static: false}) messageList!: IonContent;
   @ViewChild(IonContent, {static: false}) content!: IonContent;
-
 
   constructor(
     private route: ActivatedRoute,
@@ -30,7 +31,8 @@ export class ChatDetailPage implements OnInit {
     this.route.queryParams.subscribe(() => {
       const currentNavigation = this.router.getCurrentNavigation();
       if (currentNavigation && currentNavigation.extras?.state) {
-        this.destinataryUser = currentNavigation.extras.state['user'];
+        this.originaryUser = currentNavigation.extras.state['originaryUser'];
+        this.destinataryUser = currentNavigation.extras.state['destinataryUser'];
         this.getAllMessages()
         this.scrollDownView()
       }
@@ -44,7 +46,7 @@ export class ChatDetailPage implements OnInit {
   }
 
   sendMessage(message: string) {
-    this.chatService.sendMessage(this.destinataryUser, message);
+    this.chatService.sendMessage(this.destinataryUser.toString(), message);
     this.clearInputValue(this.messageInput);
     this.scrollDownView()
   }
@@ -62,11 +64,19 @@ export class ChatDetailPage implements OnInit {
   }
 
   getAllMessages() {
-    this.chatService.getMessage(this.destinataryUser).subscribe(conversationMessages => {
+    this.chatService.getMessage(this.originaryUser,this.destinataryUser).subscribe(conversationMessages => {
+
+      if(conversationMessages.length == 0){
+       this.sendPresentationMessage()
+      }
       this.messages = conversationMessages.sort((a, b) => {
         return a.message_timestamp.getTime() - b.message_timestamp.getTime();
       });
     })
+  }
+
+  sendPresentationMessage(){
+    this.sendMessage("Hola, me gustaria reservar tu viaje...")
   }
 
 }
