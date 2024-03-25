@@ -55,7 +55,8 @@ export class ChatDetailPage implements OnInit {
   }
 
   sendMessage(message: string) {
-    this.chatService.sendMessage(this.destinataryUser.toString(), message);
+
+    this.chatService.sendMessage(this.destinataryUser.id.toString(), message);
     this.clearInputValue(this.messageInput);
     this.scrollDownView()
   }

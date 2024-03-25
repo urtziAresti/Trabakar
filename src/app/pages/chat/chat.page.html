@@ -7,8 +7,10 @@
 <ion-content>
 
   <ion-list>
-    <ion-item *ngFor="let user of contactedUsers;let i  = index" (click)="openUserChat(user.userProfile,i)">
-      <ion-label>{{ user.userProfile.name }} {{ user.userProfile.surname }}</ion-label>
+    <ion-item *ngFor="let userTravel of contactedUsers;let i  = index" (click)="openUserChat(userTravel.userProfile,i)">
+      <ion-label>{{ userTravel.userProfile.name }} {{ userTravel.userProfile.surname }}</ion-label>
+      -->
+      <ion-label> {{userTravel.travelData.destiny?.name}}</ion-label>
     </ion-item>
   </ion-list>
 

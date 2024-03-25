@@ -28,6 +28,7 @@ export class AddressFinderPage implements OnInit {
           if (currentNavigation.extras.state['destiny']) {
             this.destiny = true;
             this.origin = false;
+            this.searchQuery = '';
           }
         } else {
           this.destiny = false;
