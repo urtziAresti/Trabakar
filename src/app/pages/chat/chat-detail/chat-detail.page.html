@@ -3,8 +3,8 @@
     <ion-buttons slot="start">
       <ion-back-button default-href="/" [text]="'BACK' | translate"></ion-back-button>
     </ion-buttons>
-
-    <ion-title>{{ destinataryUser.name }} {{ destinataryUser.surname }}</ion-title>
+<!--    <ion-title>{{ destinataryUser.name }} {{ destinataryUser.surname }}</ion-title>-->
+    <ion-label (click)="acceptReserve()" *ngIf="travelData?.userID == currentUser?.uid " color="warning" slot="end" class="reserve-button padding-right-l">Aceptar</ion-label>
   </ion-toolbar>
 </ion-header>
 
@@ -19,6 +19,9 @@
       </div>
     </ion-item>
   </ion-list>
+
+
+
 </ion-content>
 
 <ion-footer class="chat-detail-footer">

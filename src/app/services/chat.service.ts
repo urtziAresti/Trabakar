@@ -1,10 +1,10 @@
 import {Injectable} from '@angular/core';
-import {map, Observable} from "rxjs";
+import {combineLatest, map, Observable, of, switchMap} from "rxjs";
 import {UserProfile} from "../interfaces/user-profile";
 import {
   addDoc,
   collection,
-  collectionData,
+  collectionData, doc, docData,
   Firestore,
   getDocs,
 } from "@angular/fire/firestore";
@@ -12,6 +12,8 @@ import {DocumentData} from "@angular/fire/compat/firestore";
 import {Auth} from "@angular/fire/auth";
 import {ChatMessage} from "../interfaces/chatMessage";
 import {Md5} from 'ts-md5';
+import {Travel} from "../interfaces/travel";
+import {Userprofiletravel} from "../interfaces/userprofiletravel";
 
 @Injectable({
   providedIn: 'root'
@@ -20,6 +22,69 @@ export class ChatService {
 
   constructor(private firestore: Firestore,
               private auth: Auth) {
+  }
+
+  getContactedUsers(): Observable<Userprofiletravel[]> {
+    const currentUser = this.auth.currentUser;
+    const allUsersCollectionRef = collection(this.firestore, 'travels');
+
+    // @ts-ignore
+    return collectionData(allUsersCollectionRef).pipe(
+      switchMap((allTravels: DocumentData[]) => {
+        const getUserObservables: (Observable<{
+          travelData: Travel;
+          userProfile: UserProfile
+        }> | Observable<null>)[] = allTravels.map(travelData => {
+          if (travelData['travelClientsUIDs'] && travelData['travelClientsUIDs'].includes(currentUser?.uid)) {
+            return this.getUserById(travelData['userID']).pipe(
+              map((userProfile: UserProfile) => {
+                const travelDatas: Travel = {
+                  destiny: travelData['destiny'],
+                  origin: travelData['origin'],
+                  userID: travelData['userID'],
+                  travelID: travelData['travelID'],
+                  comments: travelData['comments'],
+                  numberOfSeatsAvailable: travelData['numberOfSeatsAvailable'],
+                  estimatedPrice: travelData['estimatedPrice'],
+                  publishDate: travelData['publishDate'],
+                  travelStartDates: travelData['travelStartDates'],
+                  travelStartTime: travelData['travelStartTime'],
+                  travelDuration: travelData['travelDuration']
+                };
+
+                return {
+                  userProfile: userProfile,
+                  travelData: travelDatas
+                };
+              })
+            );
+          } else {
+            // If the user is not part of this travel, return an empty observable
+            return of(null);
+          }
+        });
+
+        // Combine all observables into one observable array
+        return combineLatest(getUserObservables).pipe(
+          // Filter out null values and flatten the array of Userprofiletravel objects
+          map(results => results.filter(result => result !== null).flat())
+        );
+      })
+    );
+  }
+
+  getUserById(userId: string): Observable<UserProfile> {
+    const userDocRef = doc(this.firestore, `users/${userId}`);
+    return docData(userDocRef).pipe(
+      map((data: any) => {
+        console.warn("userData", data)
+        return {
+          id: data['id'],
+          name: data['name'],
+          surname: data['surname']
+        } as UserProfile;
+      })
+    );
   }
 
   getAllUsers(): Observable<UserProfile[]> {
@@ -57,9 +122,10 @@ export class ChatService {
     }
   }
 
-  getMessage(originaryUser: any, destinataryUser: UserProfile) {
+  getMessage(destinataryUser: UserProfile): Observable<ChatMessage[]> {
 
-    const chatRoomKey = this.generateUniqueHash(destinataryUser.toString(), originaryUser)
+    const currentUser = this.auth.currentUser;
+    const chatRoomKey = this.generateUniqueHash(destinataryUser.id.toString(), currentUser!.uid)
     const userDocRef = collection(this.firestore, `chatRooms/chatRoom-${chatRoomKey}/chats`);
 
     return collectionData(userDocRef).pipe(

@@ -14,4 +14,5 @@ export interface Travel {
   comments?: string;
   publishDate?: Date;
   travelDuration? :string;
+  travelClientsUIDs? : string[]
 }

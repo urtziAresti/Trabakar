@@ -34,7 +34,7 @@ export class PriceSelectorPage implements OnInit {
     const travelData: TravelModel = this.travelService.travelData;
     travelData.estimatedPrice = this.estimatedPrice;
     travelData.comments = this.travelComments;
-    this.travelService.publisTravel().then(() => {
+    this.travelService.publishTravel().then(() => {
       this.router.navigateByUrl('home/publish')
       this.showCorrectPublish("Viaje añadido", "Tu viaje a sido publicado. Ya pudes buscarlo")
     }).catch(err => {

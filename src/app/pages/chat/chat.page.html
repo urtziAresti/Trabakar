@@ -7,8 +7,8 @@
 <ion-content>
 
   <ion-list>
-    <ion-item *ngFor="let user of users" (click)="openUserChat(user)">
-      <ion-label>{{ user.name }} {{ user.surname }}</ion-label>
+    <ion-item *ngFor="let user of contactedUsers;let i  = index" (click)="openUserChat(user.userProfile,i)">
+      <ion-label>{{ user.userProfile.name }} {{ user.userProfile.surname }}</ion-label>
     </ion-item>
   </ion-list>
 

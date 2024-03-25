@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, NavigationExtras, Router} from "@angular/router";
 import {Travel} from "../../../interfaces/travel";
 import {Auth} from "@angular/fire/auth";
+import {TravelService} from "../../../services/travel.service";
 
 @Component({
   selector: 'app-travel-detail',
@@ -16,7 +17,8 @@ export class TravelDetailPage implements OnInit {
 
   constructor(private route: ActivatedRoute,
               private router: Router,
-              private auth: Auth) {
+              private auth: Auth,
+              private travelService:TravelService) {
   }
 
   ngOnInit() {
@@ -35,10 +37,11 @@ export class TravelDetailPage implements OnInit {
   }
 
   openChatWithTravelPublisher() {
+    this.travelService.setCurrentUserUIDtoselectedTravel(this.travelData.travelID)
     const navigationExtras: NavigationExtras = {
       state: {
-        originaryUser: this.user?.uid,
-        destinataryUser: this.travelData.userID
+        destinataryUser: this.travelData.userID,
+        travelData:this.travelData
       }
     };
     this.router.navigateByUrl('home/chat/chat-detail', navigationExtras);

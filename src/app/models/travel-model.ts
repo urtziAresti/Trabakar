@@ -14,6 +14,8 @@ export class TravelModel implements Travel {
   private _comments?: string;
   private _publishDate?: Date;
   private _travelDuration?: string;
+  private _travelClientsUIDs?: string[];
+
 
   constructor(
     userID: string,
@@ -25,6 +27,7 @@ export class TravelModel implements Travel {
     comments?: string,
     publishDate?: Date,
     travelDuration?: string,
+    travelClientsUIDs?:string[]
   ) {
     this._travelID = this.generateTravelID();
     this._userID = userID;
@@ -36,6 +39,7 @@ export class TravelModel implements Travel {
     this._comments = comments;
     this._publishDate = publishDate;
     this._travelDuration = travelDuration;
+    this._travelClientsUIDs = travelClientsUIDs;
   }
 
   generateTravelID() {
@@ -74,6 +78,10 @@ export class TravelModel implements Travel {
   }
 
 
+  get travelClientsUIDs(): string[] | undefined {
+    return this._travelClientsUIDs;
+  }
+
   get estimatedPrice(): number | undefined {
     return this._estimatedPrice;
   }
@@ -111,8 +119,12 @@ export class TravelModel implements Travel {
     this._publishDate = value;
   }
 
-  set TravelDuration(value: string | undefined) {
+  set travelDuration(value: string | undefined) {
     this._travelDuration = value;
+  }
+
+  set travelClientsUIDs(value: string[] | undefined) {
+    this._travelClientsUIDs = value;
   }
 
   set estimatedPrice(value: number | undefined) {

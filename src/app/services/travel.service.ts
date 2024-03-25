@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {TravelModel} from '../models/travel-model';
-import {collection, collectionData, doc, Firestore, setDoc} from "@angular/fire/firestore";
+import {collection, collectionData, doc, Firestore, setDoc, updateDoc} from "@angular/fire/firestore";
 import {Auth} from "@angular/fire/auth";
 import {BehaviorSubject, map, Observable, tap} from "rxjs";
 import {Travel} from "../interfaces/travel";
@@ -93,7 +93,23 @@ export class TravelService {
   }
 
 
-  async publisTravel(): Promise<void> {
+  async setCurrentUserUIDtoselectedTravel(travelID: String): Promise<void> {
+    return new Promise<void>((resolve, reject) => {
+      const userDocRef = doc(this.firestore, `travels/${travelID}`);
+      updateDoc(userDocRef, {
+        travelClientsUIDs: this.auth.currentUser?.uid,
+      }).then(res => {
+        resolve()
+        console.warn(res)
+      }).catch(err => {
+        reject()
+        console.error(err)
+      })
+    })
+  }
+
+
+  async publishTravel(): Promise<void> {
     return new Promise<void>((resolve, reject) => {
       const userDocRef = doc(this.firestore, `travels/${this.travelData.travelID}`);
       setDoc(userDocRef, {

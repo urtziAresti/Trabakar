@@ -4,6 +4,8 @@ import {UserProfile} from "../../../interfaces/user-profile";
 import {ChatService} from "../../../services/chat.service";
 import {ChatMessage} from "../../../interfaces/chatMessage";
 import {IonContent} from "@ionic/angular";
+import {Auth} from "@angular/fire/auth";
+import {Travel} from "../../../interfaces/travel";
 
 
 @Component({
@@ -13,7 +15,9 @@ import {IonContent} from "@ionic/angular";
 })
 export class ChatDetailPage implements OnInit {
   destinataryUser!: UserProfile;
-  originaryUser!: UserProfile;
+  currentUser = this.auth.currentUser;
+  travelData?: Travel;
+
 
   messages!: ChatMessage[];
   @ViewChild('messageInput', {static: false}) messageInput!: HTMLInputElement;
@@ -23,19 +27,24 @@ export class ChatDetailPage implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private chatService: ChatService) {
-
+    private chatService: ChatService,
+    private auth: Auth) {
   }
 
   ngOnInit() {
     this.route.queryParams.subscribe(() => {
+
       const currentNavigation = this.router.getCurrentNavigation();
       if (currentNavigation && currentNavigation.extras?.state) {
-        this.originaryUser = currentNavigation.extras.state['originaryUser'];
         this.destinataryUser = currentNavigation.extras.state['destinataryUser'];
         this.getAllMessages()
         this.scrollDownView()
       }
+      // if (currentNavigation && currentNavigation.extras?.state) {
+      //   if (currentNavigation.extras?.state['travelData']) {
+      //     this.travelData = currentNavigation.extras?.state['travelData'] as Travel;
+      //   }
+      // }
     });
   }
 
@@ -51,6 +60,10 @@ export class ChatDetailPage implements OnInit {
     this.scrollDownView()
   }
 
+  acceptReserve(){
+    console.warn(this.currentUser)
+  }
+
   scrollDownView() {
     if (this.messageList) {
       setTimeout(() => {
@@ -64,10 +77,9 @@ export class ChatDetailPage implements OnInit {
   }
 
   getAllMessages() {
-    this.chatService.getMessage(this.originaryUser,this.destinataryUser).subscribe(conversationMessages => {
-
-      if(conversationMessages.length == 0){
-       this.sendPresentationMessage()
+    this.chatService.getMessage(this.destinataryUser).subscribe(conversationMessages => {
+      if (conversationMessages.length == 0) {
+        this.sendPresentationMessage()
       }
       this.messages = conversationMessages.sort((a, b) => {
         return a.message_timestamp.getTime() - b.message_timestamp.getTime();
@@ -75,7 +87,7 @@ export class ChatDetailPage implements OnInit {
     })
   }
 
-  sendPresentationMessage(){
+  sendPresentationMessage() {
     this.sendMessage("Hola, me gustaria reservar tu viaje...")
   }
 
