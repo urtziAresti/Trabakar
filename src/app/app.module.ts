@@ -13,7 +13,7 @@ import {getFirestore, provideFirestore} from '@angular/fire/firestore';
 import {getMessaging, provideMessaging} from '@angular/fire/messaging';
 import {environment} from "../environments/environment";
 import { provideAuth, getAuth } from '@angular/fire/auth';
-import {StorageModule} from "@angular/fire/storage";
+import {getStorage, provideStorage, StorageModule} from "@angular/fire/storage";
 import { GoBackDirective } from './directives/go-back.directive';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -41,6 +41,7 @@ export function HttpLoaderFactory(handler: HttpBackend) {
     provideAnalytics(() => getAnalytics()),
     provideFirestore(() => getFirestore()),
     provideMessaging(() => getMessaging()),
+    provideStorage(() => getStorage()),
     StorageModule,
     TranslateModule.forRoot({
       defaultLanguage: environment.defaultLanguage,
@@ -56,7 +57,7 @@ export function HttpLoaderFactory(handler: HttpBackend) {
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    }),
+    })
   ],
   providers: [{provide: RouteReuseStrategy, useClass: IonicRouteStrategy}, ScreenTrackingService],
   bootstrap: [AppComponent],

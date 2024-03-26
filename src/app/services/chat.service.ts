@@ -14,6 +14,8 @@ import {ChatMessage} from "../interfaces/chatMessage";
 import {Md5} from 'ts-md5';
 import {Travel} from "../interfaces/travel";
 import {Userprofiletravel} from "../interfaces/userprofiletravel";
+import {getDownloadURL, ref, Storage, uploadString,uploadBytes} from '@angular/fire/storage';
+import firebase from "firebase/compat";
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +23,9 @@ import {Userprofiletravel} from "../interfaces/userprofiletravel";
 export class ChatService {
 
   constructor(private firestore: Firestore,
-              private auth: Auth) {
+              private auth: Auth,
+              private storage: Storage,
+  ) {
   }
 
   getContactedUsers(): Observable<Userprofiletravel[]> {
@@ -115,10 +119,33 @@ export class ChatService {
       const chatRoomKey = this.generateUniqueHash(destinataryUserUID!, originaryUser!.uid);
       const userDocRef = collection(this.firestore, `chatRooms/chatRoom-${chatRoomKey}/chats`);
       await addDoc(userDocRef, messageData);
+      this.updateFirebaseJSONOFChats(messageData);
       return true;
     } catch (e) {
       console.error('Error sending message:', e);
       return false;
+    }
+  }
+
+
+  async updateFirebaseJSONOFChats(messageData: any) {
+
+    var jsonData = JSON.stringify(messageData);
+
+    const filePath = 'https://firebasestorage.googleapis.com/v0/b/trabacar-36366.appspot.com/o/chats%2FlastChats3.json?alt=media&token=bab02abb-9ae2-4e06-b69b-bdf5c993c645';
+    const storageRef = ref(this.storage, filePath);
+
+    try {
+      var jsonBlob = new Blob([jsonData], {type: "application/json"})
+
+      uploadBytes(storageRef,jsonBlob,{
+        contentType:'application/json'
+      })
+
+      return true
+    } catch (e) {
+      console.error(e)
+      return null;
     }
   }
 
@@ -156,5 +183,6 @@ export class ChatService {
     let UIDSArray = [value1.toLowerCase(), value2.toLowerCase()].sort();
     return Md5.hashStr(UIDSArray.toString().replace('/', ''));
   }
+
 
 }
