@@ -1,9 +1,8 @@
 import {Injectable} from '@angular/core';
-import {Auth, getAuth, updateEmail, updatePassword} from '@angular/fire/auth';
+import {Auth, updateEmail, updatePassword} from '@angular/fire/auth';
 import {doc, docData, Firestore, setDoc} from '@angular/fire/firestore';
 import {getDownloadURL, ref, Storage, uploadString} from '@angular/fire/storage';
 import {Photo} from '@capacitor/camera';
-import {DocumentData} from "@angular/fire/compat/firestore";
 import {map, Observable} from "rxjs";
 import {UserProfile} from "../interfaces/user-profile";
 import {User} from "firebase/auth";

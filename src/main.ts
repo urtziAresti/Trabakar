@@ -30,9 +30,6 @@ if (environment.production) {
       .then(registration => {
         console.log('Custom Service registration successful with scope: ', registration.scope);
 
-
-
-
       })
       .catch(err => {
         console.error('Custom ServiceWorker registration failed: ', err);
@@ -43,9 +40,7 @@ if (environment.production) {
     navigator.serviceWorker.register('./assets/sw.js')
       .then(registration => {
         console.log('Custom Service registration assets successful with scope: ', registration.scope);
-        if (registration.active) {
-          registration.active.postMessage({ action: 'getLocalStorage', data: myData });
-        }
+
       })
       .catch(err => {
         console.error('Custom ServiceWorker assets registration failed: ', err);

@@ -21,8 +21,6 @@ self.addEventListener('message', event => {
 });
 
 
-
-
 self.addEventListener('sync', function (event) {
   if (event.tag === 'chats-fetch') {
     event.waitUntil(fetchChats());
@@ -30,7 +28,7 @@ self.addEventListener('sync', function (event) {
 });
 
 function fetchChats() {
-  fetch('https://firebasestorage.googleapis.com/v0/b/trabacar-36366.appspot.com/o/chats%2FlastChats.json?alt=media&token=179ef39e-90ac-43b3-8ba0-f6d7d34aeb43')
+  fetch('https://firebasestorage.googleapis.com/v0/b/trabacar-36366.appspot.com/o/chats%2FlastChats3.json?alt=media&token=3adf683f-ac37-41b8-8118-0c6a4e9933f4')
     .then(function(response) {
       if (!response.ok) {
         throw new Error('Network response was not ok');
@@ -45,19 +43,6 @@ function fetchChats() {
       console.error('Request failed', error);
     });
 }
-
-
-
-
-
-self.addEventListener('install', function(event) {
-  console.log('[Service Worker] Installing Service Worker ...', event);
-});
-
-self.addEventListener('activate', function(event) {
-  console.log('[Service Worker] Activating Service Worker ...', event);
-  return self.clients.claim();
-});
 
 self.addEventListener('fetch', function(event) {
   console.log('[Service Worker] Fetching something ...', event);

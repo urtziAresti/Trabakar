@@ -130,9 +130,10 @@ export class ChatService {
 
   async updateFirebaseJSONOFChats(messageData: any) {
 
+
     var jsonData = JSON.stringify(messageData);
 
-    const filePath = 'https://firebasestorage.googleapis.com/v0/b/trabacar-36366.appspot.com/o/chats%2FlastChats3.json?alt=media&token=bab02abb-9ae2-4e06-b69b-bdf5c993c645';
+    const filePath = 'https://firebasestorage.googleapis.com/v0/b/trabacar-36366.appspot.com/o/chats%2FlastChats3.json?alt=media&token=3adf683f-ac37-41b8-8118-0c6a4e9933f4';
     const storageRef = ref(this.storage, filePath);
 
     try {
